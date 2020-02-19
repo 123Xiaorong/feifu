@@ -1,0 +1,78 @@
+img{
+    width: 500px;
+    height: 400px;
+}
+.floatL{
+    float: left;
+}
+.Enjoy_nav{
+    padding-top: 65px;
+    width: 98%;
+    margin: 0 auto;
+}
+.Baking_content{
+    width: 700px;
+    height: 400px;
+    /*border: 1px solid rebeccapurple;*/
+    padding: 100px 30px;
+}
+.MarginL{
+    /*margin-left: 40px;*/
+}
+.Clear{
+    clear: both;
+}
+.ContentBorder{
+    width: 98%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+.ContentBorder2{
+    width: 98%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+.peixuntime{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 30px;
+    color: white;
+    background-image: url("../../images/zc/bg10.jpg");
+    background-size: cover;
+}
+.Table_border{
+    width: 500px;
+    margin-left: 75px;
+    height: 400px;
+    /*border: 1px solid rebeccapurple;*/
+}
+.Info_input{
+    width: 550px;
+    padding: 50px 50px;
+}
+.Info_input>div{
+    padding: 10px 0;
+}
+.Info_input>button{
+    width: 150px;
+    height: 52px;
+    background-color: rgb(255,64,1);
+    color: white;
+    line-height: 52px;
+    text-decoration: none;
+    border: none;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.person_info{
+    width: 120px;
+}
+.Border2{
+    margin: 0 auto;
+    height: 400px;
+    width: 1200px;
+}
+.modal_button{
+    background-color: rgb(255,64,1);
+}

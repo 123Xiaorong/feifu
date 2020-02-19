@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>环保</title>
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg1 {
+            height: 651px;
+            background: url('../../images/wcm/choose/bg0814_1.jpg') no-repeat center;
+        }
+        .bg2 {
+            height: 543px;
+            background: url('../../images/wcm/choose/bg2.jpg') no-repeat center;
+        }
+        .bg3 {
+            height: 732px;
+            background: url('../../images/wcm/choose/bg0814_3.jpg') no-repeat center;
+        }
+        .bg4{
+            height: 248px;
+            background: url('../../images/wcm/choose/bg0814_4.jpg') no-repeat center;
+        }
+        .bg5 {
+            height: 67px;
+            background: url('../../images/wcm/choose/bg5.jpg') no-repeat center;
+        }
+        .bg6 {
+            height: 140px;
+            background: url('../../images/wcm/choose/bg6.jpg') no-repeat center;
+        }
+        .bg7 {
+            height: 480px;
+            background: url('../../images/wcm/choose/bg0702_7 (2).jpg') no-repeat center;
+        }
+        .bottom_text {
+            background: #ededed;
+            max-width: 1920px;
+            margin: auto;
+        }
+        .bottom_text div {
+            width: 753px;
+            height: auto;
+            margin: auto;
+            color: #9c9c9c;
+            padding: 57px 0;
+            font-size: 16px;
+        }
+        .bottom_text div h4 {
+            font-weight: bold;
+        }
+        .bottom_text div p {
+            line-height: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="t_baoliangge">
+        <div class="t_daohanglan">
+            <div class="t_logo">
+                <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+            </div>
+            <div class="t_ul" id="t_ul">
+                <ul>
+                    <li>
+                        <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                    </li>
+                    <li>
+                        <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                    </li>
+                </ul>
+            </div>
+            <!--<div id="t_shousuo-1">-->
+            <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+            <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--</div>-->
+            <div class="t_tubiao" id="t_tubiao">
+                <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+                <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+                <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+                <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+                <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_zicaidan">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/breakfast.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span>
+                </a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/bread.html">
+                    <i class="iconfont icon-tusi"></i>
+                    <br>
+                    <span class="t_quanbu-2">吐司</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/drink.html">
+                    <i class="iconfont icon-yinpin"></i>
+                    <br>
+                    <span class="t_quanbu-3">饮品</span></a>
+            </div>
+        </div>
+    
+        <div class="display_none" id="t_qita">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/nearby.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span></a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/flower.html">
+                    <i class="iconfont icon-shouye"></i>
+                    <br>
+                    <span class="t_quanbu-2">鲜花</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/card.html">
+                    <i class="iconfont icon-iconkpxd"></i>
+                    <br>
+                    <span class="t_quanbu-3">贺卡</span></a>
+            </div>
+            <div class="t_dangaolihe">
+                <a href="../../html/xr/sweet.html">
+                    <i class="iconfont icon-lihe"></i>
+                    <br>
+                    <span class="t_quanbu-4">甜点</span></a>
+            </div>
+        </div>
+    
+    
+        <div class="display_none" id="t_qiye-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <div class="t_xianhua">
+                <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+                <br>
+                <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+            </div>
+            <div class="t_heka">
+                <i class="iconfont icon-kehuqunzu"></i>
+                <br>
+                <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_tiyan-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <!--<div class="t_xianhua">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-hongbeigongju"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-2">烘培</span></a>-->
+            <!--</div>-->
+            <div class="t_heka">
+                <a href="../../html/zc/Teach_video.html">
+                    <i class="iconfont icon-shipin"></i>
+                    <br>
+                    <span class="t_quanbu-3">教学视频</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/zc/Activ.html">
+                    <i class="iconfont icon-Donut"></i>
+                    <br>
+                    <span class="t_quanbu-4">体验</span></a>
+            </div>
+        </div>
+        <!--<div class="display_none" id="t_wodefeihu-x">-->
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-dingdan"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">我的订单</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_heka">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-zhaohuimima"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-3">找回密码</span></a>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div id="coverLayerOutly" class="display-none">
+        <div id="coverLayerly" class="display-none">
+            <span id="coverLayerBlockly">×</span>
+            <button id="coverLayerButtonOnely">登录</button>
+            <button id="coverLayerButtonTwoly">关闭</button>
+            <div id="coverLayerContently"></div>
+        </div>
+    </div>
+    <div class="BDContainer" onmouseover="t_zao()">
+        <div class="bg1">&nbsp;</div>
+        <div class="bg2">&nbsp;</div>
+        <div class="bg3">&nbsp;</div>
+        <div class="bg4">&nbsp;</div>
+        <!-- 跳转到蛋糕页 -->
+        <a href="../../html/xr/cake.html">
+            <div class="bg5">&nbsp;</div>
+        </a>
+        <div class="bg6">&nbsp;</div>
+        <div class="bg7">&nbsp;</div>
+        <div class="bottom_text">
+            <div>
+                <h4>活动规则</h4>
+                <p>活动时间：2019年7月1日至2019年12月31日</p>
+                <h4>参与规则</h4>
+                <p>1. 支持环保计划，结算时勾选“助力环保 无需餐具”，订单完成后可获赠价值158元「喵叽叽曲奇·随机礼盒」1份（再次下单时赠品区勾选赠礼即可）。</p>
+                <p>2. 本活动可与其他优惠同享。</p>
+                <h4>赠品使用规则</h4>
+                <p>1. 即日起至2019年12月31日，购全场任意产品即享，仅限使用1次，使用后立即失效。</p>
+                <p>2. 赠品口味随机，由第三方物流另行配送。</p>
+                <p>3. 赠品不与其他优惠同享（如蛋糕券、兑换券、储值卡、银行优惠等）。</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div>
+                <ul>
+                    <li><a href="#">全部蛋糕</a></li>
+                    <li><a href="#">关于诺心</a></li>
+                    <li><a href="#">客服服务</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+            <h2>copyright©妃芙cake版权所有</h2>
+            <figure>
+                <img src="../../images/wcm/choose/weixin.jpg" alt="">
+                <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+            </figure>
+    </footer>
+
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/nav1.js"></script>
+</body>
+
+</html>

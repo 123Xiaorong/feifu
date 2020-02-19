@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/xxb/personalCenterSon.css">
+</head>
+<body>
+<div class="personalCenterBox">
+    <p class="personalCenterTitle">优惠券列表</p>
+    <ul id="titleSon">
+        <li class="active">全部券</li>
+        <li>打折券</li>
+        <li>满减券</li>
+        <li>兑换券</li>
+        <li>新人券</li>
+        <li id="couponChoose">
+            <input type="checkbox" id="couponYes" checked>
+            <label for="couponYes">已拥有</label>
+            <input type="checkbox" id="couponNo" checked>
+            <label for="couponNo">未拥有</label>
+        </li>
+    </ul>
+    <div class="couponBox display-none">
+        <div class="border">
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+            <span class="borderType"></span>
+        </div>
+        <div>
+            <p><span>7</span>折</p>
+            <p>满300可用</p>
+        </div>
+        <div>
+            <p>全类商品<span>新人劵</span></p>
+            <p>0000.00.00-0000.00.00</p>
+            <p>
+                <button class="couponGet">领取</button>
+                <button class="couponGet">索要</button>
+                <button class="couponUse display-none">使用</button>
+                <button class="couponUse display-none">赠送</button>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="../../js/ajax.js"></script>
+<script src="../../js/xxb/personalCenterCouponManage.js"></script>
+</body>
+</html>

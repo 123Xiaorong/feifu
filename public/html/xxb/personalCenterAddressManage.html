@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <title>百度地图API自定义地图</title>
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/xxb/personalCenterSon.css">
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=UXsxdM6p00Wn9fqT7GGuLqYCPBAforDZ&"></script>
+</head>
+<body>
+<div class="personalCenterBox">
+    <p class="personalCenterTitle">新增地址</p>
+    <div class="contentContainer">
+        <div id="map"></div>
+        <div id="mapSearch">
+            <p>请选择收货地址:</p>
+            <button>省</button>
+            <button>市</button>
+            <button>区</button>
+            <input type="text" placeholder="详细地址" id="address" autocomplete="off">
+            <!--<button id="btn" class="display-none">搜索</button>-->
+            <p>请输入收货人:</p>
+            <input type="text" autocomplete="off" placeholder="收货人">
+            <p>请输入手机号码:</p>
+            <input type="text" autocomplete="off" placeholder="手机号码">
+            <button id="btn">保存为收货地址</button>
+        </div>
+        <!--<input type="text" id="address">-->
+        <!--<button id="btn">搜索</button>-->
+    </div>
+    <p class="personalCenterTitle">我的地址</p>
+    <div class="contentContainer">
+        <div class="addressInformation display-none">
+            <span>
+                <input type="radio" name="addressDefault">
+                <label>默认地址</label>
+            </span>
+            <button type="button">删除</button>
+            <p>
+                <span>许孝波</span>
+                <em>15828123297</em>
+                <span class="addressNo display-none"></span>
+            </p>
+            <b><span>四川省</span><span>成都市</span><span>武侯区</span>一环路南四段111号</b>
+        </div>
+        <!--<div class="addressInformation">-->
+            <!--<span>-->
+                <!--<input type="radio" name="addressDefault">-->
+                <!--<label>默认地址</label>-->
+            <!--</span>-->
+            <!--<button>删除</button>-->
+            <!--<p>-->
+                <!--<span>许孝波</span>-->
+                <!--<em>15828123297</em>-->
+                <!--&lt;!&ndash;<button>删除</button>&ndash;&gt;-->
+            <!--</p>-->
+            <!--<b><span>四川省</span><span>成都市</span><span>武侯区</span>一环路南四段111号</b>-->
+        <!--</div>-->
+        <!--<div class="addressInformation">-->
+            <!--<span>-->
+                <!--<input type="radio" name="addressDefault">-->
+                <!--<label>默认地址</label>-->
+            <!--</span>-->
+            <!--<button>删除</button>-->
+            <!--<p>-->
+                <!--<span>许孝波</span>-->
+                <!--<em>15828123297</em>-->
+                <!--&lt;!&ndash;<button>删除</button>&ndash;&gt;-->
+            <!--</p>-->
+            <!--<b><span>四川省</span><span>成都市</span><span>武侯区</span>一环路南四段111号</b>-->
+        <!--</div>-->
+        <!--<div class="addressInformation">-->
+            <!--<span>-->
+                <!--<input type="radio" name="addressDefault">-->
+                <!--<label>默认地址</label>-->
+            <!--</span>-->
+            <!--<button>删除</button>-->
+            <!--<p>-->
+                <!--<span>许孝波</span>-->
+                <!--<em>15828123297</em>-->
+                <!--&lt;!&ndash;<button>删除</button>&ndash;&gt;-->
+            <!--</p>-->
+            <!--<b><span>四川省</span><span>成都市</span><span>武侯区</span>一环路南四段111号</b>-->
+        <!--</div>-->
+        <!--<div class="addressInformation">-->
+            <!--<span>-->
+                <!--<input type="radio" name="addressDefault">-->
+                <!--<label>默认地址</label>-->
+            <!--</span>-->
+            <!--<button>删除</button>-->
+            <!--<p>-->
+                <!--<span>许孝波</span>-->
+                <!--<em>15828123297</em>-->
+                <!--&lt;!&ndash;<button>删除</button>&ndash;&gt;-->
+            <!--</p>-->
+            <!--<b><span>四川省</span><span>成都市</span><span>武侯区</span>一环路南四段111号</b>-->
+        <!--</div>-->
+    </div>
+</div>
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/xxb/PCD.js"></script>
+<script src="../../js/ajax.js"></script>
+<script src="../../js/xxb/personalCenterAddressManage.js"></script>
+</body>
+</html>

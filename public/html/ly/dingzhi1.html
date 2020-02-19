@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/ly/dingzhi1.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+
+    <link href="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!--导航栏-->
+<div class="t_baoliangge">
+    <div class="t_daohanglan">
+        <div class="t_logo">
+            <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+        </div>
+        <div class="t_ul" id="t_ul">
+            <ul>
+                <li>
+                    <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                </li>
+                <li>
+                    <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                </li>
+            </ul>
+        </div>
+        <!--<div id="t_shousuo-1">-->
+        <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+        <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+        <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+        <!--</div>-->
+        <div class="t_tubiao" id="t_tubiao">
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+            <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+            <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+            <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+            <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_zicaidan">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/breakfast.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span>
+            </a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/bread.html">
+                <i class="iconfont icon-tusi"></i>
+                <br>
+                <span class="t_quanbu-2">吐司</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/drink.html">
+                <i class="iconfont icon-yinpin"></i>
+                <br>
+                <span class="t_quanbu-3">饮品</span></a>
+        </div>
+    </div>
+
+    <div class="display_none" id="t_qita">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/nearby.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span></a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/flower.html">
+                <i class="iconfont icon-shouye"></i>
+                <br>
+                <span class="t_quanbu-2">鲜花</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/card.html">
+                <i class="iconfont icon-iconkpxd"></i>
+                <br>
+                <span class="t_quanbu-3">贺卡</span></a>
+        </div>
+        <div class="t_dangaolihe">
+            <a href="../../html/xr/sweet.html">
+                <i class="iconfont icon-lihe"></i>
+                <br>
+                <span class="t_quanbu-4">甜点</span></a>
+        </div>
+    </div>
+
+
+    <div class="display_none" id="t_qiye-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <div class="t_xianhua">
+            <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+            <br>
+            <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+        </div>
+        <div class="t_heka">
+            <i class="iconfont icon-kehuqunzu"></i>
+            <br>
+            <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_tiyan-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-hongbeigongju"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">烘培</span></a>-->
+        <!--</div>-->
+        <div class="t_heka">
+            <a href="../../html/zc/Teach_video.html">
+                <i class="iconfont icon-shipin"></i>
+                <br>
+                <span class="t_quanbu-3">教学视频</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/zc/Activ.html">
+                <i class="iconfont icon-Donut"></i>
+                <br>
+                <span class="t_quanbu-4">体验</span></a>
+        </div>
+    </div>
+    <!--<div class="display_none" id="t_wodefeihu-x">-->
+    <!--<div class="t_quanbu-t">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-quanbu"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-1">全部</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_xianhua">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-dingdan"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-2">我的订单</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_heka">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-zhaohuimima"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-3">找回密码</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div id="coverLayerOutly" class="display-none">
+    <div id="coverLayerly" class="display-none">
+        <span id="coverLayerBlockly">×</span>
+        <button id="coverLayerButtonOnely">登录</button>
+        <button id="coverLayerButtonTwoly">关闭</button>
+        <div id="coverLayerContently"></div>
+    </div>
+</div>
+<div class="x_kong"></div>
+<!--身体-->
+<div class="t_shenti-1" onmouseover="t_zao()">
+    <!--蛋糕图片放的位置-->
+    <div class="t_kuangjia" id="box" >
+        <!--<img src="../../images/ly/list_13164.jpg">-->
+        <div class="small" >
+            <img id="mainImg" src="../../images/ly/list_13164.jpg">
+            <div class="mask"></div>
+        </div>
+        <div class="big">
+            <img id="e_fangda" src="../../images/ly/list_13164.jpg" width="500" />
+        </div>
+        <div class="v_wenzi" id="c_wenzi">为爱发声,为爱作证
+        <!--<div class="t_yingwen-1">MlLK& CHEESE</div>-->
+        </div>
+    </div>
+    <!--//定制位置-->
+    <div class="t_shenti-2">
+        <div class="c_wenzi" id="c_wenzhi2">纯白の恋情</div>
+        <div class="c_wenzi-1" id="c_wenzhi1">玲珑骰子安红豆，入骨相思知不知</div>
+        <!--<div class="c_wenzi-2">￥244</div>-->
+        <div class="c_wenzi-3">
+           <span> 蛋糕尺寸:</span>&nbsp;
+            <select id="t_cun">
+                <!--<option>请选择尺寸</option>-->
+                <option>请选择尺寸</option>
+                <option value="12">2-4人餐</option>
+                <option value="18">5-8人餐</option>
+                <option value="24">10-12人餐</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span> 餐具:</span>&nbsp;
+           <input type="text" name="" oninput="value=value.replace(/[^\d]/g,'') " maxlength="2" class="c_renshu" placeholder="只能输入数字">
+            (套)
+        </div>
+        <div class="c_wenzi-4">
+            <span> 蛋糕层数:</span>&nbsp;
+            <select id="t_ceng" onblur="jiage()">
+                <!--<option >互相奶油</option>-->
+                <option value="0">请选择层数</option>
+                <option value="1">一层</option>
+                <option value="2">二层</option>
+                <option value="3">三层</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span> 刻字:</span>&nbsp;
+            <input type="text" name="kezhi"  maxlength="6" class="c_renshu" placeholder="只能刻六个字" id="t_kezhi">
+        </div>
+        <div class="c_wenzi-5">
+            <a href="../car/gouwuche.html" alt=""><button id="g_jiaru" style="outline: 0px">加入购物车</button></a>
+            <a href="../car/jiesuan.html"><button id="g_goumai" style="outline: 0px">立即购买</button></a>
+            <div class="c_wenzi-2" id="c_jiage">￥---</div>
+        </div>
+        <div class="c_wenzi-6">
+            <div class="c_wenzi-7">Preservation conditions｜保鲜条件</div>
+            <div  class="c_wenzi-8">最佳保存温度10°C，最佳赏味期为24小时内
+                食用前请在室温下放置20分钟，口感更佳</div>
+        </div>
+    </div>
+<!--<div style="width: 100%;height: 600px">-->
+    <!--贺卡位置-->
+    <div class="c_geju">
+            <div class="c_wen">把您祝福写给他(她):</div>
+            <div class="c_zhufu"  > <textarea  placeholder="只能输入100字..." maxlength="100"id="t_zhufuyu"  style="color: #3e3e3e"></textarea></div>
+            <div class="c_tijiao">
+                <button id="t_qingchu">清除</button>
+                <button>提交</button>
+            </div>
+    </div>
+
+
+    <!--关于里面-->
+    <div id="c_geju-1" class="t_yingchang" onclick="fan()">
+            <div class="c_wenzi-8-1">设计理念</div>
+            <div class="c_wenzi-9" id="y_lilian">
+                看上你，不是因为你家财万贯;喜欢你,不奢求锦衣玉食;嫁给你，不渴望荣华富贵
+                .爱情,用钱买不到;爱情,用车换不来;爱情,用真心才能得到.草根爱情，一样幸福快乐.
+            </div>
+        <div class="c_wenti">
+            <div class="c_yongliao"onclick="yongliao()">蛋糕用料</div>
+            <div class="c_peisong" onclick="peisong()">食用口感</div>
+        </div>
+    </div>
+    <div id="c_geju-2" class="t_yingchang" onclick="fan()">
+        <div class="c_wenzi-8-1">蛋糕用料</div>
+        <div class="c_wenzi-9" id="y_yongliao">
+            看上你，不是因为你家财万贯;喜欢你,不奢求锦衣玉食;嫁给你，不渴望荣华富贵
+            .爱情,用钱买不到;爱情,用车换不来;爱情,用真心才能得到.草根爱情，一样幸福快乐.
+        </div>
+        <div class="c_wenti">
+            <div class="c_yongliao"onclick="sheji()">设计理念</div>
+            <div class="c_peisong" onclick="peisong()">食用口感</div>
+        </div>
+    </div>
+    <div id="c_geju-3" class="t_yingchang" onclick="fan()">
+        <div class="c_wenzi-8-1">食用口感</div>
+        <div class="c_wenzi-9" id="y_kougan">
+            看上你，不是因为你家财万贯;喜欢你,不奢求锦衣玉食;嫁给你，不渴望荣华富贵
+            .爱情,用钱买不到;爱情,用车换不来;爱情,用真心才能得到.草根爱情，一样幸福快乐.
+        </div>
+        <div class="c_wenti">
+            <div class="c_yongliao"onclick="sheji()">设计理念</div>
+            <div class="c_peisong" onclick="yongliao()">蛋糕用料</div>
+        </div>
+    </div>
+    <div id="c_geju-4" class="" >
+        <div class="c_wenzi-8-1" onclick="sheji()">设计理念</div>
+        <div class="c_wenzi-8-1" onclick="yongliao()">蛋糕用料</div>
+        <div class="c_wenzi-8-1" onclick="sheji()">配送问题</div>
+    </div>
+<!--</div>-->
+</div>
+<!--页尾-->
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">全部蛋糕</a></li>
+            <li><a href="#">关于诺心</a></li>
+            <li><a href="#">客服服务</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+    <h2>copyright©妃芙cake版权所有</h2>
+    <figure>
+        <img src="../../images/ly/weixin.jpg" alt="">
+        <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+    </figure>
+</footer>
+
+
+
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/nav1.js"></script>
+<script src="../../js/ly/dingzhi1.js"></script>
+<!--<script src="../bootstrap-3.3.7-dist/dist/js/jquery.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../../js/ly/common.js"></script>
+
+<script>
+    var id;
+    function yonghuming() {
+        id=sessionStorage.getItem("userId");
+        // console.log(id);
+        $.ajax({
+            url:"/yonghuming.do",
+            type:"post",
+            data:{
+                data:id,
+            },
+            success:function (data) {
+                $("#t_yonghuming").html(`${data[0].username}`)
+            },
+        })
+    }
+    yonghuming()
+
+
+
+    $("#t_wodefeifu").click(function () {
+        var zi=$("#t_yonghuming").text();
+        console.log(zi.length)
+        if(zi.length<=0){
+            ourAlert(500,150,"请先登录",22)
+        }else {
+            location.href="../xxb/personalCenter.html"
+        }
+    })
+
+
+    $("#coverLayerButtonOne").click(function () {
+        location.assign("../xr/login.html")
+    })
+
+    function yingchang() {
+        var zi=$("#t_yonghuming").text();
+        // console.log(zi.length)
+        if(zi.length>0){
+            $("#t_yingchang").css({
+                "display":"none"
+            })
+            $("#t_zhuxiao").css({
+                "display":"inline"
+            })
+        }else {
+            $("#t_yingchang").css({
+                "display":"inline"
+            })
+
+        }
+        clearInterval(cc)
+    }
+    var cc=setInterval(yingchang ,100)
+
+
+    $("#t_zhuxiao").click(function () {
+        ourAlert(500,150,"确认注销",22)
+        $("#coverLayerButtonOne").text("确认注销")
+        $("#coverLayerButtonTwo").text("切换账号")
+        var zhuxiao=$("#t_zhuxiao").text();
+        console.log(zhuxiao);
+        if(zhuxiao=="注销"){
+            $("#coverLayerButtonOne").click(function () {
+                location.href="../wcm/jingxuan.html"
+                sessionStorage.removeItem("userId")
+            });
+            $("#coverLayerButtonTwo").click(function () {
+                location.assign("../xr/login.html");
+            })
+
+        }else {
+            $("#coverLayerButtonOne").click(function () {
+                location.assign("../xr/login.html")
+            })
+        }
+    })
+    // $("#coverLayerButtonOne").click(function () {
+    //
+    // });
+    $("#t_qingchu").click(function () {
+        $("#t_zhufuyu").val("")
+    })
+</script>
+
+<script>
+    window.onload=function(){
+        // console.log(21344);
+        removeAhref();
+    }
+
+</script>
+<script>
+    function removeAhref() {
+        // console.log($("#g_jiaru").parent());
+        $("#g_jiaru").parent().removeAttr("href");
+        $("#g_goumai").parent().removeAttr("href");
+        // console.log($("#g_jiaru").parent())
+    };
+
+    // setInterval(jiage)
+    var t_cun;
+    var t_ceng;
+    var t_cunn;
+    var id=location.search.split("=");
+    function  tupian1() {
+        // console.log(location.search);
+        // console.log(id[1]);
+        $.ajax({
+            url:"/xiangqiang.do",
+            type:"post",
+            data:{
+                data:id[1]
+            },
+            success:function (data) {
+                 $('#mainImg').attr({
+                     'src':'../../images/image/'+data[0].img
+                 });
+                $('#e_fangda').attr({
+                    'src':'../../images/image/'+data[0].img
+                });
+                $("#c_wenzi").html(`${data[0].description}`)
+                $("#c_wenzhi1").html(`${data[0].mean}`)
+                $("#c_wenzhi2").html(`${data[0].goodsname}`)
+            }
+        })
+    }
+    tupian1()
+    
+    function peifang() {
+        // console.log(id[1]);
+        $.ajax({
+            url:"/peifang.do",
+            type:"post",
+            data:{
+                data:id[1]
+            },
+            success:function (data) {
+                $("#y_lilian").html(`${data[0].design}`)
+                $("#y_yongliao").html(`${data[0].material}`)
+                $("#y_kougan").html(`${data[0].taste}`)
+            }
+        })
+    }
+    peifang()
+
+
+
+    $("#t_cun").change(function () {
+        t_cun=$("#t_cun").val();
+        // console.log(t_cun);
+        t_cunn=$("#t_cun option:selected");
+        t_cunn.text()
+        // console.log(t_cunn.text())
+
+    })
+    $("#t_ceng").change(function () {
+        t_ceng=$("#t_ceng").val();
+        // console.log(t_ceng);
+    })
+
+    function jiage() {
+
+        var id1=location.search.split("=")
+        console.log(id1[1])
+        $.ajax({
+            url:"/jiage.do",
+            type:"post",
+            data:{
+               data:id1[1],
+                data2:t_cun,
+                data3:t_ceng,
+            },
+            success:function (data) {
+                console.log(data)
+                $("#c_jiage").html(`￥${data[0].weight}`)
+            }
+        })
+    }
+    // jiage()
+
+    var DD=location.search.split("=");
+
+    $("#g_jiaru").click(function () {
+        // $("#g_jiaru").css("outline","none");
+
+     // 产品名称
+        var mingzi=$("#c_wenzhi2").html()
+        // console.log('名称'+mingzi)
+ // 图片路径
+       var lujing= $("#mainImg").attr("src");
+        // console.log('路径'+lujing);
+  // 多少人吃
+  //      var t_cunnn =t_cunn.text()
+        // console.log( '吃'+t_cunnn);
+  // 价格
+        var jiage=$("#c_jiage").text()
+        // console.log('价格'+jiage);
+        var kezi=$("input[name='kezhi']").val()
+        // console.log(kezi);
+        // 用户ID
+       var id=sessionStorage.getItem("userId");
+           if(id==null){
+           // console.log(1243);
+           ourAlertNav(500,150,"请先登录",20);
+       }else{
+           $.ajax({
+               url:"/tijiao.do",
+               type:"post",
+               data:{
+                   data:mingzi,
+                   data2:lujing,
+                   data3:t_cunn.text(),
+                   data4:jiage,
+                   data5:kezi,
+                   data6:id,
+                   data7: DD[1],
+               },
+               success:function (data) {
+
+               },
+           })
+               location.href="../car/gouwuche.html";
+       }
+    })
+
+
+
+    $("#g_goumai").click(function () {
+        // $("#g_goumai").css("outline","none");
+
+        var DD=location.search.split("=");
+
+        // 产品名称
+        var mingzi=$("#c_wenzhi2").html()
+        // console.log('名称'+mingzi)
+        // 图片路径
+        var lujing= $("#mainImg").attr("src");
+        // console.log('路径'+lujing);
+        // 多少人吃
+        // var t_cunnn =t_cunn.text()
+        // console.log( '吃'+t_cunnn);
+        // 价格
+        var jiage=$("#c_jiage").text()
+        // console.log('价格'+jiage);
+        var kezi=$("input[name='kezhi']").val()
+        // console.log(kezi);
+        var id=sessionStorage.getItem("userId");
+        if(id==null){
+            // console.log(1243);
+            ourAlertNav(500,150,"请先登录",20);
+        }else{
+            $.ajax({
+                url:"/goumai.do",
+                type:"post",
+                data:{
+                    data:mingzi,
+                    data2:lujing,
+                    data3:t_cunn.text(),
+                    data4:jiage,
+                    data5:kezi,
+                    data6:id,
+                    data7:DD,
+                },
+                success:function (data) {
+
+                },
+            })
+            location.href="../car/gouwuche.html";
+        }
+    })
+</script>
+
+</body>
+</html>

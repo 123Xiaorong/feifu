@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蛋糕定制</title>
+
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cakeMain{
+            width: 98%;
+            margin: 0 auto;
+            min-width: 905px;
+            padding-top: 65px;
+        }
+        /*<!--搜索选项-->*/
+        .sectionOne{
+            background-color: #f9f9f9;
+            padding: 16px 1.5%;
+        }
+        .cakeSearch{
+            width: 99.5%;
+            font-size: 14px;
+            color: #3e3e3e;
+            font-weight: normal;
+        }
+        .cakeSearch dl{
+            display: block;
+            line-height: 36px;
+            height: 36px;
+            background-color: white;
+        }
+        .cakeSearch dt{
+            float: left;
+            margin-right: 40px;
+            margin-left: 20px;
+        }
+        .cakeSearch dd{
+            float: left;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+        .cakeSearch dd:hover{
+            color: rgb(255,79,21);
+        }
+        /*产品展示*/
+        .sectionTwo{
+            background-color: #f9f9f9;
+            padding: 0px 1.5%;
+            /*outline: #ffc73a 1px solid;*/
+        }
+        .sectionTwo>div{
+            width: 21.5%;
+            background-color: white;
+            padding: 1.5% 1.5%;
+            float: left;
+            margin-right: 0.5%;
+            margin-bottom: 10px;
+            /*outline: #5936ff 1px solid;*/
+        }
+        .sectionTwo>div:hover{
+            /*background-color: rgb(252,237,239);*/
+            /*background-color: rgba(255,79,21,0.1);*/
+            box-shadow: 0 0 10px 2px #888b87;
+        }
+        .sectionTwo div a{
+            text-decoration: none;
+        }
+        .sectionTwo div h3{
+            width: 100%;
+            color: #3e3e3e;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            /*outline: red 1px solid;*/
+        }
+        .sectionTwo div h4{
+            width: 100%;
+            color: #949494;
+            font-size: 12px;
+            font-weight: normal;
+            /*outline: red 1px solid;*/
+        }
+        .sectionTwo div p{
+            width: 100%;
+            color: #cca976;
+            font-size: 16px;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /*outline: red 1px solid;*/
+        }
+        .sectionTwo div h1{
+              width: 100%;
+              color: #FF4F15;
+              font-size: 14px;
+              font-weight: normal;
+              display: inline;
+              /*outline: red 1px solid;*/
+          }
+        .sectionTwo div h1:hover{
+            color: red;
+        }
+        .addCart:hover span{
+            color: red;
+            display: inline;
+        }
+        .sectionTwo div a>span{
+           display: none;
+        }
+        .cakeImage{
+            width: 100%;
+            overflow: hidden;
+        }
+        .cakeImage:hover img{
+            transform: scale(1.1);
+        }
+        .cakeImage>img{
+            width: 100%;
+            font-size: 0;
+            transition: transform .3s linear;
+        }
+    </style>
+
+</head>
+<body>
+<!--导航-->
+<div class="t_baoliangge">
+    <div class="t_daohanglan">
+        <div class="t_logo">
+            <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+        </div>
+        <div class="t_ul" id="t_ul">
+            <ul>
+                <li>
+                    <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                </li>
+                <li>
+                    <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                </li>
+            </ul>
+        </div>
+        <!--<div id="t_shousuo-1">-->
+        <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+        <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+        <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+        <!--</div>-->
+        <div class="t_tubiao" id="t_tubiao">
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+            <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+            <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+            <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+            <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_zicaidan">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/breakfast.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span>
+            </a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/bread.html">
+                <i class="iconfont icon-tusi"></i>
+                <br>
+                <span class="t_quanbu-2">吐司</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/drink.html">
+                <i class="iconfont icon-yinpin"></i>
+                <br>
+                <span class="t_quanbu-3">饮品</span></a>
+        </div>
+    </div>
+
+    <div class="display_none" id="t_qita">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/nearby.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span></a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/flower.html">
+                <i class="iconfont icon-shouye"></i>
+                <br>
+                <span class="t_quanbu-2">鲜花</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/card.html">
+                <i class="iconfont icon-iconkpxd"></i>
+                <br>
+                <span class="t_quanbu-3">贺卡</span></a>
+        </div>
+        <div class="t_dangaolihe">
+            <a href="../../html/xr/sweet.html">
+                <i class="iconfont icon-lihe"></i>
+                <br>
+                <span class="t_quanbu-4">甜点</span></a>
+        </div>
+    </div>
+
+
+    <div class="display_none" id="t_qiye-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <div class="t_xianhua">
+            <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+            <br>
+            <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+        </div>
+        <div class="t_heka">
+            <i class="iconfont icon-kehuqunzu"></i>
+            <br>
+            <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_tiyan-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-hongbeigongju"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">烘培</span></a>-->
+        <!--</div>-->
+        <div class="t_heka">
+            <a href="../../html/zc/Teach_video.html">
+                <i class="iconfont icon-shipin"></i>
+                <br>
+                <span class="t_quanbu-3">教学视频</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/zc/Activ.html">
+                <i class="iconfont icon-Donut"></i>
+                <br>
+                <span class="t_quanbu-4">体验</span></a>
+        </div>
+    </div>
+    <!--<div class="display_none" id="t_wodefeihu-x">-->
+    <!--<div class="t_quanbu-t">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-quanbu"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-1">全部</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_xianhua">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-dingdan"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-2">我的订单</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_heka">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-zhaohuimima"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-3">找回密码</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<div id="coverLayerOutly" class="display-none">
+    <div id="coverLayerly" class="display-none">
+        <span id="coverLayerBlockly">×</span>
+        <button id="coverLayerButtonOnely">登录</button>
+        <button id="coverLayerButtonTwoly">关闭</button>
+        <div id="coverLayerContently"></div>
+    </div>
+</div>
+<!--主要部分-->
+<div class="cakeMain" onmouseover="t_zao()">
+    <!--搜索选项-->
+    <section class="sectionOne">
+        <div class="cakeSearch">
+            <dl>
+                <!--<dt></dt>-->
+                <dt>系列：</dt>
+                <dd onclick="quanbu()">全部</dd>
+                <dd onclick="xinhua()">心花怒放</dd>
+                <dd onclick="gaobai()">甜蜜告白</dd>
+                <dd onclick="huayuan()">秘密花园</dd>
+                <dd onclick="xingkong()">星空系列</dd>
+            </dl>
+            <!--<dl>-->
+                <!--<dt>规格：</dt>-->
+                <!--<dd>全部</dd>-->
+                <!--<dd>2-4人食</dd>-->
+                <!--<dd>5-8人食</dd>-->
+                <!--<dd>10-12人食</dd>-->
+                <!--<dd>15-20人食</dd>-->
+            <!--</dl>-->
+        </div>
+    </section>
+    <!--产品展示-->
+    <section class="sectionTwo">
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                     <img src="../../images/ly/list_13164.jpg" alt="" id="q_tu">
+                </div>
+            </a>
+            <a href="#">
+                <h3 id="q_mingzi">雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4 id="q_miaoshu">甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <div class="cakeImage">
+                    <img src="../../images/ly/list_13164.jpg" alt="">
+                </div>
+            </a>
+            <a href="#">
+                <h3>雪域牛乳芝士·特浓</h3>
+            </a>
+            <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+            <p>
+                <small>￥</small>
+                <span>248</span>
+            </p>
+            <a href="../../html/ly/dingzhi1.html" class="addCart">
+                <h1>立即定制</h1>
+                <span>+</span>
+            </a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">全部蛋糕</a></li>
+            <li><a href="#">关于诺心</a></li>
+            <li><a href="#">客服服务</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+    <h2>copyright©妃芙cake版权所有</h2>
+    <figure>
+        <img src="../../images/ly/weixin.jpg" alt="">
+        <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+    </figure>
+</footer>
+
+
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/nav1.js"></script>
+<script src="../../js/ajax.js"></script>
+<script>
+    window.onload=function () {
+        $(".cakeImage").css("height",$(".cakeImage")[0].offsetWidth);
+        $(".sectionTwo").css("height",($(".sectionTwo>div")[0].offsetHeight)*4+60);
+        tupian();
+    }
+    window.onresize=function () {
+        $(".cakeImage").css("height",$(".cakeImage")[0].offsetWidth);
+        $(".sectionTwo").css("height",($(".sectionTwo>div")[0].offsetHeight)*4+60);
+    }
+
+    function tupian() {
+        $.ajax({
+            url:"/tupian.do",
+            type:"post",
+            data:{
+
+            },
+            success:function (data) {
+            // console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+            for (var i=1;i<data.length;i++){
+
+                document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                    "            <a href='dingzhi1.html?G_id="+data[i].G_id+"'>\n" +
+                    "                <div class=\"cakeImage\">\n" +
+                    "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                    "                </div>\n" +
+                    "            </a>\n" +
+                    "            <a href=\"#\">\n" +
+                    "                <h3>"+data[i].description+"</h3>\n" +
+                    "            </a>\n" +
+                    "            <h4>"+data[i].description+"</h4>\n" +
+                    "            <p>\n" +
+                    "                <small>￥</small>\n" +
+                    "                <span>"+data[i].leadTime+"</span>\n" +
+                    "            </p>\n" +
+                    "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                    "                <h1>立即定制</h1>\n" +
+                    "                <span>+</span>\n" +
+                    "            </a>\n" +
+                    "        </div>";
+
+                // console.log( document.getElementsByClassName("sectionTwo")[0])
+            }
+            },
+        })
+    }
+
+    function quanbu() {
+        $.ajax({
+            url:"/quanbu.do",
+            type:"post",
+            data:{
+
+            },
+            success:function (data) {
+                // console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+                for (var i=1;i<data.length;i++){
+
+                    document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                        "            <a href=>\n" +
+                        "                <div class=\"cakeImage\">\n" +
+                        "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                        "                </div>\n" +
+                        "            </a>\n" +
+                        "            <a href=>\n" +
+                        "                <h3>"+data[i].description+"</h3>\n" +
+                        "            </a>\n" +
+                        "            <h4>"+data[i].description+"</h4>\n" +
+                        "            <p>\n" +
+                        "                <small>￥</small>\n" +
+                        "                <span>"+data[i].leadTime+"</span>\n" +
+                        "            </p>\n" +
+                        "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                        "                <h1>立即定制</h1>\n" +
+                        "                <span>+</span>\n" +
+                        "            </a>\n" +
+                        "        </div>";
+
+                    // console.log( document.getElementsByClassName("sectionTwo")[0])
+                }
+            },
+        })
+    }
+
+    function xinhua() {
+        var xinhua="心花怒放"
+        $.ajax({
+            url:"/xinhua.do",
+            type:"post",
+            data:{
+              data:xinhua
+            },
+            success:function (data) {
+                console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+                for (var i=0;i<data.length;i++){
+                    document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                        "            <a href=\"\">\n" +
+                        "                <div class=\"cakeImage\">\n" +
+                        "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                        "                </div>\n" +
+                        "            </a>\n" +
+                        "            <a href=\"#\">\n" +
+                        "                <h3>"+data[i].description+"</h3>\n" +
+                        "            </a>\n" +
+                        "            <h4>"+data[i].description+"</h4>\n" +
+                        "            <p>\n" +
+                        "                <small>￥</small>\n" +
+                        "                <span>"+data[i].leadTime+"</span>\n" +
+                        "            </p>\n" +
+                        "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                        "                <h1>立即定制</h1>\n" +
+                        "                <span>+</span>\n" +
+                        "            </a>\n" +
+                        "        </div>";
+                }
+            },
+        })
+    }
+
+    function gaobai() {
+        var xinhua="甜蜜告白"
+        $.ajax({
+            url:"/gaobai.do",
+            type:"post",
+            data:{
+                data:xinhua
+            },
+            success:function (data) {
+                // console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+                for (var i=0;i<data.length;i++){
+                    document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                        "            <a href=\"\">\n" +
+                        "                <div class=\"cakeImage\">\n" +
+                        "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                        "                </div>\n" +
+                        "            </a>\n" +
+                        "            <a href=\"#\">\n" +
+                        "                <h3>"+data[i].description+"</h3>\n" +
+                        "            </a>\n" +
+                        "            <h4>"+data[i].description+"</h4>\n" +
+                        "            <p>\n" +
+                        "                <small>￥</small>\n" +
+                        "                <span>"+data[i].leadTime+"</span>\n" +
+                        "            </p>\n" +
+                        "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                        "                <h1>立即定制</h1>\n" +
+                        "                <span>+</span>\n" +
+                        "            </a>\n" +
+                        "        </div>";
+                }
+            },
+        })
+
+    }
+
+    function huayuan() {
+        var xinhua="秘密花园"
+        $.ajax({
+            url:"/huayuan.do",
+            type:"post",
+            data:{
+                data:xinhua
+            },
+            success:function (data) {
+                // console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+                for (var i=0;i<data.length;i++){
+                    document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                        "            <a href=\"\">\n" +
+                        "                <div class=\"cakeImage\">\n" +
+                        "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                        "                </div>\n" +
+                        "            </a>\n" +
+                        "            <a href=\"#\">\n" +
+                        "                <h3>"+data[i].description+"</h3>\n" +
+                        "            </a>\n" +
+                        "            <h4>"+data[i].description+"</h4>\n" +
+                        "            <p>\n" +
+                        "                <small>￥</small>\n" +
+                        "                <span>"+data[i].leadTime+"</span>\n" +
+                        "            </p>\n" +
+                        "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                        "                <h1>立即定制</h1>\n" +
+                        "                <span>+</span>\n" +
+                        "            </a>\n" +
+                        "        </div>";
+                }
+            },
+        })
+
+    }
+
+    function xingkong() {
+        var xinhua="星空系列"
+        $.ajax({
+            url:"/xingkong.do",
+            type:"post",
+            data:{
+                data:xinhua
+            },
+            success:function (data) {
+                // console.log(data);
+                document.getElementsByClassName("sectionTwo")[0].innerHTML="";
+                for (var i=0;i<data.length;i++){
+                    document.getElementsByClassName("sectionTwo")[0].innerHTML+=" <div>\n" +
+                        "            <a href=\"\">\n" +
+                        "                <div class=\"cakeImage\">\n" +
+                        "                    <img src='../../images/image/"+data[i].img+"' alt=\"\">\n" +
+                        "                </div>\n" +
+                        "            </a>\n" +
+                        "            <a href=\"#\">\n" +
+                        "                <h3>"+data[i].description+"</h3>\n" +
+                        "            </a>\n" +
+                        "            <h4>"+data[i].description+"</h4>\n" +
+                        "            <p>\n" +
+                        "                <small>￥</small>\n" +
+                        "                <span>"+data[i].leadTime+"</span>\n" +
+                        "            </p>\n" +
+                        "            <a href='dingzhi1.html?G_id="+data[i].G_id+"' class='addCart'>\n" +
+                        "                <h1>立即定制</h1>\n" +
+                        "                <span>+</span>\n" +
+                        "            </a>\n" +
+                        "        </div>";
+                }
+            },
+        })
+    }
+</script>
+<script>
+    var id;
+    function yonghuming() {
+        id=sessionStorage.getItem("userId");
+        console.log(id);
+        $.ajax({
+            url:"/yonghuming.do",
+            type:"post",
+            data:{
+                data:id,
+            },
+            success:function (data) {
+                $("#t_yonghuming").html(`${data[0].username}`)
+            },
+        })
+    }
+    yonghuming()
+
+
+
+    $("#t_wodefeifu").click(function () {
+        var zi=$("#t_yonghuming").text();
+        console.log(zi.length)
+        if(zi.length<=0){
+            ourAlert(500,150,"请先登录",22)
+        }else {
+            location.href="../xxb/personalCenter.html"
+        }
+    })
+
+
+    $("#coverLayerButtonOne").click(function () {
+        location.assign("../xr/login.html")
+    })
+
+    function yingchang() {
+        var zi=$("#t_yonghuming").text();
+        console.log(zi.length)
+        if(zi.length>0){
+            $("#t_yingchang").css({
+                "display":"none"
+            })
+            $("#t_zhuxiao").css({
+                "display":"inline"
+            })
+        }else {
+            $("#t_yingchang").css({
+                "display":"inline"
+            })
+
+        }
+        clearInterval(cc)
+    }
+    var cc=setInterval(yingchang ,40)
+
+
+    $("#t_zhuxiao").click(function () {
+        ourAlert(500,150,"确认注销",22)
+        $("#coverLayerButtonOne").text("确认注销")
+        $("#coverLayerButtonTwo").text("切换账号")
+        var zhuxiao=$("#t_zhuxiao").text();
+        console.log(zhuxiao);
+        if(zhuxiao=="注销"){
+            $("#coverLayerButtonOne").click(function () {
+                location.href="../wcm/jingxuan.html"
+                sessionStorage.removeItem("userId")
+            });
+            $("#coverLayerButtonTwo").click(function () {
+                location.assign("../xr/login.html");
+            })
+
+        }else {
+            $("#coverLayerButtonOne").click(function () {
+                location.assign("../xr/login.html")
+            })
+        }
+    })
+    // $("#coverLayerButtonOne").click(function () {
+    //
+    // });
+</script>
+</body>
+</html>

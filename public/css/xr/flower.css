@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flowerMain{
+    width: 98%;
+    margin: 0 auto;
+    min-width: 905px;
+    padding-top: 65px;
+}
+/*分类*/
+.sectionOne{
+    background-color: #f9f9f9;
+    padding: 16px 1.5%;
+}
+.sectionOne>img{
+    width: 100%;
+    height: 267px;
+}
+/*产品展示*/
+.sectionTwo{
+    background-color: #f9f9f9;
+    padding: 0px 1.5%;
+    /*height: 500px;*/
+    /*outline: #ffc73a 1px solid;*/
+}
+.sectionTwo>div{
+    width: 21.5%;
+    background-color: white;
+    padding: 1.5% 1.5%;
+    float: left;
+    margin-right: 0.5%;
+    margin-bottom: 10px;
+    /*outline: #5936ff 1px solid;*/
+}
+.sectionTwo>div:hover{
+    /*background-color: #fcedef;*/
+    /*background-color: rgb(252,237,239);*/
+    /*background-color: rgba(255,79,21,0.1);*/
+    box-shadow: 0 0 10px 2px #888b87;
+}
+.sectionTwo div a{
+    text-decoration: none;
+}
+.sectionTwo div h3{
+    width: 100%;
+    color: #3e3e3e;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /*outline: red 1px solid;*/
+}
+.sectionTwo div h4{
+    width: 100%;
+    color: #949494;
+    font-size: 12px;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /*outline: red 1px solid;*/
+}
+.sectionTwo div p{
+    width: 100%;
+    color: #cca976;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*outline: red 1px solid;*/
+}
+.sectionTwo div h1{
+    width: 100%;
+    color: #FF4F15;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline;
+    /*outline: red 1px solid;*/
+}
+.sectionTwo div h1:hover{
+    color: red;
+}
+.addCart:hover span{
+    color: red;
+    display: inline;
+}
+.sectionTwo div a>span{
+    display: none;
+}
+.flowerImage{
+    width: 100%;
+    overflow: hidden;
+}
+.flowerImage:hover img{
+    transform: scale(1.1);
+}
+.flowerImage>img{
+    width: 100%;
+    font-size: 0;
+    transition: transform .3s linear;
+}
+footer{
+    clear: both;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+/*分类*/
+.classification{
+    background-color: #f9f9f9;
+}
+.classification h2{
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    color: #3e3e3e;
+}

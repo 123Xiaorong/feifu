@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/car/jiesuan.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+
+<body>
+    <header>
+        <!--导航-->
+        <div class="t_baoliangge">
+            <div class="t_daohanglan">
+                <div class="t_logo">
+                    <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+                </div>
+                <div class="t_ul" id="t_ul">
+                    <ul>
+                        <li>
+                            <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                        </li>
+                        <li>
+                            <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                        </li>
+                        <li>
+                            <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                        </li>
+                        <li>
+                            <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                        </li>
+                        <li>
+                            <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                        </li>
+                        <li>
+                            <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                        </li>
+                        <li>
+                            <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                        </li>
+                        <li>
+                            <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                        </li>
+                    </ul>
+                </div>
+                <!--<div id="t_shousuo-1">-->
+                <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+                <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+                <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                <!--</div>-->
+                <div class="t_tubiao" id="t_tubiao">
+                    <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                    <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+                    <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+                    <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+                    <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+                    <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+                </div>
+            </div>
+            <div class="display_none" id="t_zicaidan">
+                <div class="t_quanbu-t">
+                    <a href="../../html/xr/breakfast.html">
+                        <i class="iconfont icon-quanbu"></i>
+                        <br>
+                        <span class="t_quanbu-1">全部</span>
+                    </a>
+                </div>
+                <div class="t_xianhua">
+                    <a href="../../html/xr/bread.html">
+                        <i class="iconfont icon-tusi"></i>
+                        <br>
+                        <span class="t_quanbu-2">吐司</span></a>
+                </div>
+                <div class="t_heka">
+                    <a href="../../html/xr/drink.html">
+                        <i class="iconfont icon-yinpin"></i>
+                        <br>
+                        <span class="t_quanbu-3">饮品</span></a>
+                </div>
+            </div>
+
+            <div class="display_none" id="t_qita">
+                <div class="t_quanbu-t">
+                    <a href="../../html/xr/nearby.html">
+                        <i class="iconfont icon-quanbu"></i>
+                        <br>
+                        <span class="t_quanbu-1">全部</span></a>
+                </div>
+                <div class="t_xianhua">
+                    <a href="../../html/xr/flower.html">
+                        <i class="iconfont icon-shouye"></i>
+                        <br>
+                        <span class="t_quanbu-2">鲜花</span></a>
+                </div>
+                <div class="t_heka">
+                    <a href="../../html/xr/card.html">
+                        <i class="iconfont icon-iconkpxd"></i>
+                        <br>
+                        <span class="t_quanbu-3">贺卡</span></a>
+                </div>
+                <div class="t_dangaolihe">
+                    <a href="../../html/xr/sweet.html">
+                        <i class="iconfont icon-lihe"></i>
+                        <br>
+                        <span class="t_quanbu-4">甜点</span></a>
+                </div>
+            </div>
+
+
+            <div class="display_none" id="t_qiye-x">
+                <!--<div class="t_quanbu-t">-->
+                <!--<i class="iconfont icon-quanbu"></i>-->
+                <!--<br>-->
+                <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+                <!--</div>-->
+                <div class="t_xianhua">
+                    <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+                    <br>
+                    <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+                </div>
+                <div class="t_heka">
+                    <i class="iconfont icon-kehuqunzu"></i>
+                    <br>
+                    <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+                </div>
+            </div>
+            <div class="display_none" id="t_tiyan-x">
+                <!--<div class="t_quanbu-t">-->
+                <!--<a href="">-->
+                <!--<i class="iconfont icon-quanbu"></i>-->
+                <!--<br>-->
+                <!--<span class="t_quanbu-1">全部</span></a>-->
+                <!--</div>-->
+                <!--<div class="t_xianhua">-->
+                <!--<a href="">-->
+                <!--<i class="iconfont icon-hongbeigongju"></i>-->
+                <!--<br>-->
+                <!--<span class="t_quanbu-2">烘培</span></a>-->
+                <!--</div>-->
+                <div class="t_heka">
+                    <a href="../../html/zc/Teach_video.html">
+                        <i class="iconfont icon-shipin"></i>
+                        <br>
+                        <span class="t_quanbu-3">教学视频</span></a>
+                </div>
+                <div class="t_heka">
+                    <a href="../../html/zc/Activ.html">
+                        <i class="iconfont icon-Donut"></i>
+                        <br>
+                        <span class="t_quanbu-4">体验</span></a>
+                </div>
+            </div>
+            <!--<div class="display_none" id="t_wodefeihu-x">-->
+            <!--<div class="t_quanbu-t">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <!--<div class="t_xianhua">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-dingdan"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-2">我的订单</span></a>-->
+            <!--</div>-->
+            <!--<div class="t_heka">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-zhaohuimima"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-3">找回密码</span></a>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+
+    </header>
+
+    <section>
+        <div class="sectionA">
+            选择收货地址及配送时间后，将为您显示最终的优惠价格
+        </div>
+        <div class="sectionB">
+            <p style="width: 100%;height: 30px">收货地址</p>
+            <div class="sectionB-dizhi">
+                <div class="sectionB-dizhi-xinxixi">
+
+                </div>
+                <!--<div class="sectionB-dizhi-xinxi">-->
+                        <!--<p style="margin-top: 3%">收货人： <span class="w-shouhuoren">${data[0].name}</span></p>-->
+                       <!--<p style="margin-top: 3%">联系方式： <span class="w-content">${data[0].telphone}</span></p>-->
+                         <!--<strong style="margin-top: 3%">收货地址： <span class="w-sheng">${data[0].province}</span>&nbsp;<span class="w-shi">${data[0].city}</span>&nbsp;<span class="w-qu">${data[0].district}</span>&nbsp;<span class="w-dizhi">${data[0].address}</span></strong>>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" id="insert-dizhi">修改地址</a>-->
+                     <!--</div>`)-->
+
+                <div class="sectionB-dizhi-button">
+                    <div class="login-header"><a id="link-a" style="text-decoration: none;color: white">改变配送地址</a></div>
+                    <div class="login-header-a"><a id="link" style="text-decoration: none;color: white">添加配送地址</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectionC">
+            <p>配送时间</p>
+            <div>&nbsp;</div>
+            <div class="sectionC-beisong-time">
+                <ul class="sectionC-beisong-xuanzhe">
+                    <li class="xuanzhe-liebiao">
+                        <select class="xiala-size" name="year" id="year">
+                            <option value="">选择年份</option>
+                        </select>
+                    </li>
+                    <li class="xuanzhe-liebiao">
+                        <select class="xiala-size" name="month" id="month">
+                            <option value="">选择月份</option>
+                        </select>
+                    </li>
+                    <li class="xuanzhe-liebiao">
+                        <select class="xiala-size" id="days" name="day">
+                            <option value="">选择日期</option>
+                           
+                        </select>
+                    </li>
+                    <li class="xuanzhe-liebiao-b">
+                        <select class="xiala-size-a" id="startTime" onchange="changeTimes(this.value)">
+                            <option value="0">10:00</option>
+                            <option value="1">11:00</option>
+                            <option value="2">12:00</option>
+                            <option value="3">13:00</option>
+                            <option value="4">14:00</option>
+                            <option value="5">15:00</option>
+                        </select>
+                    </li>
+                    <li class="xuanzhe-liebiao-a">
+                        ~
+                    </li>
+                    <li class="xuanzhe-liebiao">
+                        <select class="xiala-size" id="endTime">
+                            
+                        </select>
+                    </li>
+                    <li class="xuanzhe-liebiao-c">
+                        <button
+                            style="border: none;background-color: red;color: whitesmoke;width: 60%;height: 100%" onclick="peisongTime()">确定</button>
+                    </li>
+                </ul>
+                <div>&nbsp;</div>
+                <div id="peisongtime" style="display: none;margin-top: 30px ">生成配送时间:
+                    <div id="peisong" style="display: inline-block; width: 130px; height: 20px;">
+                    </div>
+                    <div id="time" style="display: inline-block;"></div>
+                </div>
+            </div>
+            <!--<div id="peisongtime" style="position: absolute; top: 40%;display: none; ">生成配送时间:-->
+                <!--<div id="peisong" style="display: inline-block; width: 130px; height: 20px;">-->
+                <!--</div>-->
+                <!--<div id="time" style="display: inline-block;"></div>-->
+            <!--</div>-->
+        </div>
+
+        <div class="sectionD">
+            <p>计福配送（冷链配送）</p>
+            <ul class="shop-xinxi-toubu">
+                <li class="shop-xinxi-toubu-xinxin-a">商品信息</li>
+                <li class="shop-xinxi-toubu-xinxin">详情</li>
+                <li class="shop-xinxi-toubu-xinxin">单价</li>
+                <li class="shop-xinxi-toubu-xinxin">数量</li>
+                <li class="shop-xinxi-toubu-xinxin">金额</li>
+            </ul>
+            <div class="sectionD-shop-xinxi">
+                <div class="sectionD-shop-xinx"></div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sectionE">
+            <p>支付方式</p>
+            <div class="shop-zhifu-fragement">
+                <!--<button style="width: 20%;height: 60px;margin-top: 2%;border: none">在线支付</button>-->
+
+                <ul class="shop-zhifu-tupian">
+                    <li class="zhifu-tupian-a"><img src="../../images/car/weixin.png"></li>
+                    <li class="zhifu-tupian"></li>
+                    <li class="zhifu-tupian"></li>
+                    <li class="zhifu-tupian"></li>
+                    <li class="zhifu-tupian"></li>
+                    <li class="zhifu-tupian"></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="sectionF">
+            <p>使用优惠</p>
+
+            <div class="shop-zhifu-fragement-a">
+                <button style="width: 20%;height: 60px;margin-top: 2%;border: none" id="use-youhuijuan">使用优惠卷</button>
+            </div>
+
+        </div>
+
+
+        <div class="sectionH">
+            <div class="gekai">
+            </div>
+            <div class="H-xiangxi">
+                <p class="shop-gekai">商品金额：<span class="zong-sum">0</span></p>
+                <p class="shop-gekai">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运费：12</p>
+                <p class="shop-gekai">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优惠：<span id="c-discount">0</span></p>
+                <p class="shop-gekai">可用积分：<span id="use-jifen"></span></p>
+                <p class="shop-gekai">抵扣积分：<input type="text" style="width: 20%" id="input-jifen"></p>
+            </div>
+        </div>
+
+        <div class="sectionI">
+            <p style="margin-left: 82%;padding-top: 20px">应付：<span id="c-shiji-money">0</span></p>
+            <p style="margin-top: 1%;"> <span style="float: left;margin-left: 500px"></span>配送至：<span id="peisong-xinxi"></span></span><span style="float: right;margin-right: 168px">收货人:<span id="shouhuoren"></span></span></p>
+            <p style="margin-top: 4%;clear: both;padding-bottom: 20px">
+                <span style="margin-left: 80%"><button
+                        style="border: none;background-color: red;color: whitesmoke;width: 10%;height: 50px;border-radius: 3px"><a
+                            href="http://localhost:8888/car/tiaozhuan.html"
+                            style="color: white;text-decoration: none;font-size: 16px" id="queding-zhifu" >去支付</a></button></span>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">全部蛋糕</a></li>
+                <li><a href="#">关于诺心</a></li>
+                <li><a href="#">客服服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+        <h2>copyright©妃芙cake版权所有</h2>
+        <figure>
+            <img src="../../images/weixin.jpg" alt="">
+            <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+        </figure>
+    </footer>
+
+    <div id="bg" class="login-bg">
+        <!-- //遮盖层	 -->
+    </div>
+
+    <div id="login" class="login">
+        <div id="title" class="login-title">添加地址信息
+            <span><a id="closeBtn" href="javascript:void(0);" class="close-login">×</a></span>
+        </div>
+        <div class="login-input-content">
+            <div class="login-input">
+                <label style="margin-left: 20%">收货地址:</label>
+                <select id="pro" style="margin-left: 3%;height: 100%;width: 12%">
+                    <option>
+                        四川省
+                    </option>
+                </select>
+                <select id="city" style="margin-left: 3%;height: 100%;width: 12%">
+                            <option>
+                                成都市
+                            </option>
+                </select>
+                                <select id="qu" style="margin-left: 3%;height: 100%;width: 12%">
+                                    <option value="0">
+                                        高新区
+                                    </option>
+                                    <option value="1">锦江区</option>
+                                    <option value="2">青羊区</option>
+                                    <option value="3">武侯区</option>
+                                    <option value="4">华阳</option>
+                                    <option value="5">新都区</option>
+                                    <option value="6">温江区</option>
+                                    <option value="7">龙泉驿区</option>
+                                    <option value="8">成华区</option>
+                                </select>
+            </div>
+
+            <div class="login-input">
+                <label style="margin-left: 20%;">详细地址:</label>
+                <input type="text" placeholder="详细地址" id="password" class="list-input" />
+            </div>
+            <!--收货人-->
+            <div class="login-input">
+                <label style="margin-left: 20%;">收货人:</label>
+                <input type="text" placeholder="收货人名字" id="c-person" class="list-input" />
+            </div>
+
+            <!--手机号码-->
+            <div class="login-input">
+                <label style="margin-left: 20%;">手机号码:</label>
+                <input type="text" placeholder="手机号码" maxlength="11" id="c-phone" class="list-input" />
+            </div>
+
+            <!--设为默认-->
+            <div class="login-input">
+                <input id="state" type="checkbox" style="margin-left: 35%;height: 60%;width: 15%;margin-top: 1%;float: left"><span
+                    style="float: left;margin-top: 1%">设为默认</span>
+            </div>
+        </div>
+        <div id="loginBtn" class="login-button"><a id="login-button-submit" style="color: white;">确定</a></div>
+    </div>
+
+
+
+
+    <div id="login-d" class="login-d">
+        <div id="title-d" class="login-title">修改地址信息
+            <span><a id="closeBtn-d" href="javascript:void(0);" class="close-login">×</a></span>
+        </div>
+        <div class="login-input-content-d">
+            <div class="login-input">
+                <label style="margin-left: 110px">收货地址:</label>
+                <select id="pro-d" style="margin-left: 3%;height: 100%;width: 12%">
+                    <option>
+                        四川省
+                    </option>
+                </select>
+                <select id="city-d" style="margin-left: 3%;height: 100%;width: 12%">
+                    <option>
+                        成都市
+                    </option>
+                </select>
+                <select id="qu-d" style="margin-left: 3%;height: 100%;width: 12%">
+                    <option value="0">
+                        高新区
+                    </option>
+                    <option value="1">锦江区</option>
+                    <option value="2">青羊区</option>
+                    <option value="3">武侯区</option>
+                    <option value="4">华阳</option>
+                    <option value="5">新都区</option>
+                    <option value="6">温江区</option>
+                    <option value="7">龙泉驿区</option>
+                    <option value="8">成华区</option>
+                </select>
+            </div>
+
+            <div class="login-input">
+                <label style="margin-left: 20%;">详细地址:</label>
+                <input type="text" placeholder="详细地址" id="password-d" class="list-input" />
+            </div>
+            <!--收货人-->
+            <div class="login-input">
+                <label style="margin-left: 20%;">收货人:</label>
+                <input type="text" placeholder="收货人名字" id="c-person-d" class="list-input" />
+            </div>
+
+            <!--手机号码-->
+            <div class="login-input">
+                <label style="margin-left: 20%;">手机号码:</label>
+                <input type="text" placeholder="手机号码" maxlength="11" id="c-phone-d" class="list-input" />
+            </div>
+
+        </div>
+        <div id="loginBtn-d" class="login-button"><a id="login-button-submit-d" style="color: white;">确定</a></div>
+    </div>
+
+    <div id="login-a" class="login-a">
+        <div id="title-a" class="login-title">地址信息
+            <span><a id="closeBtn-a" class="close-login">×</a></span>
+        </div>
+        <div class="login-input-content">
+            <ul id="adress-fragement">
+
+                <li class="add-dizhi-a" id="add-dizhi-a">+添加新地址</li>
+
+            </ul>
+            <div id="loginBtn-a" class="login-button"><a id="login-button-submit-a" style="color: white;">确定</a></div>
+        </div>
+    </div>
+    <div id="coverLayerOut-a" class="display-none-a">
+        <p style="text-align: center;font-size: 18px;margin-top: 5%" id="title-b">请选择你需要的优惠卷</p>
+            <div id="coverLayerBlock-a">×</div>
+            <button id="coverLayerButtonTwo-a">确定</button>
+            <ul class="youhuijuan-ul">
+            </ul>
+    </div>
+    <!--提示层-->
+    <div id="coverLayerOut-b" class="display-none-b">
+        <p style="text-align: center;font-size: 18px;margin-top: 5%" id="title-c">您当前消费不支持使用此卷</p>
+        <div id="coverLayerBlock-b">×</div>
+        <button id="coverLayerButtonTwo-b" style="margin-top: 8%">确定</button>
+    </div>
+    <!--隔开-->
+    <!--隔开-->
+    <!--隔开-->
+    <!--隔开-->
+    <div id="coverLayerOut" class="display-none">
+    <div id="coverLayer" class="display-none">
+    <span id="coverLayerBlock">×</span>
+    <button id="coverLayerButtonTwo">确定</button>
+    <div id="coverLayerContent" style="background-color: white"></div>
+    </div>
+    </div>
+
+
+    <!--提示-->
+            <!--底部导航栏-->
+            <script src="../../js/jquery-1.11.3.js"></script>
+            <script src="../../js/ajax.js"></script>
+            <script>
+                var huoquuser=sessionStorage.getItem("userId");
+                $.ajax({
+                    url:"/getAdder.do",
+                    type:'get',
+                    data:{"userid":huoquuser},
+                    dataType: "json",
+                    success:function(data) {
+                        console.log(data);
+                        if (data == "") {
+                            $(".sectionB-dizhi-xinxixi").after(`<div class="sectionB-dizhi-xinxi">
+                    <p style="margin-top: 2%;margin-left: 1.8%">收货人： <span class="w-shouhuoren">无</span></p>
+                    <p style="margin-top: 2%">联系方式： <span class="w-content">无</span></p>
+                    <p style="margin-top: 2%">收货地址： <span class="w-sheng">无</span>&nbsp;<span class="w-shi">无</span>&nbsp;<span class="w-qu">无</span>&nbsp;<span class="w-dizhi">无</span><a href="#" id="insert-dizhi" style="margin-left: 10%;">修改地址>></a></p>
+                </div>`)
+                        }
+                        else {
+                            // document.getElementsByClassName("sectionB-dizhi-xinxi").innerHTML = ""
+                            $(".sectionB-dizhi-xinxixi").after(`<div class="sectionB-dizhi-xinxi">
+                    <p style="margin-top: 2%;margin-left: 1.8%">收货人： <span class="w-shouhuoren">${data[0].name}</span></p>
+                    <p style="margin-top: 2%">联系方式： <span class="w-content">${data[0].telphone}</span></p>
+                    <p style="margin-top: 2%">收货地址： <span class="w-sheng">${data[0].province}</span>&nbsp;<span class="w-shi">${data[0].city}</span>&nbsp;<span class="w-qu">${data[0].district}</span>&nbsp;<span class="w-dizhi">${data[0].address}</span><a href="#" id="insert-dizhi" style="margin-left: 10%">修改地址>></a></p>
+                </div>`)
+                            $("#peisong-xinxi").text(data[0].province+data[0].city+data[0].district+data[0].address);
+                            $("#shouhuoren").text(data[0].name);
+                        }
+                    }
+                })
+                $.ajax({
+                    url:"/getAlladress.do",
+                    type:'get',
+                    data:{"userid":huoquuser},
+                    dataType: "json",
+                    success:function(data){
+                        for(var i=0;i<data.length;i++) {
+                            $("#adress-fragement").after(`<li class="add-dizhi" value="0">
+                      <div> &nbsp;</div>
+                    <p style="margin-top: 15px">收货人： <span class="c-shouhuoren">${data[i].name}</span></p>
+                    <p style="margin-top: 15px">联系方式： <span class="c-lianxiren">${data[i].telphone}</span></p>
+                    <p style="margin-top: 15px">收货地址： <span class="c-sheng">${data[i].province}</span>&nbsp;<span class="c-city">${data[i].city}</span>&nbsp;<span class="c-qu">${data[i].district}</span>&nbsp;<span class="c-dizhi">${data[i].address}</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#" style="float: right;margin-right: 20px">修改地址</a></p>
+                </li>`)
+                        }
+                        // }
+                        // 新加入部分
+                        for(var s=0;s<$(".add-dizhi").length;s++){
+                            if($(".w-shouhuoren").text()==$(".c-shouhuoren")[s].innerText){
+                                if($(".w-content").text()==$(".c-lianxiren")[s].innerText){
+                                    if($(".w-qu").text()==$(".c-qu")[s].innerText){
+                                        if($(".w-dizhi").text()==$(".c-dizhi")[s].innerText){
+                                            $(".add-dizhi")[s].id="color1";
+                                            console.log("Aaa");
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // 隔开
+                    }
+                })
+                $.ajax({
+                    url:"/getyouhuijuan.do",
+                    success:function (data) {
+                        for(var i=0;i<data.length;i++){
+                            $("#title-b").after("<li class='youhuijuan-liebiao'><input type='radio' name='1' class='youhui-radio' value=''><span class='youhuijuan-xinxi'></span></li>")
+                        }
+                        for(var k=0;k<data.length;k++) {
+                            $(".youhuijuan-xinxi")[k].innerText=data[k].cost;
+                        }
+                    }
+                })
+                $.ajax({
+                    url:"/huoqujifen.do",
+                    type:'get',
+                    data:{"userid":huoquuser},
+                    dataType: "json",
+                    success:function (data) {
+                        $("#use-jifen").text(data[0].num);
+                    }
+                })
+
+                window.onload = function () {
+                    getGoodsList()
+                }
+                $(function(){
+                    $("#date").selectDate()
+
+                    $("#days").focusout(function(){
+                        var year = $("#year option:selected").html()
+                        var month = $("#month option:selected").html()
+                        var day = $("#days option:selected").html()
+                        console.log(year+month+day)
+                        peisong.innerHTML = year+month+day
+                    })
+
+                })
+                $.fn.selectDate = function(){
+                    var minYear = (new Date).getFullYear()
+                    var maxYear = (new Date).getFullYear()
+                    var yearSel = document.getElementById('year')
+                    var monthSel = document.getElementById('month')
+                    var daySel = document.getElementById('days')
+
+                    for(var y = maxYear;y >= minYear;y--){
+                        var yearOpt = document.createElement('option')
+                        yearOpt.value = y
+                        yearOpt.innerHTML = y+'年'
+                        yearSel.appendChild(yearOpt)
+                    }
+
+                    $("#year").click(function(event){
+                        if(!$("#year option:selected").val()) return;
+                        removeOption(monthSel)
+                        addOption(12,'月',monthSel)
+                        removeOption(daySel)
+                    })
+
+                    $("#month").click(function(){
+                        removeOption(daySel)
+                        var year = $("#year option:selected").val()
+                        var month = $("#month option:selected").val()
+                        if(month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12){
+                            addOption(31,'日',daySel)
+                        }else if(month==4 || month==6 || month==9 || month==11){
+                            addOption(30,'日',daySel)
+                        }else if(month==2){
+                            if((year%4 == 0 && year%100 != 0 ) || (year%400 == 0)){
+                                addOption(29,'日',daySel)
+                            }else{
+                                addOption(28,'日',daySel)
+                            }
+                        }
+                    })
+
+                    function addOption(num,unit,parent){
+                        //num：选项个数
+                        //unit：单位（年/月/日）
+                        //parent：父对象
+                        for(var index=1;index <= num;index++){
+                            var opt =document.createElement('option')
+                            $(opt).attr('value',index)
+                            if(index<10){index = '0'+index}
+                            $(opt).html(index+unit)
+                            $(parent).append(opt)
+                        }
+                    }
+
+                    function removeOption(parent){
+                        //parent：父对象
+                        var options = $(parent).find('option')
+                        for(var index = 1;index < options.length;index++){
+                            parent.removeChild(options[index])
+                        }
+                    }
+                }
+
+                var times = new Array(5)
+                times[0] = new Array("11:00","12:00","13:00","14:00","15:00")
+                times[1] = new Array("12:00","13:00","14:00","15:00")
+                times[2] = new Array("13:00","14:00","15:00")
+                times[3] = new Array("14:00","15:00")
+                times[4] = new Array("15:00")
+                times[5] = new Array("15:30")
+
+                function changeTimes(val){
+                    var startTime = document.getElementById("startTime")
+                    var endTime = document.getElementById("endTime")
+                    endTime.options.length=0
+                    for(var i=0;i<times.length;i++){
+                        if(val==i){
+
+                            for(var j=0;j<times[i].length;j++){
+                                var textNode = document.createTextNode(times[i][j])
+                                var opEle = document.createElement("option")
+                                opEle.appendChild(textNode)
+                                endTime.appendChild(opEle)
+                            }
+                        }
+                    }
+                    time.innerHTML = startTime[val].innerText+"~"+endTime[0].innerText
+                }
+
+
+                $("#link").click(function () {
+                    $("#login").css({
+                        "display": "block"
+                    })
+                    $(".login-bg").css({
+                        "display": "block"
+                    })
+                })
+                //点击关闭按钮 隐藏登陆框和遮盖层
+                var closeBtn = document.getElementById('closeBtn');
+                closeBtn.onclick = function () {
+                    //隐藏 登陆框和遮盖层
+                    login.style.display = 'none';
+                    bg.style.display = 'none';
+                }
+                //点击关闭按钮 隐藏登陆框和遮盖层
+                var logina = document.getElementById("login-a")
+
+                var closeBtna = document.getElementById('closeBtn-a');
+                closeBtna.onclick = function () {
+                    //隐藏 登陆框和遮盖层
+                    logina.style.display = 'none';
+                    bg.style.display = 'none';
+                }
+
+
+                //
+                $("#link-a").click(function () {
+                    $("#login-a").css({
+                        "display": "block"
+                    })
+                    $("#bg").css({
+                        "display": "block"
+                    })
+
+
+                    for(var s=0;s<$(".add-dizhi").length;s++){
+                        if($(".w-shouhuoren").text()==$(".c-shouhuoren")[s].innerText){
+                            if($(".w-content").text()==$(".c-lianxiren")[s].innerText){
+                                if($(".w-qu").text()==$(".c-qu")[s].innerText){
+                                    if($(".w-dizhi").text()==$(".c-dizhi")[s].innerText){
+                                        $(".add-dizhi")[s].id="color1";
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                })
+                $("#add-dizhi").click(function () {
+                    $("#login").css({
+                        "display": "block"
+                    })
+                    $("#login-a").css({
+                        "display": "none"
+                    })
+                })
+
+                function getGoodsList() {
+                    myAjax("get", "/getGoodsList.do", "", getGoods)
+                }
+
+                function getGoods() {
+                    var data = JSON.parse(xhr.responseText)
+                    var zongsum=0;
+                    // document.getElementById("shop-xinxi-toubu").innerHTML = ""
+                    for (var i = 0; i < data.length; i++) {
+                        if(data[i].s_user==huoquuser){
+
+                            $(".sectionD-shop-xinx").after(`<ul class="shop-xinxi-toubu-a" id="shop-xinxi-toubu">
+                    <li class="shop-xinxi-body-xinxi-a"><img src="../../images/image/${data[i].s_picname}" style="width: 150px"></li>
+                <li class="shop-xinxi-body-xinxi"><p>${data[i].s_name}</p>
+                    <p>${data[i].s_mimaoshu}</p>
+                </li>
+                <li class="shop-xinxi-body-xinxi-c">${data[i].s_jiage}</li>
+                <li class="shop-xinxi-body-xinxi-c">${data[i].s_shuliang}</li>
+                <li class="shop-xinxi-body-xinxi-c">￥${data[i].s_jiage*data[i].s_shuliang}</li>
+                </ul>`)
+                            zongsum=zongsum+parseInt(data[i].s_jiage*data[i].s_shuliang);
+                        }
+                    }
+                    // for(var k=0;k<data.length;k++){
+                    //     zongsum=zongsum+parseInt(data[k].s_jiage*data[k].s_shuliang);
+                    // }
+                    $(".zong-sum").text(zongsum);
+                    $("#c-shiji-money").text(zongsum+12);
+                    $("#input-jifen").val("");
+                }
+
+                $("#input-jifen").blur(function () {
+                    var keyongjifen=parseInt($("#input-jifen").val());
+                    var zongjifen=$("#use-jifen").text();
+                    if(zongjifen>keyongjifen){
+                    }
+                    else if(zongjifen<keyongjifen){
+                        ourAlert(400,200,"你的积分余额不足，请重新输入",18);
+                        $("#input-jifen").val(0);
+                    }
+                })
+                function ourAlert(width, height,text,fontSize) {
+                    document.getElementById("coverLayer").style.opacity = "0";
+                    document.getElementById("coverLayerOut").style.opacity = "0";
+                    document.getElementById("coverLayerOut").classList.remove("display-none");
+                    document.getElementById("coverLayer").classList.remove("display-none");
+                    $("#coverLayerContent").text("");
+                    document.getElementById("coverLayer").style.width = width + "px";
+                    document.getElementById("coverLayer").style.height = height + "px";
+                    document.getElementById("coverLayerContent").style.width = width*0.8 + "px";
+                    document.getElementById("coverLayerContent").style.height = height*0.8 + "px";
+                    document.getElementById("coverLayer").style.top = 60 + "px";
+                    document.getElementById("coverLayer").style.left = parseFloat(document.body.offsetWidth) / 2 - width / 2 + "px";
+                    document.getElementById("coverLayer").style.transition="all ease-in-out .4s";
+                    document.getElementById("coverLayer").style.webkitTransition="all ease-in-out .4s";
+                    let alertText=document.createTextNode(text);
+                    document.getElementById("coverLayerContent").appendChild(alertText);
+                    document.getElementById("coverLayerContent").style.fontSize=fontSize+"px";
+                    setTimeout(() => {
+                        document.getElementById("coverLayer").style.opacity = "1";
+                        document.getElementById("coverLayerOut").style.opacity = "1";
+                        document.getElementById("coverLayer").style.top = 120 + "px";
+                    }, 1);
+                    document.getElementById("coverLayerBlock").onclick=function () {//叉叉的点击事件
+                        document.getElementById("coverLayer").style.opacity = "0";
+                        document.getElementById("coverLayerOut").style.opacity = "0";
+                        document.getElementById("coverLayer").style.top = 60 + "px";
+                        setTimeout(()=>{
+                            document.getElementById("coverLayerOut").classList.add("display-none");
+                            document.getElementById("coverLayer").classList.add("display-none");
+                        },401);
+                    };
+                }
+                document.getElementById("coverLayerButtonTwo").onclick=function () {//button2的单击事件
+                    document.getElementById("coverLayer").style.opacity = "0";
+                    document.getElementById("coverLayerOut").style.opacity = "0";
+                    document.getElementById("coverLayer").style.top = 60 + "px";
+                    setTimeout(()=>{
+                        document.getElementById("coverLayerOut").classList.add("display-none");
+                        document.getElementById("coverLayer").classList.add("display-none");
+                    },401);
+                }
+                $("#use-youhuijuan").click(function () {
+                    $(".display-none-a").css({
+                        "display":"block"
+                    })
+                    $("#bg").css({
+                        "display": "block"
+                    })
+                })
+                $("#coverLayerBlock-a").click(function () {
+                    $(".display-none-a").css({
+                        "display":"none"
+                    })
+                })
+                $("#coverLayerOut-a").on("click",".youhui-radio",function () {
+                        $(".youhui-radio").attr("value",0);
+                  $(this).attr("value","1");
+                })
+                var youhuijuanname;
+      $("#coverLayerButtonTwo-a").click(function () {
+          for(var i=0;i<$(".youhuijuan-liebiao").length;i++){
+              if($(".youhuijuan-liebiao").find(".youhui-radio")[i].value==1){
+                  youhuijuanname=$(".youhuijuan-xinxi")[i].innerText;
+                  break;
+              }
+          }
+          if(youhuijuanname=="6折"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              $("#c-discount").text(parseInt(huoqujiage*0.4));
+              $(".display-none-a").css({
+                  "display": "none"
+              })
+              $("#bg").css({
+                  "display": "none"
+              })
+          }
+          if(youhuijuanname=="7折"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              $("#c-discount").text(parseInt(huoqujiage*0.3));
+              $(".display-none-a").css({
+                  "display": "none"
+              })
+              $("#bg").css({
+                  "display": "none"
+              })
+          }
+          if(youhuijuanname=="8折"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              $("#c-discount").text(parseInt(huoqujiage*0.2));
+              $(".display-none-a").css({
+                  "display": "none"
+              })
+              $("#bg").css({
+                  "display": "none"
+              })
+          }
+          if(youhuijuanname=="9折"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              $("#c-discount").text(parseInt(huoqujiage*0.1));
+              $(".display-none-a").css({
+                  "display": "none"
+              })
+              $("#bg").css({
+                  "display": "none"
+              })
+          }
+      if(youhuijuanname=="满100减20"){
+          var huoqujiage=parseInt($(".zong-sum").text());
+              if(huoqujiage<100){
+                  $(".display-none-b").css({
+                      "display":"block"
+                  })
+              }
+              else {
+                  $("#c-discount").text(20);
+                  $(".display-none-a").css({
+                      "display": "none"
+                  })
+                  $("#bg").css({
+                      "display": "none"
+                  })
+              }
+      }
+          if(youhuijuanname=="满200减60"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              if(huoqujiage<200){
+                  $(".display-none-b").css({
+                      "display":"block"
+                  })
+              }
+              else {
+                  $("#c-discount").text(60);
+                  $(".display-none-a").css({
+                      "display": "none"
+                  })
+                  $("#bg").css({
+                      "display": "none"
+                  })
+
+              }
+          }
+          if(youhuijuanname=="满300减80"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              if(huoqujiage<300){
+                  $(".display-none-b").css({
+                      "display":"block"
+                  })
+              }
+              else {
+                  $("#c-discount").text(80);
+                  $(".display-none-a").css({
+                      "display": "none"
+                  })
+                  $("#bg").css({
+                      "display": "none"
+                  })
+              }
+          }
+          if(youhuijuanname=="满400减80"){
+              var huoqujiage=parseInt($(".zong-sum").text());
+              if(huoqujiage<400){
+                  $(".display-none-b").css({
+                      "display":"block"
+                  })
+              }
+              else {
+                  $("#c-discount").text(80);
+                  $(".display-none-a").css({
+                      "display": "none"
+                  })
+                  $("#bg").css({
+                      "display": "none"
+                  })
+              }
+          }
+          shijimoney();
+      })
+
+  $("#coverLayerButtonTwo-b").click(function () {
+      $(".display-none-b").css({
+          "display":"none"
+      })
+  })
+                // 获取实际价格
+                function shijimoney() {
+                    var zongsum=$(".zong-sum").text();
+                    var dazhe=$("#c-discount").text();
+                    $("#c-shiji-money").text(zongsum-12-dazhe);
+                }
+                // shijimoney();
+                function getAdder() {
+                    $(".sectionB-dizhi-xinxi").remove();
+                    $.ajax({
+                        url:"/chongfugetadder.do",
+                        type:'get',
+                        data:{"userid":huoquuser},
+                        dataType: "json",
+                        success:function(data){
+                            console.log(data);
+                            // document.getElementsByClassName("sectionB-dizhi-xinxi").innerHTML = ""
+                            $(".sectionB-dizhi-xinxixi").after(`<div class="sectionB-dizhi-xinxi">
+                    <p style="margin-top: 2%;margin-left: 1.8%">收货人： <span class="w-shouhuoren">${data[0].name}</span></p>
+                    <p style="margin-top: 2%">联系方式： <span class="w-content">${data[0].telphone}</span></p>
+                    <p style="margin-top: 2%">收货地址： <span class="w-sheng">${data[0].province}</span>&nbsp;<span class="w-shi">${data[0].city}</span>&nbsp;<span class="w-qu">${data[0].district}</span>&nbsp;<span class="w-dizhi">${data[0].address}</span><a href="#" id="insert-dizhi" style="margin-left: 10%">修改地址>></a></p>
+                </div>`)
+                            $("#peisong-xinxi").text(data[0].province+data[0].city+data[0].district+data[0].address);
+                            $("#shouhuoren").text(data[0].name);
+                        }
+                    })
+                }
+                function huoqudizhi(){
+                    $(".add-dizhi").remove();
+                    $.ajax({
+                        url:"/chongfugetAlladress.do",
+                        type:'get',
+                        data:{"userid":huoquuser},
+                        dataType: "json",
+                        success:function(data){
+                            console.log(data);
+                            // document.getElementsByClassName("sectionB-dizhi-xinxi").innerHTML = ""
+                            for(var i=0;i<data.length;i++) {
+                                $("#adress-fragement").after(`<li class="add-dizhi" value="0">
+                      <div> &nbsp;</div>
+                    <p style="margin-top: 15px">收货人：  <span class="c-shouhuoren">${data[i].name}</span></p>
+                    <p style="margin-top: 15px">联系方式：  <span class="c-lianxiren">${data[i].telphone}</span></p>
+                    <p style="margin-top: 15px">收货地址： <span class="c-sheng">${data[i].province}</span>&nbsp;<span class="c-city">${data[i].city}</span>&nbsp;<span class="c-qu">${data[i].district}</span>&nbsp;<span class="c-dizhi">${data[i].address}</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="#" style="float: right;margin-right: 20px">修改地址</a></p>
+                </li>`)
+                            }
+                        }
+                    })
+                }
+
+                function peisongTime(){
+                    $("#peisongtime").css({
+                        'display': 'block'
+                    })
+                    $(".sectionC-beisong-xuanzhe").css({
+                        'display': 'none'
+                    })
+                }
+                var state=0;
+                $("#state").click(function(){
+                    // $("#state").prop("checked");
+                    console.log($("#state").prop("checked"));
+                    if(($("#state").prop("checked"))==true){
+                        console.log('1111')
+                        state = "默认";
+                    }else{
+                        state = "备选";
+                    }
+                    console.log(state);
+                })
+
+                $("#login-button-submit").click(function (){
+                    if(state==0){
+                        state="备选"
+                    }
+                    var pro = document.getElementById("pro")
+                    var city = document.getElementById("city")
+                    var qu = document.getElementById("qu")
+                    var password=document.getElementById("password")
+                    var cperson = document.getElementById("c-person")
+                    var cphone = document.getElementById("c-phone")
+                    var quname = "";
+                    if($("#qu").val()==1){
+                        quname='锦江区'
+                    }
+                    else if($("#qu").val()==0){
+                        quname='高新区'
+                    }
+                    else if($("#qu").val()==2){
+                        quname='青羊区'
+                    }
+                    else if($("#qu").val()==3){
+                        quname='武侯区'
+                    }
+                    else if($("#qu").val()==4){
+                        quname='华阳'
+                    }
+                    else if($("#qu").val()==5){
+                        quname='新都区'
+                    }
+                    else if($("#qu").val()==6){
+                        quname='温江区'
+                    }
+                    else if($("#qu").val()==7){
+                        quname='龙泉驿区'
+                    }else {
+                        quname='成华区'
+                    }
+
+
+                    var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+                    xhr.open("post","/addAddress.do",true);//发送请求,默认为true，异步传输，false为同步传输
+                    // post设置请求头
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.send("pro="+'四川省'+"&city="+'成都市'+"&qu="+quname+"&password="+password.value+"&cperson="+cperson.value+"&cphone="+cphone.value+"&id="+huoquuser+"&state="+state);//发送参数
+
+                    xhr.onreadystatechange=function () {
+                        if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                            var data = JSON.parse(xhr.responseText);//转换成数组
+                            console.log(data);
+                            if(data!=""){
+                                if(state=="默认"){
+                                    getAdder();
+                                    xuanzhong();
+                                    huoqudizhi();
+                                }
+                                else {
+                                    getAdder();
+                                    xuanzhong();
+                                    huoqudizhi();
+                                }
+                            }
+                        }
+                    }
+                    $("#password").val("详细地址");
+                    $("#c-person").val("收货人名字");
+                    $("#c-phone").val("手机号码");
+                    $("#qu").val(0);
+                    $("#login").css({
+                        "display": "none"
+                    })
+                    $("#bg").css({
+                        "display": "none"
+                    })
+                })
+
+                $(".sectionB-dizhi").on("click",'#insert-dizhi',function(){
+                    $(".login-d").css({
+                        "display":"block"
+                    })
+                    $("#password-d").val($(".sectionB-dizhi").find("span")[5].innerText)
+                    $("#c-person-d").val($(".sectionB-dizhi").find("span")[0].innerText)
+                    $("#c-phone-d").val($(".sectionB-dizhi").find("span")[1].innerText)
+                 console.log($(".sectionB-dizhi").find("span")[4].innerText);
+                    for(var i=0;i<$("#qu-d").find("option").length;i++){
+                        if($(".sectionB-dizhi").find("span")[4].innerText==$("#qu-d").find("option")[i].innerText) {
+                       $("#qu-d").val(i);
+                         break;
+                }
+                }
+                })
+                
+                
+                $("#add-dizhi-a").click(function () {
+                    $("#login").css({
+                        "display":"block"
+                    })
+                    $("#login-a").css({
+                        "display":"none"
+                    })
+                })
+
+$("#login-button-submit-d").click(function () {
+    var huoqudizhia=$("#password-d").val();
+    var huoquperson=$("#c-person-d").val();
+    var huoquphone=$("#c-phone-d").val();
+    var huoquarea=$("#qu-d").val();
+    var areaname=0;
+    if(huoquarea==0){
+        areaname="高新区"
+    }
+    if(huoquarea==1){
+        areaname="锦江区"
+    }
+    if(huoquarea==2){
+        areaname="青羊区"
+    }
+    if(huoquarea==3){
+        areaname="武侯区"
+    }
+    if(huoquarea==4){
+        areaname="华阳"
+    }
+    if(huoquarea==5){
+        areaname="新都区"
+    }
+    if(huoquarea==6){
+        areaname="温江区"
+    }
+    if(huoquarea==7){
+        areaname="龙泉驿区"
+    }
+    if(huoquarea==8){
+        areaname="成华区"
+    }
+    var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+    console.log("aaa");
+
+    xhr.open("post","/insertAddress.do",true);//发送请求,默认为true，异步传输，false为同步传输
+    // post设置请求头
+    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xhr.send("pro="+'四川省'+"&city="+'成都市'+"&qu="+areaname+"&password="+huoqudizhia+"&cperson="+huoquperson+"&cphone="+huoquphone+"&id="+huoquuser+"&state="+"默认");//发送参数
+
+    $("#login-d").css({
+        "display":"none"
+    })
+    getAdder();
+    huoqudizhi();
+})
+
+                $("#closeBtn-d").click(function () {
+                    $("#login-d").css({
+                        "display":"none"
+                    })
+                })
+                $("#loginBtn-a").click(function () {
+                    // console.log($(".add-dizhi")[0].value)
+                    for(var i=0;i<  $(".add-dizhi").length;i++){
+                        if($(".add-dizhi")[i].value==1){
+                            var shouhuoren=$(".c-shouhuoren")[i].innerText;
+                            var lianxiren=$(".c-lianxiren")[i].innerText;
+                            var qu=$(".c-qu")[i].innerText;
+                            var dizhi=$(".c-dizhi")[i].innerText;
+                            var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+
+
+                            xhr.open("post","/xiugaimoren.do",true);//发送请求,默认为true，异步传输，false为同步传输
+                            // // post设置请求头
+                            xhr.onreadystatechange=function () {
+                                if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                                    var data = JSON.parse(xhr.responseText);//转换成数组
+                                    console.log(data);
+                                    if(data!=""){
+                                        getAdder();
+                                    }
+                                }
+                            }
+                            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                            xhr.send("pro="+'四川省'+"&city="+'成都市'+"&qu="+qu+"&password="+dizhi+"&cperson="+shouhuoren+"&cphone="+lianxiren+"&id="+huoquuser+"&state="+"默认");//发送参数
+                            // getAdder();
+                            $("#login-a").css({
+                                "display": "none"
+                            })
+                            $("#bg").css({
+                                "display": "none"
+                            })
+                            break;
+                        }
+                        else {
+                            $("#login-a").css({
+                                "display": "none"
+                            })
+                            $("#bg").css({
+                                "display": "none"
+                            })
+                        }
+                    }
+                    //
+                    // var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+                    //
+                    //
+                    // xhr.open("post","/xiugaimoren.do",true);//发送请求,默认为true，异步传输，false为同步传输
+                    // // // post设置请求头
+                    // xhr.onreadystatechange=function () {
+                    //     if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                    //         var data = JSON.parse(xhr.responseText);//转换成数组
+                    //         console.log(data);
+                    //         if(data!=""){
+                    //             getAdder();
+                    //         }
+                    //     }
+                    // }
+                    // xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    // xhr.send("pro="+'四川省'+"&city="+'成都市'+"&qu="+qu+"&password="+dizhi+"&cperson="+shouhuoren+"&cphone="+lianxiren+"&id="+huoquuser+"&state="+"默认");//发送参数
+                    // // getAdder();
+                    // $("#login-a").css({
+                    //     "display": "none"
+                    // })
+                    // $("#bg").css({
+                    //     "display": "none"
+                    // })
+                })
+
+
+
+                $("#login-a").on("click",".add-dizhi",function () {
+                    $(".add-dizhi").css({
+                        "border":"none"
+                    })
+                    $(".add-dizhi").attr("value",0)
+                    $(".add-dizhi").attr("id",0)
+                    $(this).css({
+                        "border":"2px solid orange",
+                    })
+                    $(this).attr("value",1)
+                    $(this).attr("id","color1")
+                })
+
+
+                function xuanzhong() {
+                    for(var s=0;s<$(".add-dizhi").length;s++){
+                        if($(".w-shouhuoren").text()==$(".c-shouhuoren")[s].innerText){
+                            console.log("Aaa");
+                            if($(".w-content").text()==$(".c-lianxiren")[s].innerText){
+                                if($(".w-qu").text()==$(".c-qu")[s].innerText){
+                                    if($(".w-dizhi").text()==$(".c-dizhi")[s].innerText){
+                                        $(".add-dizhi")[s].id="color1";
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                $("#queding-zhifu").click(function () {
+
+                         var huoqujifenaaa=$(".zong-sum").text();
+                    var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+
+                    xhr.open("post","/wanchengzhifu.do",true);//发送请求,默认为true，异步传输，false为同步传输
+
+                    xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                    xhr.send("userid="+huoquuser+"&jifen="+huoqujifenaaa);//发送参数
+                })
+
+            </script>
+</body>
+
+</html>

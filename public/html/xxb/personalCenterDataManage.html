@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/xxb/personalCenterSon.css">
+</head>
+<body>
+<div class="personalCenterBox">
+    <p class="personalCenterTitle">基本信息</p>
+    <div id="contentBox">
+        <div id="contentBoxL">
+            <p>用户积分:<span id="userScore">0</span></p>
+            <img src="" alt="">
+        </div>
+        <form id="contentBoxR">
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label for="userNickname">昵称:</label>
+                <input type="text" id="userNickname" name="userNickname" autocomplete="off" onchange="ifChange()">
+            </div>
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label for="userName">姓名:</label>
+                <input type="text" id="userName" name="userName" autocomplete="off" onchange="ifChange()">
+            </div>
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label>性别:</label>
+                <input type="radio" id="man" name="userSex" onchange="ifChange()"><label for="man">男</label>
+                <input type="radio" id="woman" name="userSex" onchange="ifChange()"><label for="woman">女</label>
+            </div>
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label>生日:</label>
+                <span class="selectBox">
+                    <input type="text" id="birthYear" autocomplete="off" placeholder="年" onchange="ifChange()">
+                    <!--<label for="birthdayYear" class="beforeSelect">年</label>-->
+                    <!--<select id="birthdayYear" name="birthdayYear">-->
+                        <!--<option disabled>请选择年</option>-->
+                        <!--<option>2010</option>-->
+                        <!--<option>2011</option>-->
+                        <!--<option>2012</option>-->
+                        <!--<option>2013</option>-->
+                        <!--<option>2014</option>-->
+                        <!--<option>2015</option>-->
+                    <!--</select>-->
+                </span>
+                <span class="selectBox">
+                    <input type="text" id="birthMonth" autocomplete="off" placeholder="月" onchange="ifChange()">
+                    <!--<label for="birthdayMonth" class="beforeSelect">月</label>-->
+                    <!--<select id="birthdayMonth" name="birthdayMonth">-->
+                        <!--<option disabled>请选择月</option>-->
+                        <!--<option>1</option>-->
+                        <!--<option>2</option>-->
+                        <!--<option>3</option>-->
+                        <!--<option>4</option>-->
+                        <!--<option>5</option>-->
+                        <!--<option>6</option>-->
+                    <!--</select>-->
+                </span>
+                <span class="selectBox">
+                    <input type="text" id="birthDay" autocomplete="off" placeholder="日" onchange="ifChange()">
+                    <!--<label for="birthdayDay" class="beforeSelect">日</label>-->
+                    <!--<select id="birthdayDay" name="birthdayDay">-->
+                        <!--<option disabled>请选择日</option>-->
+                        <!--<option>1</option>-->
+                        <!--<option>2</option>-->
+                        <!--<option>3</option>-->
+                        <!--<option>4</option>-->
+                        <!--<option>5</option>-->
+                        <!--<option>6</option>-->
+                    <!--</select>-->
+                </span>
+            </div>
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label>城市:</label>
+                <span class="selectBox">
+                    <input type="button" class="chooseAddress" value="省">
+                    <!--<label for="userProvince" class="beforeSelect">省</label>-->
+                    <!--<select id="userProvince" name="userProvince">-->
+                        <!--<option disabled>请选择省</option>-->
+                        <!--<option class="display-none">省</option>-->
+                    <!--</select>-->
+                </span>
+                <span class="selectBox">
+                    <input type="button" class="chooseAddress" value="市">
+                    <!--<label for="userCity" class="beforeSelect">市</label>-->
+                    <!--<select id="userCity" name="userCity">-->
+                        <!--<option disabled>请选择市</option>-->
+                        <!--<option class="display-none">市</option>-->
+                    <!--</select>-->
+                </span>
+                <span class="selectBox">
+                    <input type="button" class="chooseAddress" value="区">
+                    <!--<label for="userDistrict" class="beforeSelect">区</label>-->
+                    <!--<select id="userDistrict" name="userDistrict">-->
+                        <!--<option disabled>请选择区</option>-->
+                        <!--<option class="display-none">区</option>-->
+                    <!--</select>-->
+                </span>
+            </div>
+            <div class="inputBox">
+                <span class="sign"></span>
+                <label for="userTel">电话:</label>
+                <input type="text" id="userTel" name="userTel" autocomplete="off" onchange="ifChange()">
+            </div>
+            <!--<div class="inputBox">-->
+                <!--<span class="sign"></span>-->
+                <!--<label for="userEmail">邮箱:</label>-->
+                <!--<input type="text" id="userEmail" name="userEmail" autocomplete="off">-->
+            <!--</div>-->
+            <p class="saveSubmit"><button type="button" disabled class="disabled" id="savePersonal">保存</button></p>
+        </form>
+    </div>
+    <p class="personalCenterTitle">生日助手</p>
+    <div id="personalShow">
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+        <div class="personalShowBox addBirth">+</div>
+        <div class="personalShowBox birthShow display-none">
+            <p>龙杨</p>
+            <p>1998.08.24</p>
+            <p>
+                <button class="display-none">修改</button>
+                <button>删除</button>
+            </p>
+        </div>
+    </div>
+</div>
+<script src="../../js/ajax.js"></script>
+<script src="../../js/xxb/personalCenterDataManage.js"></script>
+</body>
+</html>

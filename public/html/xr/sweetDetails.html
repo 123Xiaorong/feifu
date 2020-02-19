@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>甜品详情页</title>
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/xr/swwetDetails.css">
+</head>
+<body>
+<!--导航-->
+<div class="t_baoliangge">
+    <div class="t_daohanglan">
+        <div class="t_logo">
+            <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+        </div>
+        <div class="t_ul" id="t_ul">
+            <ul>
+                <li>
+                    <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/zc/enjoyBaking.html" id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xxb/personalCenter.html" id="t_wodefeifu" onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                </li>
+            </ul>
+        </div>
+        <div id="t_shousuo-1">
+            <!--<span id="t_shanchu" onclick="t_shanchu()">X</span> -->
+            <i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>
+            <input type="text" name="t_shousuo" id="t_shousuo">
+        </div>
+        <div class="t_tubiao" id="t_tubiao">
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>
+            <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()"></i></a>
+            <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_zicaidan">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/breakfast.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span>
+            </a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/bread.html">
+                <i class="iconfont icon-tusi"></i>
+                <br>
+                <span class="t_quanbu-2">吐司</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/sweet.html">
+                <i class="iconfont icon-yinpin"></i>
+                <br>
+                <span class="t_quanbu-3">饮品</span></a>
+        </div>
+    </div>
+
+    <div class="display_none" id="t_qita">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/nearby.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span></a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/flower.html">
+                <i class="iconfont icon-shouye"></i>
+                <br>
+                <span class="t_quanbu-2">鲜花</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/card.html">
+                <i class="iconfont icon-iconkpxd"></i>
+                <br>
+                <span class="t_quanbu-3">贺卡</span></a>
+        </div>
+        <div class="t_dangaolihe">
+            <a href="../../html/xr/sweet.html">
+                <i class="iconfont icon-lihe"></i>
+                <br>
+                <span class="t_quanbu-4">甜点</span></a>
+        </div>
+    </div>
+
+
+    <div class="display_none" id="t_qiye-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <div class="t_xianhua">
+            <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+            <br>
+            <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+        </div>
+        <div class="t_heka">
+            <i class="iconfont icon-kehuqunzu"></i>
+            <br>
+            <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_tiyan-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-hongbeigongju"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">烘培</span></a>-->
+        <!--</div>-->
+        <div class="t_heka">
+            <a href="../../html/zc/Teach_video.html">
+                <i class="iconfont icon-shipin"></i>
+                <br>
+                <span class="t_quanbu-3">教学视频</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/zc/Activ.html">
+                <i class="iconfont icon-Donut"></i>
+                <br>
+                <span class="t_quanbu-4">体验</span></a>
+        </div>
+    </div>
+    <!--<div class="display_none" id="t_wodefeihu-x">-->
+    <!--<div class="t_quanbu-t">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-quanbu"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-1">全部</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_xianhua">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-dingdan"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-2">我的订单</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_heka">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-zhaohuimima"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-3">找回密码</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<!--详情页主要部分-->
+<section class="cakeDetailMain" onmouseover="t_zao()">
+    <!--轮播图-->
+    <div class="sectionOne">
+        <div id="prev"></div>
+        <div id="next"></div>
+        <ul id="play">
+            <li style="display: block;"><img src="../../images/xr/lunbo2.jpg" alt=""/></li>
+            <li><img src="../../images/xr/lunbo1.jpg" alt=""/></li>
+            <li><img src="../../images/xr/lunbo3.png" alt=""/></li>
+        </ul>
+        <ul id="lunBoButton">
+            <li>
+                <div style="background: #ff4001;"></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+            <li>
+                <div></div>
+            </li>
+        </ul>
+    </div>
+    <!--详情信息-->
+    <div class="sectionTwo">
+        <div class="sectionTwoLeft">
+            <div class="goodTitle">
+                <h1>喵叽叽云顶小花曲奇礼盒（原味）</h1>
+                <h3>￥<span>158</span></h3>
+                <h2></h2>
+            </div>
+            <div class="goodIntroduce">
+                <!--<span>- 关于商品 -</span>-->
+                <div class="goodInner">
+                    <h1>Le Cheesecake Supreme</h1>
+                    <p>甄选进口食材，精心烘焙制作</p>
+                    <p>带你感受浓郁醇正的黄油香</p>
+                    <p>经过上千次的反复尝试</p>
+                    <p>呈现别具一格的小花造型</p>
+                    <p>层层叠叠，只为这一口酥香的绽放</p>
+                    <!--<p>每一口浓滑令人意犹未尽</p>-->
+                </div>
+            </div>
+        </div>
+        <div class="sectionTwoRight">
+            <h1>建议食用人数</h1>
+            <div class="chooseGood">
+                <button>280克</button>
+                <button>560克</button>
+                <!--<button>9-12人食用</button>-->
+                <!--<button>13-18人食用</button>-->
+            </div>
+            <div class="chooseGoodMore">
+                <!--<p class="chooseGoodMorePone">-->
+                    <!--<i class="iconfont icon-canju"></i>-->
+                    <!--<span>含5套餐具</span>-->
+                <!--</p>-->
+                <p class="chooseGoodMorePtwo">
+                    <i class="iconfont icon-dingdan"></i>
+                    <span>约 17 x 5 cm</span>
+                </p>
+                <p class="chooseGoodMorePthree">
+                    <i class="iconfont icon-jianshen-tizhongqi-zhongliangqi"></i>
+                    <span>约280g</span>
+                </p>
+                <p class="chooseGoodMorePfour">
+                    <span>甜度：</span>
+                    <i class="iconfont icon-Donut"></i>
+                    <!--<i class="iconfont icon-Donut"></i>-->
+                </p>
+            </div>
+            <div class="myHref">
+                <div>
+                    <a href="#" class="myBtn cartBtn">加入购物车 +</a>
+                    <a href="#" class="myBtn purBtn">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearFix" style="background-color: white;height: 30px"></div>
+    <!--其他商品：轮播-->
+    <!--<div class="sectionThree">-->
+        <!--<div class="sectionThreeOne">-->
+            <!--<img src="../../images/xr/list_20484.jpg" alt="">-->
+            <!--<p>雪域牛乳芝士·特浓</p>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeTwo">-->
+            <!--<span>+</span>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeThree">-->
+            <!--<h2>派对必备  欢喜加倍</h2>-->
+            <!--<div class="goodsLunBo goodsLunBoOne">-->
+                <!--<div>-->
+                    <!--<-->
+                <!--</div>-->
+                <!--<section>-->
+                    <!--<div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸1</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸2</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸2</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸4</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸5</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸6</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</section>-->
+                <!--<div>-->
+                    <!--&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeFour">-->
+            <!--<span>+</span>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeFive">-->
+            <!--<h2>超值组合专享礼</h2>-->
+            <!--<div class="goodsLunBo goodsLunBoTwo">-->
+                <!--<div>-->
+                    <!--<-->
+                <!--</div>-->
+                <!--<section>-->
+                    <!--<div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸1</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸2</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸2</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸4</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸5</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<img src="../../images/xr/xiaotu3.jpg" alt="">-->
+                            <!--<h3>笑脸6</h3>-->
+                            <!--<h4>-->
+                                <!--<b>￥<span>39</span></b>-->
+                                <!--<em>￥<span>88</span></em>-->
+                                <!--&lt;!&ndash;<button></button>&ndash;&gt;-->
+                                <!--<i class="iconfont icon-anniu"></i>-->
+                            <!--</h4>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</section>-->
+                <!--<div>-->
+                    <!--&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeSix">-->
+            <!--<span>=</span>-->
+        <!--</div>-->
+        <!--<div class="sectionThreeSeven">-->
+            <!--<h4>已添加<strong>0</strong>项加购商品</h4>-->
+            <!--<a href="#">立即购买</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clearFix" style="background-color: white;height: 30px"></div>-->
+    <!--商品描述图片-->
+    <div class="sectionFour">
+        <img src="../../images/xr/sweet1.png" alt="">
+        <img src="../../images/xr/sweet2.jpg" alt="">
+        <img src="../../images/xr/sweet3.jpg" alt="">
+        <!--<img src="../../images/xr/pro1-4.GIF" alt="">-->
+    </div>
+    <!--材料描述-->
+    <div class="materialDesc">
+        <h2>主要原材料</h2>
+        <h4>Main raw materials</h4>
+        <div></div>
+        <table>
+            <thead>
+                <td>食材配比</td>
+                <td>产地</td>
+            </thead>
+            <tr>
+                <td>牛奶</td>
+                <td>澳洲/新西兰</td>
+            </tr>
+            <tr>
+                <td>无盐黄油</td>
+                <td>新西兰</td>
+            </tr>
+            <tr>
+                <td>巧克力</td>
+                <td>比利时/新加坡</td>
+            </tr>
+            <tr>
+                <td>奶油芝士</td>
+                <td>澳洲/新西兰</td>
+            </tr>
+        </table>
+    </div>
+    <!--食用说明-->
+    <div class="aboutEdible">
+        <h1>关于食用</h1>
+        <h2>About edible</h2>
+        <img src="../../images/xr/fork1.jpg" alt="">
+        <div class="foodInner">
+            <p>适合人群：大众</p>
+            <p>适合季节：所有</p>
+            <p>保鲜条件：冷藏0~4摄氏度</p>
+            <p>食用方法：请收到蛋糕后2-3小时内食用</p>
+            <p>温馨提示：蛋糕中出现的细小黑色颗粒为香草籽，</p>
+            <p>此为香草荚未碾磨均匀带入的颗粒，可放心食用。</p>
+            <p><span style="color: red;font-weight: bolder">*&nbsp;&nbsp;</span>商品以实物为准。</p>
+        </div>
+        <figure class="purseThreeNine">
+            <img src="../../images/xr/papafaceweb.jpg" alt="">
+            <a href="">立即抢购</a>
+        </figure>
+    </div>
+    <!--用户评论-->
+    <div class="comment">
+        <h1>用户评论</h1>
+        <div class="commentOneDiv"></div>
+        <div class="commentPeople">
+            <div class="commentPeopleLeft">
+                <div>
+                    <figure>
+                        <img src="../../images/xr/list_20484.jpg" alt="">
+                    </figure>
+                    <section>
+                        <p>
+                            <span>139***0414</span>
+                            <span>规格：2-4人食</span>
+                            <span>2019-11-15 20:22:17</span>
+                        </p>
+                        <h1>非常满意的订购感受。选择诺心是正确地，还会回购</h1>
+                        <div>
+                            <a href=""><img src="../../images/xr/list_20484.jpg" alt=""></a>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../../images/xr/list_20484.jpg" alt="">
+                    </figure>
+                    <section>
+                        <p>
+                            <span>139***0414</span>
+                            <span>规格：2-4人食</span>
+                            <span>2019-11-15 20:22:17</span>
+                        </p>
+                        <h1>蛋糕每一次入口都有惊喜，浓郁的奶香和芝士香味充斥在齿间，值得细细品味！另外客服人员给予高度评价，对于我超时的修改订单第一时间回复并完美解决！非常满意的订购感受。选择诺心是正确地，还会回购</h1>
+                        <div>
+                            <a href=""><img src="../../images/xr/list_20484.jpg" alt=""></a>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../../images/xr/list_20484.jpg" alt="">
+                    </figure>
+                    <section>
+                        <p>
+                            <span>139***0414</span>
+                            <span>规格：2-4人食</span>
+                            <span>2019-11-15 20:22:17</span>
+                        </p>
+                        <h1>非常满意的订购感受。选择诺心是正确地，还会回购</h1>
+                        <div>
+                            <a href=""><img src="../../images/xr/list_20484.jpg" alt=""></a>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <figure>
+                        <img src="../../images/xr/list_20484.jpg" alt="">
+                    </figure>
+                    <section>
+                        <p>
+                            <span>139***0414</span>
+                            <span>规格：2-4人食</span>
+                            <span>2019-11-15 20:22:17</span>
+                        </p>
+                        <h1>非常满意的订购感受。选择诺心是正确地，还会回购</h1>
+                        <div>
+                            <a href=""><img src="../../images/xr/list_20484.jpg" alt=""></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="commentPeopleRight">
+                <img src="../../images/xr/7F5F0F48B1BB90701EB0BDE5205345E2.jpg" alt="">
+            </div>
+            <section style="clear: both">
+                <div class="pageAll">
+                    <div style="width: 60px">上一页</div>
+                    <div style="color: #ff4001">1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div style="width: 60px">下一页</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--热门推荐-->
+    <div class="hotRecommendationAll">
+        <h1>热门推荐</h1>
+        <div class="hotRecommendationAllDiv"></div>
+        <div class="hotRecommendation">
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div class="cakeImage">
+                        <img src="../../images/xr/list_13164.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <h3>雪域牛乳芝士·特浓</h3>
+                </a>
+                <h4>甄选澳洲a2®全脂鲜牛奶 浓醇升级</h4>
+                <p>
+                    <small>￥</small>
+                    <span>248</span>
+                </p>
+                <a href="#" class="addCart">
+                    <h1>加入购物车</h1>
+                    <span>+</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--尾部-->
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">全部蛋糕</a></li>
+            <li><a href="#">关于诺心</a></li>
+            <li><a href="#">客服服务</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+    <h2>copyright©妃芙cake版权所有</h2>
+    <figure>
+        <img src="../../images/weixin.jpg" alt="">
+        <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+    </figure>
+</footer>
+<!--隐藏部分-->
+<div class="hiddenDiv">
+    <p class="hiddenDivGoodsName">喵叽叽云顶小花曲奇礼盒</p>
+    <p class="hiddenDivGoodsCommint">
+        用户评论(
+        <span>7</span>
+        )
+    </p>
+    <p>热门推荐</p>
+    <p class="hiddenDivPrice">
+        <span>￥</span>
+        <i>158</i>
+        <em>
+            (
+            <span>2-4人食</span>
+            )</em>
+    </p>
+    <p>
+        <a href="#">加入购物车＋</a>
+    </p>
+</div>
+
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/nav.js"></script>
+<script src="../../js/xr/sweetDetails.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,416 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.display_none {
+    display: none;
+}
+
+.t_baoliangge {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.t_daohanglan {
+    width: 100%;
+    height: 65px;
+    background-color: white;
+}
+
+.t_logo {
+    width: 15%;
+    height: 60px;
+    float: left;
+    margin-left: 4%;
+}
+
+.t_logo > a > img {
+    width: 180px;
+    height: 60px;
+}
+
+.t_ul {
+    width: 58%;
+    height: 67px;
+    float: left;
+    margin-left: 2%;
+}
+
+.t_ul > ul > li {
+    font-size: 16px;
+    float: left;
+    list-style: none;
+    margin: 0 2.5%;
+    text-align: center;
+    line-height: 65px;
+}
+
+.t_ul > ul > li > div > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_ul-1 {
+    width: 2060px;
+    height: 80px;
+    background-color: rgb(250, 246, 245);
+    position: absolute;
+    margin-left: -800px;
+}
+
+.t_ul-1 > li {
+    font-size: 15px;
+    list-style: none;
+    float: left;
+    line-height: 80px;
+    text-align: center;
+}
+
+.t_ul-1 > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_tubiao {
+    width: 16%;
+    height: 80px;
+    position: absolute;
+    top: 1.8%;
+    left: 83%;
+    text-align: center;
+    margin: -25px 0 0 1%;
+    /*border: 1px solid red;*/
+}
+
+.t_tubiao > a {
+    width: 35px;
+    color: darkgrey;
+    text-decoration: none;
+    display: inline-block;
+    margin: 43px 2% 0 3%;
+}
+
+.icon-xiugaitouxiang:before{
+    margin-left: -200px;
+}
+.t_tubiao > a > i {
+    font-size: 20px;
+    color: black;
+}
+
+#t_shousuo-1 {
+    float: left;
+    width: 56%;
+    height: 130px;
+    display: none;
+    margin-top: -20px;
+}
+
+#t_shousuo {
+    border: 1px solid;
+    float: left;
+    display: none;
+    margin-top: -29px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: 0px;
+    padding-left: 15px;
+}
+
+#t_shanchu {
+    float: left;
+    display: none;
+    margin-top: 45px;
+}
+
+#t_zicaidan {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(204, 169, 118, 0.99);
+    outline: rgba(204, 169, 118, 0.99) 2px solid;
+    padding-top: -6px;
+    text-align: center;
+    clear: left;
+}
+
+#t_zicaidan > div {
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#t_qita {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(204, 169, 118, 0.99);
+    outline: rgba(204, 169, 118, 0.99) 2px solid;
+    text-align: center;
+    clear: left;
+}
+
+#t_qita > div {
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.t_quanbu-t > i {
+    font-size: 20px;
+}
+
+.t_quanbu-t > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_xianhua > i {
+    font-size: 20px;
+}
+
+.t_xianhua > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_heka > i {
+    font-size: 20px;
+}
+
+.t_heka > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_dangaolihe > i {
+    font-size: 20px;
+}
+
+.t_dangaolihe > a {
+    text-decoration: none;
+    color: black;
+}
+
+.t_quanbu-t:hover {
+    color: rgb(255, 64, 1);
+}
+
+.t_quanbu-t:hover > a {
+    color: rgb(255, 64, 1);
+}
+
+.t_xianhua:hover {
+    color: rgb(255, 64, 1);
+}
+
+.t_xianhua:hover > a {
+    color: rgb(255, 64, 1);
+}
+
+.t_heka:hover {
+    color: rgb(255, 64, 1);
+}
+
+.t_heka:hover > a {
+    color: rgb(255, 64, 1);
+}
+
+.t_dangaolihe:hover {
+    color: rgb(255, 64, 1);
+}
+
+.t_dangaolihe:hover > a {
+    color: rgb(255, 64, 1);
+}
+
+#t_qiye-x {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(204, 169, 118, 0.99);
+    outline: rgba(204, 169, 118, 0.99) 2px solid;
+    text-align: center;
+    clear: left;
+}
+
+#t_qiye-x > div {
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#t_tiyan-x {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(204, 169, 118, 0.99);
+    outline: rgba(204, 169, 118, 0.99) 2px solid;
+    text-align: center;
+    clear: left;
+}
+
+#t_tiyan-x > div {
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#t_wodefeihu-x {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(204, 169, 118, 0.99);
+    outline: rgba(204, 169, 118, 0.99) 2px solid;
+    text-align: center;
+    clear: left;
+}
+
+#t_wodefeihu-x > div {
+    display: inline-block;
+    width: 140px;
+    height: 46px;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#t_jingxuan:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_daogao:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_zaocan:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_zoubian:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_qiye:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_dingzhi:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_tiyan:hover {
+    color: rgb(255, 64, 1);
+}
+
+#t_wodefeifu:hover {
+    color: rgb(255, 64, 1);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.t_baoliangge a{
+    text-decoration: none!important;
+}
+
+.t_tubiao span{
+    /*color: #3e3e3e;*/
+    color: #ff5c29;
+    /*font-weight: bolder;*/
+}
+
+.t_tubiao button{
+    outline: 0px;
+}
+
+
+
+/*===============覆盖层===========*/
+#coverLayerOutly{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    transition: all linear .5s;
+}
+#coverLayerly {
+    position: absolute;
+    background-color: white;
+    /*border-radius: 20px;*/
+    /*border-top-right-radius: 0px;*/
+    box-shadow: 0 0 5px #888888;
+    /*height: 100%;*/
+    /*width: 20%;*/
+    margin: 0 auto;
+    border-radius: 4px;
+    /*background-color: red;*/
+}
+
+#coverLayerBlockly {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+}
+#coverLayerBlockly:hover{
+    color: red;
+}
+
+#coverLayerly > button {
+    padding: 10px 40px;
+    border: 0px;
+    background-color: #ff4001;
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: 0px;
+}
+
+#coverLayerButtonOnely {
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+}
+
+#coverLayerButtonTwoly {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+}
+#coverLayerContently{
+    /*width: 90%;*/
+    /*height: 80%;*/
+    /*background-color: red;*/
+    margin: 5% auto 0;
+    /*padding: 15px;*/
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 16px;
+    /*text-align: center;*/
+    /*border-top: 1px solid black;*/
+    /*border-bottom: 1px solid black;*/
+    box-sizing: border-box;
+}
+.display-none{
+    display: none;
+}

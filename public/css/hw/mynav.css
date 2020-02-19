@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Nav{
+    min-width: 1200px;
+}
+.Nav_tittle{
+    margin: 20px 0 0 10px ;
+    width: 200px;
+    font-size: 20px;
+    color: #a4a4a4;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.part_box{
+    width: 900px;
+    margin: 0 auto;
+    height: 80px;
+}
+.part{
+    float: left;
+    width:300px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    color:black ;
+}
+.Nav_kind{
+    clear: both;
+    border-bottom: 1px silver solid;
+}
+.t_daohanglan {
+    width: 100%;
+    background-color: white;
+}
+
+.t_logo {
+    border-right: 1px silver solid;
+    margin-top: 20px;
+    width: 15%;
+    height: 60px;
+    float: left;
+    margin-left: 15%;
+}
+
+.t_logo > a > img {
+    width: 180px;
+    height: 60px;
+}
+
+.t_tubiao {
+    width: 16%;
+    height: 60px;
+    text-align: center;
+    float: right;
+    line-height: 70px;
+    margin: 20px 10% 0 0 ;
+}
+
+.t_tubiao > a {
+    width: 35px;
+    color: darkgrey;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 2% 0 3%;
+}
+
+.t_tubiao > a > i {
+    font-size: 20px;
+    color: black;
+}
+
+#t_shousuo-1 {
+    float: left;
+    width: 56%;
+    height: 130px;
+    display: none;
+    margin-top: -20px;
+}
+
+#t_shousuo {
+    border: 1px solid;
+    float: left;
+    display: none;
+    margin-top: -29px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: 0px;
+    padding-left: 15px;
+}
+
+
+
+

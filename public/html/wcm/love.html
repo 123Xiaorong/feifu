@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>点亮[心]味道 慢读细品寻味巴黎</title>
+    <link rel="stylesheet" href="../../css/wcm/stackedCards.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main_topic {
+            width: 100%;
+            height: auto;
+            background: #fff4e0;
+        }
+
+        .bg {
+            position: relative;
+        }
+
+        .bg1 {
+            background: url('../../images/wcm/choose/bg01.jpg') no-repeat center;
+            height: 796px;
+        }
+
+        .ani {
+            position: absolute;
+            left: 50%;
+            z-index: 2;
+        }
+
+        .ani_p {
+            top: 76px;
+            margin-left: -123px;
+        }
+
+        .ani_a {
+            top: 182px;
+            margin-left: 72px;
+        }
+
+        .ani_r {
+            top: 269px;
+            margin-left: -172px;
+        }
+
+        .ani_s {
+            top: 390px;
+            margin-left: 140px;
+        }
+
+        .ani_i {
+            top: 460px;
+            margin-left: -54px;
+        }
+
+        .bg2 {
+            background: url('../../images/wcm/choose/love_bg02.jpg') no-repeat center;
+            height: 520px;
+        }
+
+        .link_img2 {
+            position: absolute;
+            left: 50%;
+            top: 15px;
+            margin-left: -518px;
+            width: 566px;
+            height: 476px;
+        }
+
+        .bg3 {
+            background: url('../../images/wcm/choose/lovebg03.jpg') no-repeat center;
+            height: 440px;
+        }
+
+        .bg4 {
+            background: url('../../images/wcm/choose/lovebg04.jpg') no-repeat center;
+            height: 688px;
+        }
+
+        .bg5 {
+            background: url('../../images/wcm/choose/lovebg05.jpg') no-repeat center;
+            height: 554px;
+        }
+
+        /* .bg6 {
+            background: url('../../images/wcm/choose/lovebg06_01.jpg') no-repeat center;
+            height: 461px;
+        } */
+
+        .buy_item {
+            position: absolute;
+            left: 50%;
+            top: 200px;
+            margin-left: -112px;
+            width: 220px;
+            height: 70px;
+            text-decoration: none;
+        }
+
+        .look_up_shop {
+            position: absolute;
+            left: 50%;
+            top: 296px;
+            margin-left: -56px;
+            width: 115px;
+            height: 35px;
+            text-decoration: none;
+        }
+        .look_up_shop:hover {
+            cursor: pointer;
+        }
+
+        .bg7 {
+            background: url('../../images/wcm/choose/lovebg7.jpg') no-repeat center;
+            height: 439px;
+        }
+
+        .link_img7 {
+            position: absolute;
+            left: 50%;
+            top: 45px;
+            margin-left: -430px;
+            width: 433px;
+            height: 359px;
+        }
+
+        .bg9 {
+            background: url('../../images/wcm/choose/lovebg09.jpg') no-repeat center;
+            height: 514px;
+        }
+
+        .link_img9 {
+            position: absolute;
+            left: 50%;
+            top: 15px;
+            margin-left: -218px;
+            width: 566px;
+            height: 476px;
+        }
+
+        .bg10 {
+            background: url('../../images/wcm/choose/lovebg10.jpg') no-repeat center;
+            height: 662px;
+        }
+
+        .look_up_shop_1 {
+            top: 198px;
+            margin-left: -78px;
+            width: 153px;
+        }
+
+        .bottom_text {
+            position: absolute;
+            left: 50%;
+            top: 300px;
+            margin-left: -300px;
+            width: 800px;
+            height: auto;
+            color: #6c6a6a;
+        }
+
+        .bottom_text h4 {
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .bottom_text p {
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .container-fixed {
+            max-width: 767px;
+            margin: 0 auto;
+        }
+
+        .stacked-cards {
+            padding-top: 100px;
+            /* padding-bottom: 15px; */
+        }
+
+        .stacked-cards-fanOut {
+            padding-bottom: 40px;
+        }
+
+        .stacked-cards-fanOut li img {
+            max-height: 200px;
+        }
+
+        .stacked-cards li {
+            height: 300px;
+        }
+
+        @media (max-width: 767px) {
+            .stacked-cards li {
+                height: 180px;
+            }
+        }
+
+        .stacked-cards li:nth-child(n) {
+            background: url('../../images/wcm/choose/banner_2.jpg') no-repeat center;
+        }
+
+        .stacked-cards li:nth-child(2n) {
+            background: url('../../images/wcm/choose/banner_3.jpg') no-repeat center;
+        }
+
+        .stacked-cards li:nth-child(3n) {
+            background: url('../../images/wcm/choose/banner_4.jpg') no-repeat center;
+        }
+
+        .stacked-cards li:nth-child(4n) {
+            background: url('../../images/wcm/choose/banner_5.jpg') no-repeat center;
+        }
+        .stacked-cards li:nth-child(5n) {
+            background: url('../../images/wcm/choose/banner_1.jpg') no-repeat center;
+        }
+
+        .source {
+            margin: 25px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="t_baoliangge">
+        <div class="t_daohanglan">
+            <div class="t_logo">
+                <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+            </div>
+            <div class="t_ul" id="t_ul">
+                <ul>
+                    <li>
+                        <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                    </li>
+                    <li>
+                        <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                    </li>
+                </ul>
+            </div>
+            <!--<div id="t_shousuo-1">-->
+            <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+            <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--</div>-->
+            <div class="t_tubiao" id="t_tubiao">
+                <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+                <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+                <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+                <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+                <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_zicaidan">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/breakfast.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span>
+                </a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/bread.html">
+                    <i class="iconfont icon-tusi"></i>
+                    <br>
+                    <span class="t_quanbu-2">吐司</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/drink.html">
+                    <i class="iconfont icon-yinpin"></i>
+                    <br>
+                    <span class="t_quanbu-3">饮品</span></a>
+            </div>
+        </div>
+    
+        <div class="display_none" id="t_qita">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/nearby.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span></a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/flower.html">
+                    <i class="iconfont icon-shouye"></i>
+                    <br>
+                    <span class="t_quanbu-2">鲜花</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/card.html">
+                    <i class="iconfont icon-iconkpxd"></i>
+                    <br>
+                    <span class="t_quanbu-3">贺卡</span></a>
+            </div>
+            <div class="t_dangaolihe">
+                <a href="../../html/xr/sweet.html">
+                    <i class="iconfont icon-lihe"></i>
+                    <br>
+                    <span class="t_quanbu-4">甜点</span></a>
+            </div>
+        </div>
+    
+    
+        <div class="display_none" id="t_qiye-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <div class="t_xianhua">
+                <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+                <br>
+                <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+            </div>
+            <div class="t_heka">
+                <i class="iconfont icon-kehuqunzu"></i>
+                <br>
+                <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_tiyan-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <!--<div class="t_xianhua">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-hongbeigongju"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-2">烘培</span></a>-->
+            <!--</div>-->
+            <div class="t_heka">
+                <a href="../../html/zc/Teach_video.html">
+                    <i class="iconfont icon-shipin"></i>
+                    <br>
+                    <span class="t_quanbu-3">教学视频</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/zc/Activ.html">
+                    <i class="iconfont icon-Donut"></i>
+                    <br>
+                    <span class="t_quanbu-4">体验</span></a>
+            </div>
+        </div>
+        <!--<div class="display_none" id="t_wodefeihu-x">-->
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-dingdan"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">我的订单</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_heka">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-zhaohuimima"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-3">找回密码</span></a>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div id="coverLayerOutly" class="display-none">
+        <div id="coverLayerly" class="display-none">
+            <span id="coverLayerBlockly">×</span>
+            <button id="coverLayerButtonOnely">登录</button>
+            <button id="coverLayerButtonTwoly">关闭</button>
+            <div id="coverLayerContently"></div>
+        </div>
+    </div>
+    <div class="main_topic" onmouseover="t_zao()">
+        <section class="bg bg1">
+            <img src="../../images/wcm/choose/p_icon.png" class="ani ani_p" style="display:inline;">
+            <img src="../../images/wcm/choose/a_icon.png" class="ani ani_a" style="display:inline;">
+            <img src="../../images/wcm/choose/r_icon.png" class="ani ani_r" style="display:inline;">
+            <img src="../../images/wcm/choose/s_icon.png" class="ani ani_s" style="display:inline;">
+            <img src="../../images/wcm/choose/i_icon.png" class="ani ani_i" style="display:inline;">
+        </section>
+        <section class="bg bg2">
+            <a href="#" class="link_img2">&nbsp;</a>
+        </section>
+        <section class="bg bg3"></section>
+        <section class="bg bg4"></section>
+        <section class="bg bg5">
+            <div class="container-fixed source">
+
+                <div class="stacked-cards stacked-cards-fanOut">
+                    <ul style="max-width: 100%;">
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg bg7">
+            <!-- 商品详情 -->
+            <a href="../xr/cakeDetails.html?G_id=5" class="link_img7"></a>
+        </section>
+        <section class="bg bg9">
+            <a href="#" class="link_img9"></a>
+        </section>
+        <section class="bg bg10">
+            <a onclick="getCarche()" class="look_up_shop_1 look_up_shop"></a>
+            <div class="bottom_text">
+                <h4>活动规则</h4>
+                <p>活动时间：2019年6月6日至2019年12月31日</p>
+                <p>发货区域：全国第三方物流发货，具体发货范围及收费标准以下单信息为准。</p>
+                <h4 style="margin-top: 20px;">参与规则</h4>
+                <p>1. 活动期间，购买「点亮巴黎的心礼」享276元优惠价，aha会员享246元优惠价，先到先得，售完即止。</p>
+                <p>2. 本活动仅限线上用户参与，不与其他优惠同享（如优惠券、蛋糕券、兑换券、储值卡、银行优惠等）</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+            <div>
+                <ul>
+                    <li><a href="#">全部蛋糕</a></li>
+                    <li><a href="#">关于诺心</a></li>
+                    <li><a href="#">客服服务</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+            <h2>copyright©妃芙cake版权所有</h2>
+            <figure>
+                <img src="../../images/wcm/choose/weixin.jpg" alt="">
+                <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+            </figure>
+    </footer>
+    <script src="../../js/jquery-1.11.3.js"></script>
+    <script src="../../js/wcm/stackedCards.min.js"></script>
+    <script src="../../js/nav1.js"></script>
+    <script>
+        var stackedCardFanOut = new stackedCards({
+			selector: '.stacked-cards-fanOut',
+			layout: "fanOut",
+			transformOrigin: "bottom",
+		});
+
+        stackedCardFanOut.init();
+        
+        function getCarche(){
+            if (sessionStorage.getItem("userId") == null) {
+                function ourAlertNav(width, height,text,fontSize) {
+    document.getElementById("coverLayerly").style.opacity = "0";
+    document.getElementById("coverLayerOutly").style.opacity = "0";
+    document.getElementById("coverLayerOutly").classList.remove("display-none");
+    document.getElementById("coverLayerly").classList.remove("display-none");
+    document.getElementById("coverLayerly").style.width = width + "px";
+    document.getElementById("coverLayerly").style.height = height + "px";
+    document.getElementById("coverLayerContently").style.width = width*0.8 + "px";
+    document.getElementById("coverLayerContently").style.height = height*0.8 + "px";
+    document.getElementById("coverLayerly").style.top = 60 + "px";
+    document.getElementById("coverLayerly").style.left = parseFloat(document.body.offsetWidth) / 2 - width / 2 + "px";
+    document.getElementById("coverLayerly").style.transition="all ease-in-out .4s";
+    document.getElementById("coverLayerly").style.webkitTransition="all ease-in-out .4s";
+    document.getElementById("coverLayerContently").innerText="";
+    let alertText=document.createTextNode(text);
+    document.getElementById("coverLayerContently").appendChild(alertText);
+    document.getElementById("coverLayerContently").style.fontSize=fontSize+"px";
+    setTimeout(() => {
+        document.getElementById("coverLayerly").style.opacity = "1";
+        document.getElementById("coverLayerOutly").style.opacity = "1";
+        document.getElementById("coverLayerly").style.top = 120 + "px";
+    }, 1);
+    document.getElementById("coverLayerBlockly").onclick=function () {//叉叉的点击事件
+        document.getElementById("coverLayerly").style.opacity = "0";
+        document.getElementById("coverLayerOutly").style.opacity = "0";
+        document.getElementById("coverLayerly").style.top = 60 + "px";
+        setTimeout(()=>{
+            document.getElementById("coverLayerOutly").classList.add("display-none");
+            document.getElementById("coverLayerly").classList.add("display-none");
+        },401);
+    };
+    document.getElementById("coverLayerButtonOnely").addEventListener("click",function () {//button1的点击事件
+        document.getElementById("coverLayerly").style.opacity = "0";
+        document.getElementById("coverLayerOutly").style.opacity = "0";
+        document.getElementById("coverLayerly").style.top = 60 + "px";
+        setTimeout(()=>{
+            document.getElementById("coverLayerOutly").classList.add("display-none");
+            document.getElementById("coverLayerly").classList.add("display-none");
+        },401);
+    });
+    document.getElementById("coverLayerButtonTwoly").onclick=function () {//button2的单击事件
+        document.getElementById("coverLayerly").style.opacity = "0";
+        document.getElementById("coverLayerOutly").style.opacity = "0";
+        document.getElementById("coverLayerly").style.top = 60 + "px";
+        setTimeout(()=>{
+            document.getElementById("coverLayerOutly").classList.add("display-none");
+            document.getElementById("coverLayerly").classList.add("display-none");
+        },401);
+    }
+}
+ourAlertNav(500,150,"请先登录",22)
+            } 
+        else {
+            window.location.href = "../car/gouwuche.html"
+        }
+    }
+    </script>
+    
+</body>
+
+</html>

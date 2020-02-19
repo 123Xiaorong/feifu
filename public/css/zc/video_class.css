@@ -1,0 +1,103 @@
+.Video_nav>a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255,64,1);
+}
+section{
+    /*width: 98%;*/
+    margin: 0 auto;
+}
+.Video_nav{
+    padding-top: 80px;
+}
+.video_border{
+    /*width: 1280px;*/
+    width: 100%;
+    height: 640px;
+    /*margin: 30px auto;*/
+}
+video{
+    width: 1260px;
+    height: 640px;
+}
+.floatL{
+    float: left;
+}
+.pinglun>div:first-child{
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bolder;
+    color: #3e3e3e;
+
+}
+
+.pinglunBorder_img{
+    width: 90px;
+    height: 80px;
+}
+.pinglunBorder>div{
+    background-color: #f2f2f2;
+    /*margin: 10px 0;*/
+    width: 80%;
+    margin: 5px auto;
+    height: 100px;
+
+}
+.pinglunContent{
+    padding: 10px 50px;
+}
+.pinglun_PerInfo{
+    font-size: 13px;
+    color: #969696;
+}
+.Clear{
+    clear: both;
+}
+.Username{
+    display: inline-block;
+    width: 400px;
+
+}
+.Clear>button{
+    padding: 6px 10px;
+    background-color: #FF4001;
+    color: white;
+    /*margin-top: -65px;*/
+    border: 0px;
+    outline: 0px;
+}
+
+#pinglunqu{
+    margin-left: 290px;
+    width: 500px;
+}
+.pinglun{
+    /*width: 1280px;*/
+    width: 100%;
+    margin: 0 auto;
+    border: 0px;
+}
+.wupinglun{
+    line-height: 50px;
+    text-align: center;
+}
+.comment_img{
+    width: 100px;
+    height: 100px;
+}
+.comment_img1{
+    width: 300px;
+    height: 300px;
+}
+.pinglun_huifu>input{
+    width: 500px;
+    height: 100px;
+}
+.denglutixing{
+    text-align: center;
+    line-height: 50px;
+}
+.denglutixing>a{
+    color: #ff291e;
+}

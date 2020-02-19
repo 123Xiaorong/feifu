@@ -1,0 +1,66 @@
+.Border{
+    /*padding-top: 70px;*/
+    width: 100%;
+    margin: 0 auto ;
+}
+.Taste_nav{
+    padding-top: 80px;
+    width: 100%;
+    margin: 0 auto;
+}
+.taste_form{
+    /*margin-top: 50px;*/
+    padding-top: 18px;
+    background-color: #f0f0f0;
+    padding-left: 450px;
+    padding-bottom: 30px;
+
+}
+.taste_form>div{
+    padding-top: 10px;
+    margin-left: -5px;
+}
+.taste_form>div>div>input{
+    width: 400px;
+    height: 30px;
+}
+.taste_desc{
+    margin-top: 50px;
+}
+.taste_form>div>div>button{
+    width: 170px;
+    height: 52px;
+    background-color: rgb(255,64,1);
+    color: white;
+    line-height: 52px;
+    text-decoration: none;
+    border: none;
+    margin-left: -90px;
+}
+.BannerB{
+    width: 100%;
+    background-image: url("../../images/zc/bg11.jpg");
+    background-size: cover;
+    line-height: 30px;
+}
+.Banner{
+    padding: 70px 30px;
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.Rules{
+    color: white;
+}
+.Rules>p{
+
+}
+.modal_button{
+    background-color: rgb(255,64,1);
+}
+.form_button{
+    margin-left: 100px;
+}
+/*.form_info{*/
+    /*width: 800px;*/
+/*}*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>商品表</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>商品名称</td>
+                <td>商品标签</td>
+                <td>商品类别</td>
+                <td>商品口味</td>
+                <td>商品描述</td>
+                <td>商品图片</td>
+            </tr>
+        </thead>
+        <tbody>
+            <% goodsData.forEach((item,index)=>{ %>
+            <tr>
+                <td><%=item.G_id%></td>
+                <td><%=item.goodsname%></td>
+                <td><%=item.goodslabel%></td>
+                <td><%=item.series%></td>
+                <td><%=item.flavor%></td>
+                <td><%=item.description%></td>
+                <td><img src="../public/images/image/<%=item.img%>"></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.box{
+	width: 95%;
+	margin: 10px auto;
+	padding: 15px;
+	
+}
+.box ul li{
+	width: 20%;
+	height: 300px;
+	box-shadow: 3px 2px 30px rgba(0,0,0,.2);
+	float: left;
+	text-align: center;
+	position: relative;
+	transition: all .6s ease-out;
+}
+.box ul li h3{
+	padding-top: 30px;
+	color: #333;
+	font-size: 18px;
+}
+.box ul li p{
+	margin-top: 10px;
+	color: #666;
+	font-size: 14px;
+}
+.box ul li .quick{
+	text-decoration: none;
+	color: white;
+	margin-left: 40px;
+	font-size: 18px;
+	border: 1px solid white;
+	transition: all .5s;
+}
+.box ul li .quick:hover {
+	color: #cea461;
+	border: 1px solid #cea461;
+	
+}
+.box ul li img{
+	width: 85%;
+	height: 150px;
+	position: absolute;
+	right: 10px;
+	bottom: 37px;
+	transition: all .6s ease-out;
+}
+.box ul .on{
+	width: 450px;
+	height: 300px;
+    background-color: rgb(202,223,190);
+	text-align: left;
+}
+.box ul .on h3{
+	padding-left: 20px;
+	color: #FFF;
+}
+.box ul .on p{
+	margin-left: 20px;
+	color: #FFF;
+}
+.box ul .on img{
+	width: 270px;
+	height: 300px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+

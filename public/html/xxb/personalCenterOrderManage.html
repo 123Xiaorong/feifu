@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/xxb/personalCenterSon.css">
+</head>
+<body>
+<div class="personalCenterBox" id="orderList">
+    <p class="personalCenterTitle">订单列表</p>
+    <ul id="titleSon">
+        <li class="active">待付款</li>
+        <li>待收货</li>
+        <li>退换/售后</li>
+        <li>已完成</li>
+        <li>已失效</li>
+    </ul>
+    <div id="orderAlert"></div>
+    <!--<div class="orderBox">-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123456</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">有效时间:<span>48:00:00</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_12244.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>360</span>.00</td>-->
+                <!--<td><button>付款</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">有效时间:<span>48:00:00</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>付款</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="orderBox display-none">-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123456</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>360</span>.00</td>-->
+                <!--<td><button>配送中</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>配送中</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>配送中</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="orderBox display-none">-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123456</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_12244.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>360</span>.00</td>-->
+                <!--<td><button>审核中</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>审核中</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="orderBox display-none">-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123456</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_12244.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>已完成</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">交易时间:<span>2019-09-09 18:18</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>已完成</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+    <!--<div class="orderBox display-none">-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123456</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">有效时间:<span>00:00:00</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_12244.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>360</span>.00</td>-->
+                <!--<td><button>已失效</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+        <!--<table cellspacing="0" cellpadding="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<td class="orderId"><span></span>订单号:S123457</td>-->
+                <!--<td></td>-->
+                <!--<td></td>-->
+                <!--<td colspan="2">有效时间:<span>00:00:00</span></td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10648.png">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td>-->
+                    <!--<img src="../../images/xxb/list_10782.jpg">-->
+                <!--</td>-->
+                <!--<td>草莓奶油蛋糕</td>-->
+                <!--<td>9寸1层</td>-->
+                <!--<td>×<span>1</span></td>-->
+                <!--<td>￥<span>120</span>.00</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<td colspan="2" class="orderEnd">收货地址:四川省成都市武侯区一环路南四段</td>-->
+                <!--<td class="orderEnd">收货人:<span>许孝波</span></td>-->
+                <!--<td class="orderEnd">合计:￥<span>240</span>.00</td>-->
+                <!--<td><button>已失效</button></td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+</div>
+<script src="../../js/ajax.js"></script>
+<script src="../../js/jquery-1.11.3.js"></script>
+<script src="../../js/xxb/personalCenterOrderManage.js"></script>
+</body>
+</html>

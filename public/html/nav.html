@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+<div class="t_baoliangge">
+    <div class="t_daohanglan">
+        <div class="t_logo">
+            <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+        </div>
+        <div class="t_ul" id="t_ul">
+            <ul>
+                <li>
+                    <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                </li>
+                <li>
+                    <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                </li>
+                <li>
+                    <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                </li>
+                <li>
+                    <div><a href="" id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                </li>
+                <li>
+                    <div><a href="../../html/xxb/personalCenter.html" id="t_wodefeifu" onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                </li>
+            </ul>
+        </div>
+        <!--<div id="t_shousuo-1">-->
+            <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+            <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+        <!--</div>-->
+        <div class="t_tubiao" id="t_tubiao">
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+            <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()"></i></a>
+            <span style="border: 1px solid red" id="t_yonghuming">请登录</span>
+            <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_zicaidan">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/breakfast.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span>
+            </a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/bread.html">
+                <i class="iconfont icon-tusi"></i>
+                <br>
+                <span class="t_quanbu-2">吐司</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/drink.html">
+                <i class="iconfont icon-yinpin"></i>
+                <br>
+                <span class="t_quanbu-3">饮品</span></a>
+        </div>
+    </div>
+
+    <div class="display_none" id="t_qita">
+        <div class="t_quanbu-t">
+            <a href="../../html/xr/nearby.html">
+                <i class="iconfont icon-quanbu"></i>
+                <br>
+                <span class="t_quanbu-1">全部</span></a>
+        </div>
+        <div class="t_xianhua">
+            <a href="../../html/xr/flower.html">
+                <i class="iconfont icon-shouye"></i>
+                <br>
+                <span class="t_quanbu-2">鲜花</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/xr/card.html">
+                <i class="iconfont icon-iconkpxd"></i>
+                <br>
+                <span class="t_quanbu-3">贺卡</span></a>
+        </div>
+        <div class="t_dangaolihe">
+            <a href="../../html/xr/sweet.html">
+                <i class="iconfont icon-lihe"></i>
+                <br>
+                <span class="t_quanbu-4">甜点</span></a>
+        </div>
+    </div>
+
+
+    <div class="display_none" id="t_qiye-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <div class="t_xianhua">
+            <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+            <br>
+            <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+        </div>
+        <div class="t_heka">
+            <i class="iconfont icon-kehuqunzu"></i>
+            <br>
+            <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+        </div>
+    </div>
+    <div class="display_none" id="t_tiyan-x">
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-hongbeigongju"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">烘培</span></a>-->
+        <!--</div>-->
+        <div class="t_heka">
+            <a href="../../html/zc/Teach_video.html">
+                <i class="iconfont icon-shipin"></i>
+                <br>
+                <span class="t_quanbu-3">教学视频</span></a>
+        </div>
+        <div class="t_heka">
+            <a href="../../html/zc/Activ.html">
+                <i class="iconfont icon-Donut"></i>
+                <br>
+                <span class="t_quanbu-4">体验</span></a>
+        </div>
+    </div>
+    <!--<div class="display_none" id="t_wodefeihu-x">-->
+    <!--<div class="t_quanbu-t">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-quanbu"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-1">全部</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_xianhua">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-dingdan"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-2">我的订单</span></a>-->
+    <!--</div>-->
+    <!--<div class="t_heka">-->
+    <!--<a href="">-->
+    <!--<i class="iconfont icon-zhaohuimima"></i>-->
+    <!--<br>-->
+    <!--<span class="t_quanbu-3">找回密码</span></a>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+    var id;
+    function yonghuming() {
+     id=sessionStorage.getItem("userId");
+     $.ajax({
+         url:"/yonghuming.do",
+         type:"post",
+         data:{
+             data:id,
+         },
+         success:function (data) {
+             $("#t_yonghuming").html(`${data[0].username}`)
+         },
+     })
+
+    }
+</script>
+</body>
+</html>

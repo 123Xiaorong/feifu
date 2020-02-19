@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="../../css/car/dangao.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+</head>
+<body>
+<!--容器-->
+<!--<div class="container">-->
+<!--隔开-->
+<!--透明容器分割-->
+<header>
+    <!--导航-->
+    <div class="t_baoliangge" style="position: fixed;top: 0px">
+        <div class="t_daohanglan">
+            <div class="t_logo">
+                <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+            </div>
+            <div class="t_ul" id="t_ul">
+                <ul>
+                    <li>
+                        <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                    </li>
+                    <li>
+                        <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                    </li>
+                </ul>
+            </div>
+            <!--<div id="t_shousuo-1">-->
+            <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+            <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--</div>-->
+            <div class="t_tubiao" id="t_tubiao">
+                <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+                <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()" id="t_yingchang"></i></a>
+                <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+                <button id="t_zhuxiao" style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+                <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche" onmouseover="t_sousuo()"></i></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_zicaidan">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/breakfast.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span>
+                </a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/bread.html">
+                    <i class="iconfont icon-tusi"></i>
+                    <br>
+                    <span class="t_quanbu-2">吐司</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/drink.html">
+                    <i class="iconfont icon-yinpin"></i>
+                    <br>
+                    <span class="t_quanbu-3">饮品</span></a>
+            </div>
+        </div>
+
+        <div class="display_none" id="t_qita">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/nearby.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span></a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/flower.html">
+                    <i class="iconfont icon-shouye"></i>
+                    <br>
+                    <span class="t_quanbu-2">鲜花</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/card.html">
+                    <i class="iconfont icon-iconkpxd"></i>
+                    <br>
+                    <span class="t_quanbu-3">贺卡</span></a>
+            </div>
+            <div class="t_dangaolihe">
+                <a href="../../html/xr/sweet.html">
+                    <i class="iconfont icon-lihe"></i>
+                    <br>
+                    <span class="t_quanbu-4">甜点</span></a>
+            </div>
+        </div>
+
+
+        <div class="display_none" id="t_qiye-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <div class="t_xianhua">
+                <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+                <br>
+                <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+            </div>
+            <div class="t_heka">
+                <i class="iconfont icon-kehuqunzu"></i>
+                <br>
+                <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_tiyan-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <!--<div class="t_xianhua">-->
+            <!--<a href="">-->
+            <!--<i class="iconfont icon-hongbeigongju"></i>-->
+            <!--<br>-->
+            <!--<span class="t_quanbu-2">烘培</span></a>-->
+            <!--</div>-->
+            <div class="t_heka">
+                <a href="../../html/zc/Teach_video.html">
+                    <i class="iconfont icon-shipin"></i>
+                    <br>
+                    <span class="t_quanbu-3">教学视频</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/zc/Activ.html">
+                    <i class="iconfont icon-Donut"></i>
+                    <br>
+                    <span class="t_quanbu-4">体验</span></a>
+            </div>
+        </div>
+        <!--<div class="display_none" id="t_wodefeihu-x">-->
+        <!--<div class="t_quanbu-t">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-quanbu"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-1">全部</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_xianhua">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-dingdan"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-2">我的订单</span></a>-->
+        <!--</div>-->
+        <!--<div class="t_heka">-->
+        <!--<a href="">-->
+        <!--<i class="iconfont icon-zhaohuimima"></i>-->
+        <!--<br>-->
+        <!--<span class="t_quanbu-3">找回密码</span></a>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+</header>
+
+
+<!--隔开-->
+<section class="sectionA" onmousemove="">
+    <div class="gouwuxinxi-fragment" id="gouwuxinxi-fragment">
+        <p style="text-align: center">您还没有登录，登录后购物车的商品将保存到您的账号中！
+            <button style="background-color: #f9f9f9">立即登录</button>
+        </p>
+        <h1 style="margin-top: 65px;text-align: center;font-size: 18px">你的购物车(<span id="shop-sum"></span>)</h1>
+        <p style="text-align: center" id="shop-icon" class="wu-shop"><img id="shop-icon-img" src="../../images/car/gouwuche-icon.png" style="height: 100px;margin-top: 60px"></p>
+        <p style="text-align: center;margin-top: 3%;height: 95px" class="wu-shop">你还没有选择任何商品，<a href="../../html/xr/cake.html" style="text-decoration: none">去逛逛!</a></p>
+        <!--隔开-->
+    </div>
+</section>
+
+<!--推荐部分-->
+<section class="sectionB" onmousemove="">
+    <div>&nbsp;</div>
+    <h2 style="text-align: center;font-size: 18px">推荐商品</h2>
+    </br>
+    <h4 style="text-align: center;margin-top: -10px">Sincerely Recommend</h4>
+    <div class="sectionB-tupian-fragement">
+        <ul class="tuijian-fragement">
+
+        </ul>
+    </div>
+</section>
+
+<!--//容器-->
+<!--</div>-->
+<!--加入购物车成功-->
+<!--虚幻背景-->
+<div id="add-success-fragement" onmousemove="">
+</div>
+<!--虚化背景-->
+<div class="add-success" id="add-success" >
+    <!--<h3 style="margin-left: 10%;margin-top: 3%">提示信息</h3>-->
+    <p style="text-align: center;font-size: 18px;margin-top: 10%">加入购物车成功</p>
+    <div class="c-Determine" id="c-Determine">确定</div>
+</div>
+<!--确认删除弹出框-->
+<div class="queren-shanchu" id="queren-shanchu" >
+    <h3 style="margin-left: 10%;margin-top: 3%"></h3>
+    <p style="margin-top: 10%;font-size: 18px;text-align: center">确认删除选中商品吗？</p>
+    <div class="c-Determine-shanchu" id="c-Determine-shanchu"><button style="border: none;outline: 0px;padding: 10px 20px;color: white;background-color: #FF4001;border-radius: 3px" id="c-Determine-shanchu-quxiao">取消</button><button style="border: none;outline: 0px;padding: 10px 20px;color: white;background-color: #FF4001;border-radius: 3px;margin-left: 30px" id="c-Determine-shanchu-chengong">确定</button></div>
+</div>
+
+<!--结算弹出框-->
+<div class="c-tanchu-fragement" onmousemove="">
+    <ul class="tanchu-fragement">
+        <li class="tanchu-xinxi-a"><input type="checkbox" style="width: 25px;height: 25px;margin-top: 55%;margin-left: 30%" id="quanxuan-button" value=""></li>
+        <li class="tanchu-xinxi">全选</li>
+        <li class="tanchu-xinxi"><span id="tanchu-shanchu">删除</span></li>
+        <li class="tanchu-xinxi">|</li>
+        <li class="tanchu-xinxi-b">共<span id="sum-shop-shuliang" style="color: red">0</span>件商品，已选择<span id="tiaoxuan-shop-shuliang" style="color: red">0</span>件</li>
+        <li class="tanchu-xinxi-c"></li>
+        <li class="tanchu-xinxi-d">应付运费(不含快递费)：<span id="sum-money" style="font-size: 18px;color: red"></span></li>
+        <li class="tanchu-xinxi-button"><a href="http://localhost:8888/car/jiesuan.html" style="text-decoration: none;color: white">结算</a></li>
+    </ul>
+
+</div>
+
+<!--底部导航栏-->
+<footer>
+    <div>
+        <ul>
+            <li><a href="#">全部蛋糕</a></li>
+            <li><a href="#">关于诺心</a></li>
+            <li><a href="#">客服服务</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+    <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+    <h2>copyright©妃芙cake版权所有</h2>
+    <figure>
+        <img src="../../images/weixin.jpg" alt="">
+        <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+    </figure>
+</footer>
+
+<script src="../../js/jquery-1.11.3.js"></script>
+<!--<script src="../../js/car/feifu.js"></script>-->
+<script src="../../js/ajax.js"></script>
+<script>
+    var huoquuser=sessionStorage.getItem("userId");
+    window.onload = function(){
+        getAllGoods()
+    }
+
+    // var sum=0;
+    $("#shop-sum").text(0);
+    // var shuzu=[];
+
+
+
+    $.ajax({
+        url:"/huoquxinxi.do",
+        success:function (data) {
+            var sum=0;
+            for (var i=0;i<data.length;i++){
+                if(data[i].s_user==huoquuser&&data[i].s_zhuangtai!="danxuan-button-active-zhifu"){
+                    sum=sum+data[i].s_shuliang;
+                    $("#shop-icon").after("<div class='c-dongtai-shop' style='width: 80%;height: 180px;border: 1px solid #F0F0F0;min-width: 1260px;margin: 10px 0 '></div>");
+                    var fuxuan=document.createElement("input");
+                    fuxuan.setAttribute("class",data[i].s_zhuangtai);
+                    fuxuan.setAttribute("type","checkbox");
+                    fuxuan.setAttribute("style","width: 5%;height: 15%;float: left;margin-left: 8%;margin-top: 17.5%");
+                    var shipei=document.createElement("div");
+                    shipei.setAttribute("class","shipei");
+                    var shipei1=document.createElement("div");
+                    shipei1.setAttribute("class","shipei1");
+                    shipei.appendChild(fuxuan);
+                    var img=document.createElement("img");
+                    img.setAttribute("src","../../images/image/"+data[i].s_picname);
+                    img.setAttribute("alt","");
+                    img.setAttribute("id","c-add-image");
+                    img.setAttribute("style","width: 30%;margin-top: 2%;margin-left: 5%;height:90%;float: left");
+                    shipei.appendChild(img);
+                    var xiala=document.createElement("div");
+                    xiala.setAttribute("class","c-dongti-name-fragement");
+                    var p0=document.createElement("p");
+                    p0.setAttribute("style","font-size: 16px");
+                    p0.innerText=data[i].s_name;
+                    p0.setAttribute("class","huoquname");
+                    var p1=document.createElement("p");
+                    p1.innerText=data[i].s_mimaoshu;
+                    p1.setAttribute("style","margin-top:5%;color:#949494;font-size:14px");
+                    var p2=document.createElement("p");
+                    p2.innerText="¥"+data[i].s_jiage;
+                    p2.setAttribute("class","cc-dingzhi");
+                    p2.setAttribute("style","font-size: 18px;color:#949494;margin-top:60%");
+                    xiala.appendChild(p0);
+                    xiala.appendChild(p1);
+                    xiala.appendChild(p2);
+                    shipei.appendChild(xiala);
+                    if(data[i].s_zhufuyu==0){
+                        var liebiao=document.createElement("div");
+                        liebiao.setAttribute("class","c-shengri-xiala-fragement");
+                        var select=document.createElement("select");
+                        select.setAttribute("style","width: 60%;font-size: 18px;height: 100%");
+                        liebiao.appendChild(select);
+                        var option0=document.createElement("option");
+                        option0.innerText="填写生日祝福";
+                        var option1=document.createElement("option");
+                        option1.innerText="不需要";
+                        var option2=document.createElement("option");
+                        option2.innerText="Happy Birthday";
+                        select.appendChild(option0);
+                        select.appendChild(option1);
+                        select.appendChild(option2);
+                        shipei1.appendChild(liebiao);
+                    }
+                    else{
+                        var liebiao=document.createElement("div");
+                        liebiao.setAttribute("class","c-shengri-xiala-fragement");
+                        liebiao.innerText=data[i].s_zhufuyu;
+                        shipei1.appendChild(liebiao);
+                    }
+
+                    var jisuan=document.createElement("div");
+                    jisuan.setAttribute("class","c-money-sum");
+                    var a0=document.createElement("a");
+                    a0.setAttribute("style","display: none");
+                    a0.innerText="¥"+data[i].s_jiage;
+                    jisuan.appendChild(a0);
+                    var jisuan1=document.createElement("div");
+                    jisuan1.setAttribute("style","width: 48%;height: 20%;font-size: 18px;color: red;margin-left: 50%;margin-top: 13%");
+                    jisuan1.innerText="小计:";
+                    jisuan.appendChild(jisuan1);
+                    var a1=document.createElement("a");
+                    a1.innerText="¥"+data[i].s_jiage*data[i].s_shuliang;
+                    a1.setAttribute("class","c-tiaoxuan-sum");
+                    jisuan1.appendChild(a1);
+                    var jisuan2=document.createElement("div");
+                    jisuan2.setAttribute("class","c-jishuqi-fragment");
+                    jisuan.appendChild(jisuan2);
+                    var span0=document.createElement("span");
+                    span0.setAttribute("class","c-jianshu");
+                    var span1=document.createElement("span");
+                    span1.setAttribute("class","c-jishu-zhongjian");
+                    span1.innerText=data[i].s_shuliang;
+                    span1.setAttribute("id","c-jishu-zhongjian");
+                    var span2=document.createElement("span");
+                    span2.setAttribute("class","c-jiashu");
+                    jisuan2.appendChild(span0);
+                    jisuan2.appendChild(span1);
+                    jisuan2.appendChild(span2);
+
+                    $(".c-dongtai-shop")[0].appendChild(shipei);
+                    $(".c-dongtai-shop")[0].appendChild(shipei1);
+                    $(".c-dongtai-shop")[0].appendChild(jisuan);
+                }
+            }
+            $("#shop-sum").text(sum);
+            $("#sum-shop-shuliang").text(sum);
+            $(".danxuan-button-active").prop("checked",true);
+            // 点击复选框获取全选状态
+            var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+            for(var i=0;i<huoquchangdu;i++){
+                if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button"){
+                    $("#quanxuan-button").prop("checked",false);
+                    break;
+                }
+                else if(($(".c-dongtai-shop").find("input")[i].className!="danxuan-button")&&(i==huoquchangdu-1)){
+                    $("#quanxuan-button").prop("checked",true);
+                }
+            }
+            tiaoxuanshuliang();
+            huoquzongsum();
+           if($(".gouwuxinxi-fragment").find("div").length>0){
+                   $(".c-tanchu-fragement").css({
+                       "display":"block"
+                   })
+                   $("#shop-icon-img").attr("src","");
+                   $(".wu-shop").css({
+                       "display":"none"
+                   })
+           }
+           else {
+               $(".wu-shop").css({
+                   "display":"block"
+               })
+           }
+           // 隔开
+           // console.log($(".cc-dingzhi")[1].innerText)
+           for (var s=0;s<$(".cc-dingzhi").length;s++) {
+               if ($(".cc-dingzhi")[s].innerText.substring(1,)==0){
+                   $(".c-jianshu")[s].className="";
+                   $(".c-jiashu")[s].className="";
+               }
+                   }
+        }
+    })
+
+    function getAllGoods() {
+        myAjax("get", "/getImage.do", "", showGoods)
+    }
+
+    function showGoods(){
+        var data = JSON.parse(xhr.responseText);
+        document.getElementsByClassName("tuijian-fragement")[0].innerHTML = "";
+        for(var i=0;i<data.length;i++){
+            document.getElementsByClassName("tuijian-fragement")[0].innerHTML += `<li class="tupian-fragment">
+                <div class="tupian-change-size"><img src="../../images/image/${data[i].img}" alt="" id="myimg1" style="width: 100%"></div>
+                <div id="myname1" style="width: 90%;height: 5%;color: #3e3e3e;margin-left: 5%;text-align: left;margin-top: 5%">${data[i].goodsname}</div>
+                <!--价格-->
+                <div id="mymiaoshu1" style="width: 100px;height: 20px;color: #3e3e3e;margin-left: 5%;text-align: left;font-size:14px;margin-top:10px">${data[i].specification}</div>
+                <div id="mymoney1" style="margin-top: 8%;text-align: left;margin-left: 5%;font-size: 18px;color:#3e3e3e;font-weight:normal">¥${data[i].price}</div>
+                <!--加入购物车-->
+                <div class="add-gouwuche">
+                加入购物车<span class="c-gouwuche-xian"></span>
+                </div>
+                </li>`
+                }
+    }
+    // 动态不同ID
+    var s=1;
+    // 总金额数量
+    var zongde=0;
+    // 隔开
+
+    $(".tuijian-fragement").on('click','.add-gouwuche',function (){
+        // 获取动态信息
+        var r=this.parentNode;
+        var k=r.getElementsByTagName("img")[0].src;
+        // 获取的动态名字
+        var huoquname = r.getElementsByTagName("div")[1].innerText;
+        console.log(r);
+        var huoqumiaoshu=r.getElementsByTagName("div")[2].innerText;
+        var huoqujiage = r.getElementsByTagName("div")[3].innerText;
+        var huoqutupian=r.getElementsByTagName("img")[0].src;
+        var fenlijiage=huoqujiage.substring(1,);
+
+
+        //隔开
+        for (var i=0;i<$(".c-dongtai-shop").length;i++) {
+            if (huoquname == $(".huoquname")[i].innerText) {
+                $(".c-jishu-zhongjian")[i].innerText++;
+                break;
+            }
+            else if (i == ($(".c-dongtai-shop").length - 1)) {
+                // // 数量归一
+                $("#shop-icon").after("<div class='c-dongtai-shop' style='width: 80%;height: 180px;border: 1px solid #F0F0F0;min-width: 1260px'></div>");
+                var shipei=document.createElement("div");
+                shipei.setAttribute("class","shipei");
+                var shipei1=document.createElement("div");
+                shipei1.setAttribute("class","shipei1");
+                var fuxuan=document.createElement("input");
+                fuxuan.setAttribute("class","danxuan-button-active");
+                fuxuan.setAttribute("type","checkbox");
+                fuxuan.setAttribute("style","width: 5%;height: 15%;float: left;margin-left: 8%;margin-top: 17.5%");
+                shipei.appendChild(fuxuan);
+                var img=document.createElement("img");
+                img.setAttribute("src",k);
+                img.setAttribute("alt","");
+                img.setAttribute("id","c-add-image");
+                img.setAttribute("style","width: 30%;margin-top: 2%;margin-left: 5%;height:90%;float: left");
+                shipei.appendChild(img);
+                var xiala=document.createElement("div");
+                xiala.setAttribute("class","c-dongti-name-fragement");
+                var p0=document.createElement("p");
+                p0.setAttribute("style","font-size: 16px");
+                p0.innerText=huoquname;
+                p0.setAttribute("class","huoquname");
+                var p1=document.createElement("p");
+                p1.innerText=huoqumiaoshu;
+                p1.setAttribute("style","margin-top:5%;color:#949494;font-size:14px");
+                var p2=document.createElement("p");
+                p2.innerText=huoqujiage;
+                p2.setAttribute("style","font-size: 18px;color:#949494;margin-top:60%");
+                xiala.appendChild(p0);
+                xiala.appendChild(p1);
+                xiala.appendChild(p2);
+                shipei.appendChild(xiala);
+                var liebiao=document.createElement("div");
+                liebiao.setAttribute("class","c-shengri-xiala-fragement");
+                var select=document.createElement("select");
+                select.setAttribute("style","width: 60%;font-size: 18px;height: 100%;");
+                liebiao.appendChild(select);
+                shipei1.appendChild(liebiao);
+                var option0=document.createElement("option");
+                option0.innerText="填写生日祝福";
+                var option1=document.createElement("option");
+                option1.innerText="不需要";
+                var option2=document.createElement("option");
+                option2.innerText="Happy Birthday";
+                select.appendChild(option0);
+                select.appendChild(option1);
+                select.appendChild(option2);
+                var jisuan=document.createElement("div");
+                jisuan.setAttribute("class","c-money-sum");
+                var a0=document.createElement("a");
+                a0.setAttribute("style","display: none");
+                a0.innerText=huoqujiage;
+                jisuan.appendChild(a0);
+                var jisuan1=document.createElement("div");
+                jisuan1.setAttribute("style","width: 48%;height: 20%;font-size: 20px;color: red;margin-left: 50%;margin-top: 13%");
+                jisuan1.innerText="小计:";
+                jisuan.appendChild(jisuan1);
+                var a1=document.createElement("a");
+                a1.innerText=huoqujiage;
+                a1.setAttribute("class","c-tiaoxuan-sum");
+                jisuan1.appendChild(a1);
+                var jisuan2=document.createElement("div");
+                jisuan2.setAttribute("class","c-jishuqi-fragment");
+                jisuan.appendChild(jisuan2);
+                var span0=document.createElement("span");
+                span0.setAttribute("class","c-jianshu");
+                var span1=document.createElement("span");
+                span1.setAttribute("class","c-jishu-zhongjian");
+                span1.setAttribute("id","c-jishu-zhongjian");
+                span1.innerText=1;
+                var span2=document.createElement("span");
+                span2.setAttribute("class","c-jiashu");
+                jisuan2.appendChild(span0);
+                jisuan2.appendChild(span1);
+                jisuan2.appendChild(span2);
+
+                $(".c-dongtai-shop")[0].appendChild(shipei);
+                $(".c-dongtai-shop")[0].appendChild(shipei1);
+                $(".c-dongtai-shop")[0].appendChild(jisuan);
+                break;
+            }
+        }
+
+
+        if($(".c-dongtai-shop").length==0){
+            $("#shop-icon").after("<div class='c-dongtai-shop' style='width: 80%;height: 180px;border: 1px solid #F0F0F0;min-width: 1260px;margin: 10px 0 '></div>");
+            var shipei=document.createElement("div");
+            shipei.setAttribute("class","shipei");
+            var shipei1=document.createElement("div");
+            shipei1.setAttribute("class","shipei1");
+            var fuxuan=document.createElement("input");
+            fuxuan.setAttribute("class","danxuan-button-active");
+            fuxuan.setAttribute("type","checkbox");
+            fuxuan.setAttribute("style","width: 5%;height: 15%;float: left;margin-left: 8%;margin-top: 17.5%");
+            shipei.appendChild(fuxuan);
+            var img=document.createElement("img");
+            img.setAttribute("src",k);
+            img.setAttribute("alt","");
+            img.setAttribute("id","c-add-image");
+            img.setAttribute("style","width: 30%;margin-top: 2%;margin-left: 5%;height:90%;float: left");
+            shipei.appendChild(img);
+            var xiala=document.createElement("div");
+            xiala.setAttribute("class","c-dongti-name-fragement");
+            var p0=document.createElement("p");
+            p0.setAttribute("style","font-size: 20px");
+            p0.innerText=huoquname;
+            p0.setAttribute("class","huoquname");
+            var p1=document.createElement("p");
+            p1.innerText=huoqumiaoshu;
+            p1.setAttribute("style","margin-top:5%;color:#949494");
+            var p2=document.createElement("p");
+            p2.innerText=huoqujiage;
+            p2.setAttribute("style","font-size: 18px;color:#949494;margin-top:60%");
+            xiala.appendChild(p0);
+            xiala.appendChild(p1);
+            xiala.appendChild(p2);
+            shipei.appendChild(xiala);
+            var liebiao=document.createElement("div");
+            liebiao.setAttribute("class","c-shengri-xiala-fragement");
+            var select=document.createElement("select");
+            select.setAttribute("style","width: 60%;font-size: 18px;height: 100%;");
+            liebiao.appendChild(select);
+            shipei1.appendChild(liebiao);
+            var option0=document.createElement("option");
+            option0.innerText="填写生日祝福";
+            var option1=document.createElement("option");
+            option1.innerText="不需要";
+            var option2=document.createElement("option");
+            option2.innerText="Happy Birthday";
+            select.appendChild(option0);
+            select.appendChild(option1);
+            select.appendChild(option2);
+            var jisuan=document.createElement("div");
+            jisuan.setAttribute("class","c-money-sum");
+            var a0=document.createElement("a");
+            a0.setAttribute("style","display: none");
+            a0.innerText=huoqujiage;
+            jisuan.appendChild(a0);
+            var jisuan1=document.createElement("div");
+            jisuan1.setAttribute("style","width: 48%;height: 20%;font-size: 20px;color: red;margin-left: 50%;margin-top: 13%");
+            jisuan1.innerText="小计:";
+            jisuan.appendChild(jisuan1);
+            var a1=document.createElement("a");
+            a1.innerText=huoqujiage;
+            a1.setAttribute("class","c-tiaoxuan-sum");
+            jisuan1.appendChild(a1);
+            var jisuan2=document.createElement("div");
+            jisuan2.setAttribute("class","c-jishuqi-fragment");
+            jisuan.appendChild(jisuan2);
+            var span0=document.createElement("span");
+            span0.setAttribute("class","c-jianshu");
+            var span1=document.createElement("span");
+            span1.setAttribute("class","c-jishu-zhongjian");
+            span1.setAttribute("id","c-jishu-zhongjian");
+            span1.innerText=1;
+            var span2=document.createElement("span");
+            span2.setAttribute("class","c-jiashu");
+            jisuan2.appendChild(span0);
+            jisuan2.appendChild(span1);
+            jisuan2.appendChild(span2);
+
+            $(".c-dongtai-shop")[0].appendChild(shipei);
+            $(".c-dongtai-shop")[0].appendChild(shipei1);
+            $(".c-dongtai-shop")[0].appendChild(jisuan);
+        }
+        var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+        xhr.open("post","/addUser.do",true);//发送请求,默认为true，异步传输，false为同步传输
+        //post设置请求头
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        var tupiancaifen=huoqutupian.split("image/");
+        xhr.send("username="+huoquname+"&money="+fenlijiage+"&miaoshu="+huoqumiaoshu+"&picname="+tupiancaifen[1]+"&shuliang="+1+"&zhuangtai="+"danxuan-button-active"+"&zhufuyu="+0+"&huoquyonghu="+huoquuser);//发送参数
+
+        // // 结算总金额
+        huoquzongsum();
+
+        $(".danxuan-button-active").prop("checked",true);
+
+        // 动态框
+        var ccc=$(document).height();
+        $("#add-success-fragement").css({
+            "height":ccc,
+            "display":"block"
+        })
+        $("#add-success").css({
+            "display":"block"
+        })
+        $("#shop-icon-img").attr("src","");
+        $(".wu-shop").css({
+            "display":"none"
+        })
+        // 隔开
+        // 点击加入购物车获取全选状态
+        var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+        for(var i=0;i<huoquchangdu;i++){
+            if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button"){
+                $("#quanxuan-button").prop("checked",false);
+                break;
+            }
+            else if(($(".c-dongtai-shop").find("input")[i].className!="danxuan-button")&&(i==huoquchangdu-1)){
+                $("#quanxuan-button").prop("checked",true);
+            }
+        }
+        gouwucheshuliang();
+        tiaoxuanshuliang();
+        $(".c-tanchu-fragement").css({
+            "display":"block"
+        })
+    });
+
+
+    $("#gouwuxinxi-fragment").on('click','.c-jiashu',function () {
+        // 隔开
+        var sss=this.parentNode;
+        // sss.getElementsByTagName("span")[1].innerText++;
+
+        var fusss=this.parentNode.parentNode.parentNode;
+
+        var huoquname=fusss.getElementsByTagName("p")[0].innerText;
+
+        var zongshuliang=0;
+        for(var i=0;i<$(".c-dongtai-shop").length;i++){
+            zongshuliang=zongshuliang+parseInt($(".c-jishu-zhongjian")[i].innerText);
+        }
+        $("#sum-shop-shuliang").text(zongshuliang);
+        $("#shop-sum").text(zongshuliang);
+
+
+        var chunqu=this.parentNode.parentNode;
+        var car=chunqu.getElementsByTagName("a")[0].innerText;
+        var car111=chunqu.getElementsByTagName("a")[1].innerText;
+        var eee=parseInt(car.substring(1,));
+        var eee111=parseInt(car111.substring(1,));
+        console.log(car);
+        console.log(eee111);
+        eee111=eee+eee111;
+        // 改变当前价格
+        console.log(chunqu.getElementsByTagName("a")[1].innerText);
+        chunqu.getElementsByTagName("a")[1].innerText="¥"+eee111;
+        tiaoxuanshuliang();
+        huoquzongsum();
+        var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+        xhr.onreadystatechange=function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                // console.log(xhr.responseText);//返回json字符串格式
+                var data = JSON.parse(xhr.responseText);//转换成数组
+                if(data!=""){
+                    sss.getElementsByTagName("span")[1].innerText++;
+                }
+            }
+        }
+        var chunfang= parseInt(sss.getElementsByTagName("span")[1].innerText)+1;
+
+        xhr.open("post","/addshuliang.do",true);//发送请求,默认为true，异步传输，false为同步传输
+        //post设置请求头
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send("shuliang="+chunfang+"&username="+huoquname);//发送参数
+    })
+
+
+    $("#gouwuxinxi-fragment").on('click','.c-jianshu',function () {
+        console.log("aaa");
+        var sss=this.parentNode;
+        // 获取当前加号对应ID
+        var sssss=sss.getElementsByTagName("span")[1].innerText;
+        console.log(sssss);
+        if(sssss<=1){
+
+        }
+        else {
+            // sss.getElementsByTagName("span")[1].innerText--;
+            var zongshuliang=0;
+            for(var i=0;i<$(".c-dongtai-shop").length;i++){
+                zongshuliang=zongshuliang+parseInt($(".c-jishu-zhongjian")[i].innerText);
+            }
+            $("#sum-shop-shuliang").text(zongshuliang);
+            $("#shop-sum").text(zongshuliang);
+
+            var fusss=this.parentNode.parentNode.parentNode;
+
+            var huoquname=fusss.getElementsByTagName("p")[0].innerText;
+            var chunqu=this.parentNode.parentNode;
+            var car=chunqu.getElementsByTagName("a")[0].innerText;
+            var car111=chunqu.getElementsByTagName("a")[1].innerText;
+            console.log(car);
+            var eee=parseInt(car.substring(1,));
+            var eee111=parseInt(car111.substring(1,));
+            eee111=eee111-eee;
+            // 改变价格
+            chunqu.getElementsByTagName("a")[1].innerText="¥"+eee111;
+            tiaoxuanshuliang();
+            huoquzongsum();
+
+            var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.onreadystatechange=function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                    // console.log(xhr.responseText);//返回json字符串格式
+                    var data = JSON.parse(xhr.responseText);//转换成数组
+                    if(data!=""){
+                        sss.getElementsByTagName("span")[1].innerText--;
+                    }
+                }
+            }
+            var chunfang= parseInt(sss.getElementsByTagName("span")[1].innerText)-1;
+            xhr.open("post","/jianshuliang.do",true);//发送请求,默认为true，异步传输，false为同步传输
+            //post设置请求头
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xhr.send("shuliang="+chunfang+"&username="+huoquname);//发送参数
+        }
+    })
+    // 确定
+    $("#c-Determine").click(function () {
+        $("#add-success-fragement").css({
+            "display":"none"
+        })
+        $("#add-success").css({
+            "display":"none"
+        })
+
+        // 隔开
+    })
+
+    // 全选复选框
+    $("#quanxuan-button").click(function () {
+        if( $("#quanxuan-button").prop("checked")==true) {
+            // 获取挑选数量
+
+            var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.onreadystatechange=function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                    // console.log(xhr.responseText);//返回json字符串格式
+                    var data = JSON.parse(xhr.responseText);//转换成数组
+                    if(data!=""){
+                        $(".danxuan-button").prop("checked", true);
+                        $(".danxuan-button").attr("class", "danxuan-button-active");
+                        tiaoxuanshuliang();
+                        huoquzongsum();
+                        gouwucheshuliang();
+                    }
+                }
+            }
+            xhr.open("post","/quanbuzhuangtai.do",true);//发送请求,默认为true，异步传输，false为同步传输
+            //post设置请求头
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xhr.send("zhuangtai="+"danxuan-button-active"+"&user="+huoquuser);//发送参数
+        }
+        else {
+
+            var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.onreadystatechange=function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {//200表示数据成功返回
+                    // console.log(xhr.responseText);//返回json字符串格式
+                    var data = JSON.parse(xhr.responseText);//转换成数组
+                    console.log(data);
+                    if(data!=""){
+                        $(".danxuan-button-active").prop("checked", false);
+                        $(".danxuan-button-active").attr("class", "danxuan-button");
+                        tiaoxuanshuliang();
+                        huoquzongsum();
+                        gouwucheshuliang();
+                    }
+                }
+            }
+            xhr.open("post","/quanbuzhuangtai.do",true);//发送请求,默认为true，异步传输，false为同步传输
+            //post设置请求头
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xhr.send("zhuangtai="+"danxuan-button"+"&user="+huoquuser);//发送参数
+        }
+        tiaoxuanshuliang();
+        huoquzongsum();
+        gouwucheshuliang();
+    })
+
+    // 单选状态
+    $("#gouwuxinxi-fragment").on('click','.danxuan-button-active',function () {
+        var huoqudangqianjiedian=this.parentNode.parentNode;
+        var huoquname=huoqudangqianjiedian.getElementsByTagName("p")[0].innerText;
+        var huoqudangqianjiagebiaoqian=huoqudangqianjiedian.getElementsByTagName("a")[0].innerText;
+        console.log(huoqudangqianjiagebiaoqian);
+        var huoqudangqianjiage=huoqudangqianjiagebiaoqian.substring(1,);
+        var huoqudangqianshuliang=huoqudangqianjiedian.getElementsByTagName("span")[1].innerText;
+        var huoqusum=huoqudangqianshuliang*huoqudangqianjiage;
+        if($(this).prop("checked")==false) {
+            $(this).attr("class", "danxuan-button");
+            tiaoxuanshuliang();
+            var xhr = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.open("post", "/changezhuangtai.do", true);//发送请求,默认为true，异步传输，false为同步传输
+            //post设置请求头
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhr.send("username=" + huoquname + "&zhuangtai=" + "danxuan-button");//发送参数
+        }
+        // 获取总金额
+        huoquzongsum();
+        // 获取挑选数量
+        tiaoxuanshuliang();
+        // 判断是否以及全选
+        // 点击复选框获取全选状态
+        var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+        for(var i=0;i<huoquchangdu;i++){
+            if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button"){
+                $("#quanxuan-button").prop("checked",false);
+                break;
+            }
+            else if(($(".c-dongtai-shop").find("input")[i].className!="danxuan-button")&&(i==huoquchangdu-1)){
+                $("#quanxuan-button").prop("checked",true);
+            }
+        }
+    })
+
+    $("#gouwuxinxi-fragment").on('click','.danxuan-button',function (){
+        var huoqudangqianjiedian=this.parentNode.parentNode;
+        var huoquname=huoqudangqianjiedian.getElementsByTagName("p")[0].innerText;
+        console.log(huoqudangqianjiedian.getElementsByTagName("a")[0]);
+        var huoqudangqianjiagebiaoqian=huoqudangqianjiedian.getElementsByTagName("a")[0].innerText;
+        var huoqudangqianjiage=huoqudangqianjiagebiaoqian.substring(1,);
+        var huoqudangqianshuliang=huoqudangqianjiedian.getElementsByTagName("span")[1].innerText;
+        var huoqusum=huoqudangqianshuliang*huoqudangqianjiage;
+        if($(this).prop("checked")==true){
+            $(this).attr("class","danxuan-button-active");
+            tiaoxuanshuliang();
+            var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.open("post","/changezhuangtai.do",true);//发送请求,默认为true，异步传输，false为同步传输
+            //post设置请求头
+            xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            xhr.send("username="+huoquname+"&zhuangtai="+"danxuan-button-active");//发送参数
+        };
+        // // 获取总金额
+        huoquzongsum();
+        // 获取挑选数量
+        tiaoxuanshuliang();
+
+        // 判断是否以及全选
+        // 点击复选框获取全选状态
+        var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+        for(var i=0;i<huoquchangdu;i++){
+            if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button"){
+                $("#quanxuan-button").prop("checked",false);
+                break;
+            }
+            else if(($(".c-dongtai-shop").find("input")[i].className!="danxuan-button")&&(i==huoquchangdu-1)){
+                $("#quanxuan-button").prop("checked",true);
+            }
+        }
+    });
+
+    // 删除点击事件
+    $("#tanchu-shanchu").click(function () {
+        $("#queren-shanchu").css({
+            "display":"block"
+        })
+        var ccc=$(document).height();
+        $("#add-success-fragement").css({
+            "height":ccc,
+            "display":"block"
+        })
+    })
+    // 删除取消
+    $("#c-Determine-shanchu-quxiao").click(function () {
+        $("#queren-shanchu").css({
+            "display":"none"
+        })
+        $("#add-success-fragement").css({
+            "display":"none"
+        })
+    })
+    // 删除确认
+    $("#c-Determine-shanchu-chengong").click(function () {
+        for(var k=0;k<$(".c-dongtai-shop").length;k++){
+            if($(".c-dongtai-shop").find("input")[k].className=="danxuan-button-active"){
+                var huoquname=$(".huoquname")[k].innerText;
+                var xhr=new XMLHttpRequest()||new ActiveXObject("Microsoft.XMLHTTP");
+                xhr.open("post","/deleteUser.do",true);//发送请求,默认为true，异步传输，false为同步传输
+                //post设置请求头
+                xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xhr.send("username="+huoquname);//发送参数
+            }
+        }
+        // 循环遍历删除选中商品
+        for(var i=0;i<$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;i++){
+            if($("#gouwuxinxi-fragment").find(".c-dongtai-shop input")[i].className=="danxuan-button-active"){
+                $("#gouwuxinxi-fragment").find(".c-dongtai-shop")[i].remove();
+                i--;
+            }
+        }
+        // 如果没有商品了就清空
+        if($("#gouwuxinxi-fragment").find(".c-dongtai-shop").length==0) {
+            $("#shop-icon-img").attr("src", "../../images/car/gouwuche-icon.png");
+            $(".wu-shop").css({
+                "display": "block"
+            })
+            $(".c-tanchu-fragement").css({
+                "display":"none"
+            })
+        }
+        // 隔开
+        $("#queren-shanchu").css({
+            "display":"none"
+        })
+        $("#add-success-fragement").css({
+            "display":"none"
+        })
+        gouwucheshuliang();
+        huoquzongsum();
+        // 获取挑选数量
+        tiaoxuanshuliang();
+    })
+
+
+    // 你的购物车数量
+    function gouwucheshuliang() {
+        var c=0;
+        for(var i=0;i<$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;i++){
+            c= parseInt($(".c-jishu-zhongjian")[i].innerText)+c;
+        }
+        $("#shop-sum").text(c);
+        $("#sum-shop-shuliang").text(c);
+    }
+
+    // 获取选中后总金额
+    function huoquzongsum() {
+        var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+        var zongsum=0;
+        for (var i=0;i<huoquchangdu;i++){
+            if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button-active"){
+                zongsum=parseInt($(".c-tiaoxuan-sum")[i].innerText.substring(1,))+zongsum;
+            }
+        }
+        $("#sum-money").text("¥"+zongsum);
+    }
+
+
+    // 挑选了多少件商品
+    function tiaoxuanshuliang() {
+        var huoquchangdu=$("#gouwuxinxi-fragment").find(".c-dongtai-shop").length;
+        var shuliang=0;
+        for (var i=0;i<huoquchangdu;i++){
+            if($(".c-dongtai-shop").find("input")[i].className=="danxuan-button-active"){
+                shuliang=parseInt($(".c-jishu-zhongjian")[i].innerText)+shuliang;
+            }
+        }
+        $("#tiaoxuan-shop-shuliang").text(shuliang);
+    }
+</script>
+</body>
+</html>

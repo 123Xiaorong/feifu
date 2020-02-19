@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>精选</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../../css/wcm/style.css">
+    <link rel="stylesheet" href="../../css/wcm/Bannerstyle.css">
+    <link rel="stylesheet" href="../../css/wcm/libiao.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/iconfont.css">
+
+    <!-- px<768 col-xs  >=768 col-sm >=992px col-md >=1200px col-lg -->
+</head>
+
+<body>
+    <div class="t_baoliangge">
+        <div class="t_daohanglan">
+            <div class="t_logo">
+                <a href="../../html/wcm/shouye.html" onmouseover="t_sousuo()"><img src="../../images/feifulogo.png"></a>
+            </div>
+            <div class="t_ul" id="t_ul">
+                <ul>
+                    <li>
+                        <div><a href="../../html/wcm/jingxuan.html" id="t_jingxuan" onmouseover="t_sousuo()">精选</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/xr/cake.html" id="t_daogao" onmouseover="t_sousuo()"> 蛋糕</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zaocan" onmouseover="t_zaocan()"> 元气早餐</a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_zoubian" onmouseover="t_zaobian()"> 周边产品 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_qiye" onmouseover="t_qiye()"> 企业专区 </a></div>
+                    </li>
+                    <li>
+                        <div><a href="../../html/ly/dingzhi.html" id="t_dingzhi" onmouseover="t_sousuo()"> 定制 </a></div>
+                    </li>
+                    <li>
+                        <div><a id="t_tiyan" onmousemove="t_tiyan()"> 活动 </a></div>
+                    </li>
+                    <li>
+                        <div id="t_wodefeifu"><a onmouseover="t_wodefeifu()"> 我的妃芙 </a></div>
+                    </li>
+                </ul>
+            </div>
+            <!--<div id="t_shousuo-1">-->
+            <!--&lt;!&ndash;<span id="t_shanchu" onclick="t_shanchu()">X</span> &ndash;&gt;-->
+            <!--<i class="iconfont icon-quxiao" id="t_shanchu" onclick="t_shanchu()"></i>-->
+            <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+            <!--</div>-->
+            <div class="t_tubiao" id="t_tubiao">
+                <!--<input type="text" name="t_shousuo" id="t_shousuo">-->
+                <!--<a href="#"><i class="iconfont icon-sousuo" onclick="t_dakai()" onmouseover="t_sousuo()"></i></a>-->
+                <a href="../../html/xr/login.html"><i class="iconfont icon-xiugaitouxiang" onmouseover="t_sousuo()"
+                        id="t_yingchang"></i></a>
+                <span style="font-size: 16px;margin-left: -100px" id="t_yonghuming"></span>
+                <button id="t_zhuxiao"
+                    style="display: none;margin-left: 10px ;border: 0px;color: white; border-radius:2px;padding: 4px 8px;background-color: rgba(204, 169, 118, 0.99)">注销</button>
+                <a href="../../html/car/gouwuche.html"><i class="iconfont icon-gouwuche"
+                        onmouseover="t_sousuo()"></i></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_zicaidan">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/breakfast.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span>
+                </a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/bread.html">
+                    <i class="iconfont icon-tusi"></i>
+                    <br>
+                    <span class="t_quanbu-2">吐司</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/drink.html">
+                    <i class="iconfont icon-yinpin"></i>
+                    <br>
+                    <span class="t_quanbu-3">饮品</span></a>
+            </div>
+        </div>
+
+        <div class="display_none" id="t_qita">
+            <div class="t_quanbu-t">
+                <a href="../../html/xr/nearby.html">
+                    <i class="iconfont icon-quanbu"></i>
+                    <br>
+                    <span class="t_quanbu-1">全部</span></a>
+            </div>
+            <div class="t_xianhua">
+                <a href="../../html/xr/flower.html">
+                    <i class="iconfont icon-shouye"></i>
+                    <br>
+                    <span class="t_quanbu-2">鲜花</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/xr/card.html">
+                    <i class="iconfont icon-iconkpxd"></i>
+                    <br>
+                    <span class="t_quanbu-3">贺卡</span></a>
+            </div>
+            <div class="t_dangaolihe">
+                <a href="../../html/xr/sweet.html">
+                    <i class="iconfont icon-lihe"></i>
+                    <br>
+                    <span class="t_quanbu-4">甜点</span></a>
+            </div>
+        </div>
+
+
+        <div class="display_none" id="t_qiye-x">
+            <!--<div class="t_quanbu-t">-->
+            <!--<i class="iconfont icon-quanbu"></i>-->
+            <!--<br>-->
+            <!--<a href=""><span class="t_quanbu-1">全部</span></a>-->
+            <!--</div>-->
+            <div class="t_xianhua">
+                <i class="iconfont icon-tubiao_qiyeguanli-copy"></i>
+                <br>
+                <a href="../../html/hw/cooprecation.html"><span class="t_quanbu-2">合作专区</span></a>
+            </div>
+            <div class="t_heka">
+                <i class="iconfont icon-kehuqunzu"></i>
+                <br>
+                <a href="../../html/hw/conversion.html"><span class="t_quanbu-3">积分兑换</span></a>
+            </div>
+        </div>
+        <div class="display_none" id="t_tiyan-x">
+            <div class="t_heka">
+                <a href="../../html/zc/Teach_video.html">
+                    <i class="iconfont icon-shipin"></i>
+                    <br>
+                    <span class="t_quanbu-3">教学视频</span></a>
+            </div>
+            <div class="t_heka">
+                <a href="../../html/zc/Activ.html">
+                    <i class="iconfont icon-Donut"></i>
+                    <br>
+                    <span class="t_quanbu-4">体验</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="coverLayerOutly" class="display-none">
+        <div id="coverLayerly" class="display-none">
+            <span id="coverLayerBlockly">×</span>
+            <button id="coverLayerButtonOnely">登录</button>
+            <button id="coverLayerButtonTwoly">关闭</button>
+            <div id="coverLayerContently"></div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div id="slideBox" class="slideBox" onmouseover="t_zao()">
+        <div class="hd">
+            <ul>
+                <li>
+                    <span>生日嗨皮</span>
+                    <div class="dot">
+                        <div class="liner"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>经典雪域</span>
+                    <div class="dot">
+                        <div class="liner"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>断层蛋糕</span>
+                    <div class="dot">
+                        <div class="liner"></div>
+                    </div>
+                </li>
+                <li>
+                    <span>深秋暖味</span>
+                    <div class="dot">
+                        <div class="liner"></div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="bd">
+            <ul style="width:100%">
+                <li>
+                    <a href="birthday.html">
+                        <img src="../../images/wcm/choose/bg1.jpg" />
+                        <div class="title">
+                            <p class="main_title">Happy Brithday<br>1心1意 数你最对味</p>
+                            <p class="sub_title">生日嗨皮 尽享欢乐</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href='../xr/cakeDetails.html?G_id=5'><img src="../../images/wcm/choose/bg-2.jpg" />
+                        <div class="title" style="color: #b7955a;">
+                            <p class="main_title">经典雪域牛乳“半”雪而来</p>
+                            <p class="sub_title">11.22小雪当日 雪域立享半价<br>立即预约>></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="ins.html"><img src="../../images/wcm/choose/bg-3.jpeg" />
+                        <div class="title" style="color: #FFFFFF;">
+                            <p class="main_title">风靡ins&nbsp; 人气「断层蛋糕」</p>
+                            <p class="sub_title">每周日至周三 免费加大</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="lili.html"><img src="../../images/wcm/choose/bg-4.jpg" />
+                        <div class="title">
+                            <p class="main_title">深秋暖味 栗栗可薯</p>
+                            <p class="sub_title">新品暖心来袭 aha会员限时立减</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="section_aha">
+        <div class="inner">
+            <!-- <div style="float: left;"> -->
+            <div class="logo_wrap">
+                <img src="../../images/wcm/choose/ahaLogo.png">
+            </div>
+            <div class="content-aha">
+                <p>尊贵礼遇享不停，注册aha会员</p>
+                <p>即可领取大量优惠，
+                    <a href="#" class="more">了解更多</a>
+                </p>
+            </div>
+            <div class="btn_wrap">
+                <a class="btn" href="youhui.html">
+                    领取优惠券
+                </a>
+            </div>
+
+            
+            <!-- </div> -->
+            <div class="bg_cake">
+                <img src="../../images/wcm/choose/aha_cakeBg.png">
+            </div>
+        </div>
+    </section>
+    <!-- 精选商品轮播 -->
+    <section class="section_jingpin">
+        <!-- <section class="main_box"> -->
+        <div class="box">
+            <ul>
+                <li class="on">
+                    <a href="huanbao.html">
+                        <h3>点亮环保[心]温度</h3>
+                        <p>下单勾选[无需餐具]</p>
+                        <p style="padding-bottom: 30px;">限时赠送曲奇礼盒</p>
+                        <a class="quick" href="huanbao.html">立即查看</a>
+                        <img src="../../images/wcm/choose/jingpin1.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>点亮[心]味道</h3>
+                        <p style="padding-bottom: 30px;">浪漫心礼 带来尊享礼遇</p>
+                        <a class="quick" href="love.html">立即查看</a>
+                        <img src="../../images/wcm/choose/jingpin2.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>至臻醇享 经典之作</h3>
+                        <p style="padding-bottom: 30px;">国际金奖加冕 口碑 TOP</p>
+                        <!-- 商品详情页 -->
+                        <a class="quick" href="../xr/cakeDetails.html?G_id=5">立即查看</a>
+                        <img src="../../images/wcm/choose/jingpin3.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>先领券 后下单</h3>
+                        <p style="padding-bottom: 30px;">有优惠 更美味</p>
+                        <a class="quick" href="youhui.html">立即查看</a>
+                        <img src="../../images/wcm/choose/jingpin4.jpg" alt="img">
+                    </a>
+                </li>
+                <div style="clear: both"></div>
+            </ul>
+        </div>
+    </section>
+    <!-- 精选商品列表 -->
+    <section class="section_cake">
+        <ul class="p_list">
+
+        </ul>
+    </section>
+    <!-- 最新评论 -->
+    <section class="comment_section">
+        <h2 style="font-size: 18px; font-weight: bold; text-align: center; padding: 15px 0 20px;">- 最新评论 -</h2>
+        <div style="position: absolute;left: 60px; width: 92%; height: 300px;">
+            <ul style="width: 100%; height: 300px;">
+                <li class="common_list1">
+                    <div style="width: 100%; height: 300px;">
+                        <img style="width: 100%; height: 300px;" src="../../images/wcm/choose/home_12244.jpg" alt="">
+                        <div class="common_content">
+                            <p style="font-size: 18px;">186****2723 &nbsp;&nbsp; 2019-11-15</p>
+                            <p class="text">真材实料口味醇正，浓郁不腻甜度适中。诺心蛋糕一如既往地美味！</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="common_list1">
+                    <div style="width: 100%; height: 300px; overflow: hidden;">
+                        <img style="width: 100%; height: 300px;" src="../../images/wcm/choose/home_20105.jpg" alt="">
+                        <div class="common_content" style="left: 35%;">
+                            <p style="font-size: 18px;">
+                                189****4437 &nbsp;&nbsp;
+                                2019-11-10 </p>
+                            <p class="text">玫瑰花的造型超好看,奶油不腻很好吃,真的很不错,家人的生日蛋糕都在这里买！</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="common_list1">
+                    <div style="width: 100%; height: 300px;">
+                        <img style="width: 100%; height: 300px;" src="../../images/wcm/choose/home_22642.jpg" alt="">
+                        <div class="common_content" style="left: 68%;">
+                            <p style="font-size: 18px;">
+                                138****0614 &nbsp;&nbsp;
+                                2019-11-05 </p>
+                            <p class="text">味道超赞~阿华田真的是小时候的味道了~哈哈~甜筒也超级香脆,喜欢~~</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer style="position: relative; top: 350px; height: 165px;">
+        <div>
+            <ul>
+                <li><a href="#">全部蛋糕</a></li>
+                <li><a href="#">关于诺心</a></li>
+                <li><a href="#">客服服务</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <h1>如有问题，请扫描右边的二维码联系客服。工作时间：9:00-21:00</h1>
+        <h2>copyright©妃芙cake版权所有</h2>
+        <figure>
+            <img src="../../images/wcm/choose/weixin.jpg" alt="">
+            <h1>关注微信公众号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服</h1>
+        </figure>
+    </footer>
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../../js/wcm/jquery.SuperSlide.2.1.3.js"></script>
+    <script src="../../js/nav1.js"></script>
+    <script src="../../js/ajax.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            getAllGoods()
+        }
+
+        $(".slideBox").slide({
+            mainCell: ".bd ul",
+            effect: "fold",
+            trigger: "click",
+            autoPlay: true,
+            mouseOverStop: false,
+            startFun: function (i, c) {
+
+            }
+        });
+        $(".box ul li").hover(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+
+        function getAllGoods() {
+            myAjax("get", "/getGoods.do", "", showGoods)
+        }
+
+        function showGoods() {
+            var data = JSON.parse(xhr.responseText)
+            for (var j = 0; j < data.length; j++) {
+                for (var k = j + 1; k < data.length; k++) {
+                    if (data[j].G_id == data[k].G_id) {
+                        data.splice(j + 1, 1)
+                        k--
+                    }
+                }
+            }
+            document.getElementsByClassName("p_list")[0].innerHTML = ""
+            for (var i = 0; i < data.length; i++) {
+                document.getElementsByClassName("p_list")[0].innerHTML += `<li class="common_list">
+                <div class="item_info">
+                    <div class="item_message">
+                        <a class="img_link">
+                            <div class="auto_pos">
+                                <img style="height: 274px; width: 100%;" src="../../images/image/${data[i].img}">
+                            </div>
+                        </a>
+                        <div class="item_detail">
+                            <div class="name_wrap">
+                                <div class="p_tag">
+                                    <span class="tag">${data[i].goodslabel}</span>
+                                </div>
+                                <a href="../xr/cakeDetails.html?G_id=${data[i].G_id}" style="color: inherit; text-decoration: none;">
+                                    <h4 class="item_name" style="margin-top: 0;">${data[i].goodsname}</h4>
+                                </a>
+                                <div class="recommend_reason">
+                                    ${data[i].description}
+                                </div>
+                            </div>
+                            <div class="price_wrap">
+                                <p class="new_price">
+                                    <small>￥</small>
+                                    ${data[i].price}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>`
+                if (data[i].goodslabel == "") {
+                    // console.log(data[i])
+                    document.getElementsByClassName("tag")[i].style.display = 'none'
+                }
+            }
+        }
+
+        (function (w, d, n, a, j) {
+            w[n] = w[n] || function () {
+                (w[n].a = w[n].a || []).push(arguments);
+            };
+            j = d.createElement('script');
+            j.async = true;
+            j.src = 'https://qiyukf.com/script/8ed4e9d02f17249afdd2131d6c7018c1.js';
+            d.body.appendChild(j);
+        })(window, document, 'ysf');
+
+        
+        //覆盖层函数
+
+        // function getCoupon(){
+        //     setTimeout(()=>{ourAlert(600,200,"请先登录",30)},1000)
+        //     $(this).attr({"disabled":"disabled"}); 
+        // }
+        
+    </script>
+</body>
+
+</html>

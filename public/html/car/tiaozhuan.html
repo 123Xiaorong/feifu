@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="width: 600px;margin: 0 auto">
+    <img src="../../images/car/aaa.png" id="image" style="width: 600px;margin-top: 100px">
+    <p id="ccc" style="display: none;margin-left: 140px;margin-top: 150px;font-size: 20px">支付成功,
+        <a href="../../html/xr/cake.html" style="text-decoration: none;color: #FF4001">回到产品页</a>
+        <a href="../../html/xxb/personalCenter.html" style="text-decoration: none;color: #FF4001">查看订单</a>
+        <a href="../../html/car/gouwuche.html" style="text-decoration: none;color: #FF4001">查看购物车</a>
+    </p>
+    <p><img src="../../images/car/bbb.png" id="image1" style="width: 500px"></p>
+</div>
+
+</body>
+
+
+
+<script>
+    function f() {
+        var ccc=document.getElementById("ccc");
+        var image=document.getElementById("image");
+        var image1=document.getElementById("image1");
+        ccc.style.display="block"
+        image.setAttribute("src","")
+        image1.setAttribute("src","")
+    }
+    setTimeout(f,3000);
+
+
+
+</script>
+
+</html>

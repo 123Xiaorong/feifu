@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="../../css/xr/login.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <style>
+        /*===============覆盖层===========*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        /*===============覆盖层===========*/
+        #coverLayerOut{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1001;
+            -webkit-transition: all linear .5s;
+            -moz-transition: all linear .5s;
+            -ms-transition: all linear .5s;
+            -o-transition: all linear .5s;
+            transition: all linear .5s;
+        }
+        #coverLayer {
+            position: absolute;
+            background-color: white;
+            /*border-radius: 20px;*/
+            /*border-top-right-radius: 0px;*/
+            box-shadow: 0 0 5px #888888;
+            /*height: 100%;*/
+            /*background-color: red;*/
+        }
+
+        #coverLayerBlock {
+            position: absolute;
+            right: 10px;
+            top: -10px;
+            display: block;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        #coverLayerBlock:hover{
+            color: red;
+        }
+
+        #coverLayer > button {
+            padding: 10px 40px;
+        }
+
+        #coverLayerButtonOne {
+            position: absolute;
+            bottom: 30px;
+            left: 100px;
+        }
+
+        #coverLayerButtonTwo {
+            position: absolute;
+            bottom: 30px;
+            right: 100px;
+        }
+        #coverLayerContent{
+            /*width: 90%;*/
+            /*height: 80%;*/
+            /*background-color: red;*/
+            margin: 5% auto 0;
+            padding: 15px;
+            text-align: center;
+            /*text-align: center;*/
+            /*border-top: 1px solid black;*/
+            /*border-bottom: 1px solid black;*/
+            box-sizing: border-box;
+        }
+        .display-none{
+            display: none;
+        }
+        #t_yonghu{
+            width: 150px;
+            height: 20px;
+            background-color: #3e3e3e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="myLogin">
+    <div class="loginPage">
+        <div class="loginWrap">
+            <div class="loginHtml">
+                <!--账号密码登录-->
+                <input id="tab1" type="radio" name="tab" class="signInOne" checked>
+                <label for="tab1" class="tab">
+                    账号密码登录
+                </label>
+                <!--验证码登录-->
+                <input id="tab2" type="radio" name="tab" class="signInTwo">
+                <label for="tab2" class="tab">
+                    验证码登录
+                </label>
+                <div class="loginForm">
+                    <!--账号密码登录-->
+                    <form id="formOne">
+                        <!--账号和密码登录-->
+                        <div class="signInHtmlOne">
+                            <!--用户名-->
+                            <div class="group">
+                                <label for="username" class="label">用户名:</label>
+                                <input id="username" name="username" type="text" class="input" autocomplete="off" placeholder="请输入账号/手机号">
+                            </div>
+                            <!--密码-->
+                            <div class="group">
+                                <label for="password" class="label">密&emsp;码:</label>
+                                <input id="password"  name="password" type="password" class="input" placeholder="请输入密码" data-type="password">
+                            </div>
+                            <!--图形滑动验证-->
+                            <div class="group">
+                                <div class="container">
+                                    <div id="captcha" style="position: relative" data-type="password"></div>
+                                    <div id="msg"></div>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <!--登录按钮-->
+                                <input type="button" class="button" value="登录" onclick="userLogin()">
+                                <!--清空输入框-->
+                                <input type="reset" class="button" value="重置">
+                            </div>
+                            <!--忘记密码-->
+                            <div class="foot-lnk" id="t_wangji" >
+                                <a >忘记密码?</a>
+                            </div>
+                        </div>
+                    </form>
+                    <!--短信验证码登录-->
+                    <form>
+                        <div class="signInHtmlTwo">
+                            <div class="group">
+                                <label for="myPhone" class="label">手机号：</label>
+                                <input id="myPhone" type="text" class="input" autocomplete="off" placeholder="请输入有效的手机号">
+                            </div>
+                            <div class="group">
+                                <label for="myCode" class="label">验证码：</label>
+                                <input id="myCode" type="text" class="myMsg" style="color: #3c6588">
+                                <input id="btnSendCode"type="button" class="myMsgButton" value="发送短信" onclick="sendCode()">
+                            </div>
+                            <div class="group">
+                                <!--登录按钮-->
+                                <input type="button" class="button"  value="登录" onclick="verifyCode()">
+                                <!--清空输入框-->
+                                <input type="reset" class="button" value="重置">
+                            </div>
+                            <!--<div class="foot-lnk">-->
+                                <!--<a href="#">未收到短信？</a>-->
+                            <!--</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="coverLayerOut" class="display-none">
+    <div id="coverLayer" class="display-none">
+        <span id="coverLayerBlock">×</span>
+        <button id="coverLayerButtonOne" style="background-color: #FF4001;color: white;font-size: 16px">更改密码</button>
+        <button id="coverLayerButtonTwo" style="background-color: #FF4001;color: white;font-size: 16px">关闭页面</button>
+        <div id="coverLayerContent" style="position: relative">
+            <div style="width: 400px;height:220px;background-color: white;color: #3e3e3e" id="t_ronghe">
+                <div style="margin-top: 16px;margin-left: -6px">
+                    请输入用户名:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="t_yonghu" style="background-color: #bebebe;height: 30px;color: #626262;width: 162px">
+                        <span id="t_chenggong"></span>
+                </div>
+                <div style="margin-top: 20px">
+                    请输入手机号:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="t_haoma" style="background-color: #bebebe;height: 30px;color: #626262;width: 162px">
+                    <span id="t_chenggong1"></span>
+                </div>
+                <div id="t_xingmima1" style="display: none;position: absolute;top: 130px;left: 32px">请输入新密码:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="t_xinmima" type="password" style="background-color: #bebebe;height: 30px;color: #626262;width: 162px">
+                            <span class="t_buyizhi" style="display:none;color: red">密码不一致</span>
+                </div><br>
+                <div id="xingmima1" style="display: none;position: absolute;top: 170px;left: 32px">请输入新密码:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="xinmima" type="password" style="background-color: #bebebe;height: 30px;color: #626262;width: 162px">
+                    <span class="t_buyizhi" style="display:none;color: red" >密码不一致</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="coverLayerOutly" class="display-none">
+    <div id="coverLayerly" class="display-none">
+        <span id="coverLayerBlockly">×</span>
+        <!--<button id="coverLayerButtonOnely">登录</button>-->
+        <!--<button id="coverLayerButtonTwoly">关闭</button>-->
+        <div id="coverLayerContently" style="margin-top: 35px"></div>
+    </div>
+</div>
+
+<script src="../../js/jquery-1.11.3.js"></script>
+<!--<script src="../../js/nav1.js"></script>-->
+<script src="../../js/ajax.js"></script>
+<script src="../../js/xr/login.js"></script>
+<script src="../../js/nav1.js"></script>
+<!--<script src="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+
+<script>
+    //覆盖层函数
+    function ourAlert(width, height,text,fontSize) {
+        document.getElementById("coverLayer").style.opacity = "0";
+        document.getElementById("coverLayerOut").style.opacity = "0";
+        document.getElementById("coverLayerOut").classList.remove("display-none");
+        document.getElementById("coverLayer").classList.remove("display-none");
+        document.getElementById("coverLayer").style.width = width + "px";
+        document.getElementById("coverLayer").style.height = height + "px";
+        document.getElementById("coverLayerContent").style.width = width*0.8 + "px";
+        document.getElementById("coverLayerContent").style.height = height*0.8 + "px";
+        document.getElementById("coverLayer").style.top = 60 + "px";
+        document.getElementById("coverLayer").style.left = parseFloat(document.body.offsetWidth) / 2 - width / 2 + "px";
+        document.getElementById("coverLayer").style.transition="all ease-in-out .4s";
+        document.getElementById("coverLayer").style.webkitTransition="all ease-in-out .4s";
+        let alertText=document.createTextNode(text);
+        document.getElementById("coverLayerContent").appendChild(alertText);
+        document.getElementById("coverLayerContent").style.fontSize=fontSize+"px";
+        setTimeout(() => {
+            document.getElementById("coverLayer").style.opacity = "1";
+            document.getElementById("coverLayerOut").style.opacity = "1";
+            document.getElementById("coverLayer").style.top = 120 + "px";
+        }, 1);
+        document.getElementById("coverLayerBlock").onclick=function () {//叉叉的点击事件
+            document.getElementById("coverLayer").style.opacity = "0";
+            document.getElementById("coverLayerOut").style.opacity = "0";
+            document.getElementById("coverLayer").style.top = 60 + "px";
+            setTimeout(()=>{
+                document.getElementById("coverLayerOut").classList.add("display-none");
+                document.getElementById("coverLayer").classList.add("display-none");
+            },401);
+        };
+        document.getElementById("coverLayerButtonOne").addEventListener("click",function () {//button1的点击事件
+            document.getElementById("coverLayer").style.opacity = "0";
+            document.getElementById("coverLayerOut").style.opacity = "0";
+            document.getElementById("coverLayer").style.top = 60 + "px";
+            setTimeout(()=>{
+                document.getElementById("coverLayerOut").classList.add("display-none");
+                document.getElementById("coverLayer").classList.add("display-none");
+            },401);
+        });
+        document.getElementById("coverLayerButtonTwo").onclick=function () {//button2的单击事件
+            document.getElementById("coverLayer").style.opacity = "0";
+            document.getElementById("coverLayerOut").style.opacity = "0";
+            document.getElementById("coverLayer").style.top = 60 + "px";
+            setTimeout(()=>{
+                document.getElementById("coverLayerOut").classList.add("display-none");
+                document.getElementById("coverLayer").classList.add("display-none");
+            },401);
+        }
+    }
+</script>
+
+<script>
+    var t_yonghu;
+    var t_haoma;
+    var  t_chenggong1;
+    var t_mima;
+    var t_mima1;
+    $("#t_wangji").mouseover(function () {
+        $("#t_wangji").css("cursor","pointer");
+    })
+    $("#t_wangji").click(function () {
+            ourAlert(500,400,"",16);
+        $("#t_yonghu").val("").focus();
+        $("#t_haoma").val("").focus();
+        $("#t_xinmima").val("").focus();
+        $("#xinmima").val("").focus();
+        $("#t_chenggong").text("").focus();
+        $("#t_chenggong1").text("").focus();
+        $(".t_buyizhi").text("").focus()
+
+
+    })
+
+
+    $("#t_haoma").blur(function () {
+        t_yonghu= $("#t_yonghu").val();
+        // console.log(t_yonghu);
+        t_haoma= $("#t_haoma").val();
+        // console.log(t_haoma);
+
+        $.ajax({
+            url:"/zhaohuimima.do",
+            type:"post",
+            data:{
+              data:t_yonghu,
+              data2:t_haoma,
+            },
+            success:function (data) {
+                // console.log(data)
+                $("#t_chenggong").text(data)
+                $("#t_chenggong1").text(data)
+            },
+
+        })
+        function xixi() {
+
+            var t_chenggong1=$("#t_chenggong1").text()
+            // console.log(t_chenggong1);
+            if (t_chenggong1=="验证成功" ){
+                $("#t_xingmima1").css({
+                    "display":"inline",
+                })
+                $("#xingmima1").css({
+                    "display":"inline",
+                })
+
+            }
+            else {
+                $("#t_xingmima1").css({
+                    "display":"none",
+                })
+                $("#xingmima1").css({
+                    "display":"none",
+                })
+                $("#coverLayerButtonOne").attr('disabled',true);
+            }
+
+        }
+        setInterval(xixi,1000)
+
+
+   })
+
+
+
+    $("#coverLayerButtonOne").click(function () {
+        t_mima=$("#t_xinmima").val()
+        t_mima1=$("#xinmima").val()
+        // console.log(t_mima)
+        // console.log(t_mima1)
+        console.log(t_haoma)
+        if(t_mima==t_mima1){
+            $.ajax({
+                url:"/gengaimima.do",
+                type:"post",
+                data:{
+                    data:t_haoma,
+                    data2:t_mima
+                },
+                success:function () {
+
+                },
+            })
+            // alert("修改成功")
+            ourAlertNav(300,120,"密码修改成功",18);
+        }
+
+        else {
+                // $(".t_buyizhi").css({
+                //     "display":"inline",
+                // })
+            alert("密码不一致")
+
+        }
+
+
+
+
+    })
+        $("#t_ronghe").click(function () {
+            t_mima=$("#t_xinmima").val()
+            t_mima1=$("#xinmima").val()
+            // console.log(t_mima1)
+            // console.log(t_mima)
+            if(t_chenggong1=="验证成功" ){
+                $("#coverLayerButtonOne").attr('disabled',true)
+            }else if  (t_mima==t_mima1&&t_mima!=""){
+                $("#coverLayerButtonOne").attr('disabled',false)
+            }
+            else if(t_mima!=t_mima1){
+                    $(".t_buyizhi").css({
+                        "display":"inline",
+                    })
+            }
+        })
+</script>
+
+
+
+
+
+</body>
+</html>
